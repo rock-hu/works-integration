@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<project name="works-message" basedir=".">
+
+	<property file="../works-integration/build.properties" />
+
+	<import file="../works-integration/import.xml" />
+
+	<property name="dir.java" value="src" />
+	<property name="dir.conf" value="conf" />
+	<property name="dir.build" value="target" />
+	<property name="dir.classes" value="${dir.build}/classes" />
+
+	<property name="app.name" value="works-message" />
+	<property name="app.jar" value="${dir.build}/${app.name}.jar" />
+	<property name="app.file" value="${app.name}.zip" />
+	<property environment="env" />
+
+	<target name="usage">
+		<echo message="Usage:" />
+	</target>
+	<target name="package" description="Package the application">
+
+		<mulePackage applicationFile="${app.file}">
+			<config dir="src/main/app" />
+			<lib dir="${dir.build}" includes="${app.jar}" />
+		</mulePackage>
+	</target>
+
+	<target name="deploy" depends="package" description="Deploy the application to the Mule server">
+		<muleDeploy applicationFile="${app.file}" />
+	</target>
+
+
+</project>

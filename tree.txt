@@ -1,0 +1,306 @@
+[INFO] Scanning for projects...
+[INFO] Searching repository for plugin with prefix: 'dependency'.
+[INFO] ------------------------------------------------------------------------
+[INFO] Building works-message
+[INFO]    task-segment: [dependency:tree]
+[INFO] ------------------------------------------------------------------------
+[INFO] snapshot org.works:works-common:1.0-SNAPSHOT: checking for updates from repository.jboss.org
+[WARNING] repository metadata for: 'snapshot org.works:works-common:1.0-SNAPSHOT' could not be retrieved from repository: repository.jboss.org due to an error: Authorization failed: Access denied to: http://repository.jboss.org/maven2/org/works/works-common/1.0-SNAPSHOT/maven-metadata.xml
+[INFO] Repository 'repository.jboss.org' will be blacklisted
+[INFO] snapshot org.works:works-extenal:1.0-SNAPSHOT: checking for updates from jdbclogger
+[WARNING] repository metadata for: 'snapshot org.works:works-extenal:1.0-SNAPSHOT' could not be retrieved from repository: jdbclogger due to an error: Error transferring file: Connection timed out: connect
+[INFO] Repository 'jdbclogger' will be blacklisted
+Downloading: http://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository offical (http://repo1.maven.org/maven2)
+Downloading: http://download.java.net/maven/2//com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository sun (http://download.java.net/maven/2/)
+Downloading: http://repository.sonatype.org/content/groups/public//com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository sonatype (http://repository.sonatype.org/content/groups/public/)
+Downloading: http://repo.springsource.org/release/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository repo.springsource.org-release (http://repo.springsource.org/release)
+Downloading: https://repository.jboss.org/nexus/content/groups/public/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository repository.jboss.org-public (https://repository.jboss.org/nexus/content/groups/public)
+Downloading: http://mvnrepository.com//com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository mvnrepository (http://mvnrepository.com/)
+Downloading: http://mirrors.ibiblio.org/pub/mirrors/maven2/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository ibiblio (http://mirrors.ibiblio.org/pub/mirrors/maven2)
+Downloading: http://repository.codehaus.org/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository codehaus (http://repository.codehaus.org)
+Downloading: http://www.mvnsearch.org/maven2/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository mvnsearch (http://www.mvnsearch.org/maven2)
+Downloading: http://mavenhub.com/mvn/central/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository mavenhub (http://mavenhub.com/mvn/central)
+Downloading: https://repository.mulesoft.org/releases//com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository mulesoft-releases (https://repository.mulesoft.org/releases/)
+Downloading: http://download.osgeo.org/webdav/geotools/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository OSGEO GeoTools repo (http://download.osgeo.org/webdav/geotools)
+Downloading: http://www.hibernatespatial.org/repository/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository Hibernate Spatial repo (http://www.hibernatespatial.org/repository)
+Downloading: http://people.apache.org/repo/m2-ibiblio-rsync-repository/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository apache (http://people.apache.org/repo/m2-ibiblio-rsync-repository)
+Downloading: https://repository.apache.org/content/groups/public/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository apache-public (https://repository.apache.org/content/groups/public)
+Downloading: http://dev.nightlabs.org/maven-repository/repo/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+[WARNING] Unable to get resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' from repository nightlabs (http://dev.nightlabs.org/maven-repository/repo): Error transferring file: dev.nightlabs.org
+Downloading: http://snapshots.jboss.org/maven2/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository snapshots.jboss.org (http://snapshots.jboss.org/maven2)
+Downloading: http://public.beuth-hochschule.de/~knabe/mvn-repo//com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+[WARNING] Unable to get resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' from repository bht-knabe-repository (http://public.beuth-hochschule.de/~knabe/mvn-repo/): Authorization failed: Access denied to: http://public.beuth-hochschule.de/~knabe/mvn-repo/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+Downloading: http://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository central (http://repo1.maven.org/maven2)
+Downloading: http://repo1.maven.org/maven2/commons-email/commons-email/1.2/commons-email-1.2.pom
+[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository offical (http://repo1.maven.org/maven2)
+Downloading: http://download.java.net/maven/2//commons-email/commons-email/1.2/commons-email-1.2.pom
+[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository sun (http://download.java.net/maven/2/)
+Downloading: http://repository.sonatype.org/content/groups/public//commons-email/commons-email/1.2/commons-email-1.2.pom
+[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository sonatype (http://repository.sonatype.org/content/groups/public/)
+Downloading: http://repo.springsource.org/release/commons-email/commons-email/1.2/commons-email-1.2.pom
+[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository repo.springsource.org-release (http://repo.springsource.org/release)
+Downloading: https://repository.jboss.org/nexus/content/groups/public/commons-email/commons-email/1.2/commons-email-1.2.pom
+[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository repository.jboss.org-public (https://repository.jboss.org/nexus/content/groups/public)
+Downloading: http://mvnrepository.com//commons-email/commons-email/1.2/commons-email-1.2.pom
+[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository mvnrepository (http://mvnrepository.com/)
+Downloading: http://mirrors.ibiblio.org/pub/mirrors/maven2/commons-email/commons-email/1.2/commons-email-1.2.pom
+[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository ibiblio (http://mirrors.ibiblio.org/pub/mirrors/maven2)
+Downloading: http://repository.codehaus.org/commons-email/commons-email/1.2/commons-email-1.2.pom
+[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository codehaus (http://repository.codehaus.org)
+Downloading: http://www.mvnsearch.org/maven2/commons-email/commons-email/1.2/commons-email-1.2.pom
+[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository mvnsearch (http://www.mvnsearch.org/maven2)
+Downloading: http://mavenhub.com/mvn/central/commons-email/commons-email/1.2/commons-email-1.2.pom
+[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository mavenhub (http://mavenhub.com/mvn/central)
+Downloading: https://repository.mulesoft.org/releases//commons-email/commons-email/1.2/commons-email-1.2.pom
+[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository mulesoft-releases (https://repository.mulesoft.org/releases/)
+Downloading: http://download.osgeo.org/webdav/geotools/commons-email/commons-email/1.2/commons-email-1.2.pom
+[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository OSGEO GeoTools repo (http://download.osgeo.org/webdav/geotools)
+Downloading: http://www.hibernatespatial.org/repository/commons-email/commons-email/1.2/commons-email-1.2.pom
+[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository Hibernate Spatial repo (http://www.hibernatespatial.org/repository)
+Downloading: http://people.apache.org/repo/m2-ibiblio-rsync-repository/commons-email/commons-email/1.2/commons-email-1.2.pom
+[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository apache (http://people.apache.org/repo/m2-ibiblio-rsync-repository)
+Downloading: https://repository.apache.org/content/groups/public/commons-email/commons-email/1.2/commons-email-1.2.pom
+[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository apache-public (https://repository.apache.org/content/groups/public)
+Downloading: http://dev.nightlabs.org/maven-repository/repo/commons-email/commons-email/1.2/commons-email-1.2.pom
+[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository nightlabs (http://dev.nightlabs.org/maven-repository/repo)
+Downloading: http://snapshots.jboss.org/maven2/commons-email/commons-email/1.2/commons-email-1.2.pom
+[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository snapshots.jboss.org (http://snapshots.jboss.org/maven2)
+Downloading: http://public.beuth-hochschule.de/~knabe/mvn-repo//commons-email/commons-email/1.2/commons-email-1.2.pom
+[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository bht-knabe-repository (http://public.beuth-hochschule.de/~knabe/mvn-repo/)
+Downloading: http://repo1.maven.org/maven2/commons-email/commons-email/1.2/commons-email-1.2.pom
+[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository central (http://repo1.maven.org/maven2)
+Downloading: http://repo1.maven.org/maven2/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
+[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository offical (http://repo1.maven.org/maven2)
+Downloading: http://download.java.net/maven/2//commons-finder/commons-finder/1.0/commons-finder-1.0.pom
+[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository sun (http://download.java.net/maven/2/)
+Downloading: http://repository.sonatype.org/content/groups/public//commons-finder/commons-finder/1.0/commons-finder-1.0.pom
+[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository sonatype (http://repository.sonatype.org/content/groups/public/)
+Downloading: http://repo.springsource.org/release/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
+[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository repo.springsource.org-release (http://repo.springsource.org/release)
+Downloading: https://repository.jboss.org/nexus/content/groups/public/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
+[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository repository.jboss.org-public (https://repository.jboss.org/nexus/content/groups/public)
+Downloading: http://mvnrepository.com//commons-finder/commons-finder/1.0/commons-finder-1.0.pom
+[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository mvnrepository (http://mvnrepository.com/)
+Downloading: http://mirrors.ibiblio.org/pub/mirrors/maven2/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
+[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository ibiblio (http://mirrors.ibiblio.org/pub/mirrors/maven2)
+Downloading: http://repository.codehaus.org/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
+[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository codehaus (http://repository.codehaus.org)
+Downloading: http://www.mvnsearch.org/maven2/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
+[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository mvnsearch (http://www.mvnsearch.org/maven2)
+Downloading: http://mavenhub.com/mvn/central/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
+[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository mavenhub (http://mavenhub.com/mvn/central)
+Downloading: https://repository.mulesoft.org/releases//commons-finder/commons-finder/1.0/commons-finder-1.0.pom
+[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository mulesoft-releases (https://repository.mulesoft.org/releases/)
+Downloading: http://download.osgeo.org/webdav/geotools/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
+[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository OSGEO GeoTools repo (http://download.osgeo.org/webdav/geotools)
+Downloading: http://www.hibernatespatial.org/repository/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
+[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository Hibernate Spatial repo (http://www.hibernatespatial.org/repository)
+Downloading: http://people.apache.org/repo/m2-ibiblio-rsync-repository/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
+[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository apache (http://people.apache.org/repo/m2-ibiblio-rsync-repository)
+Downloading: https://repository.apache.org/content/groups/public/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
+[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository apache-public (https://repository.apache.org/content/groups/public)
+Downloading: http://dev.nightlabs.org/maven-repository/repo/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
+[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository nightlabs (http://dev.nightlabs.org/maven-repository/repo)
+Downloading: http://snapshots.jboss.org/maven2/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
+[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository snapshots.jboss.org (http://snapshots.jboss.org/maven2)
+Downloading: http://public.beuth-hochschule.de/~knabe/mvn-repo//commons-finder/commons-finder/1.0/commons-finder-1.0.pom
+[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository bht-knabe-repository (http://public.beuth-hochschule.de/~knabe/mvn-repo/)
+Downloading: http://repo1.maven.org/maven2/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
+[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository central (http://repo1.maven.org/maven2)
+Downloading: http://repo1.maven.org/maven2/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository offical (http://repo1.maven.org/maven2)
+Downloading: http://download.java.net/maven/2//commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository sun (http://download.java.net/maven/2/)
+Downloading: http://repository.sonatype.org/content/groups/public//commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository sonatype (http://repository.sonatype.org/content/groups/public/)
+Downloading: http://repo.springsource.org/release/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository repo.springsource.org-release (http://repo.springsource.org/release)
+Downloading: https://repository.jboss.org/nexus/content/groups/public/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository repository.jboss.org-public (https://repository.jboss.org/nexus/content/groups/public)
+Downloading: http://mvnrepository.com//commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository mvnrepository (http://mvnrepository.com/)
+Downloading: http://mirrors.ibiblio.org/pub/mirrors/maven2/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository ibiblio (http://mirrors.ibiblio.org/pub/mirrors/maven2)
+Downloading: http://repository.codehaus.org/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
+[WARNING] Unable to get resource 'commons-jexl:commons-jexl:pom:2.0.1' from repository codehaus (http://repository.codehaus.org): Error transferring file: Software caused connection abort: recv failed
+Downloading: http://www.mvnsearch.org/maven2/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
+[WARNING] Unable to get resource 'commons-jexl:commons-jexl:pom:2.0.1' from repository mvnsearch (http://www.mvnsearch.org/maven2): Error transferring file: Connection timed out: connect
+Downloading: http://mavenhub.com/mvn/central/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository mavenhub (http://mavenhub.com/mvn/central)
+Downloading: https://repository.mulesoft.org/releases//commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository mulesoft-releases (https://repository.mulesoft.org/releases/)
+Downloading: http://download.osgeo.org/webdav/geotools/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository OSGEO GeoTools repo (http://download.osgeo.org/webdav/geotools)
+Downloading: http://www.hibernatespatial.org/repository/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository Hibernate Spatial repo (http://www.hibernatespatial.org/repository)
+Downloading: http://people.apache.org/repo/m2-ibiblio-rsync-repository/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository apache (http://people.apache.org/repo/m2-ibiblio-rsync-repository)
+Downloading: https://repository.apache.org/content/groups/public/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository apache-public (https://repository.apache.org/content/groups/public)
+Downloading: http://dev.nightlabs.org/maven-repository/repo/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository nightlabs (http://dev.nightlabs.org/maven-repository/repo)
+Downloading: http://snapshots.jboss.org/maven2/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository snapshots.jboss.org (http://snapshots.jboss.org/maven2)
+Downloading: http://public.beuth-hochschule.de/~knabe/mvn-repo//commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository bht-knabe-repository (http://public.beuth-hochschule.de/~knabe/mvn-repo/)
+Downloading: http://repo1.maven.org/maven2/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository central (http://repo1.maven.org/maven2)
+[WARNING] POM for 'net.sf.jasperreports:jasperreports-applet:pom:4.6.0:compile' is invalid.
+
+Its dependencies (if any) will NOT be available to the current build.
+[WARNING] POM for 'net.sf.jasperreports:jasperreports-fonts:pom:4.6.0:compile' is invalid.
+
+Its dependencies (if any) will NOT be available to the current build.
+[WARNING] POM for 'net.sf.jasperreports:jasperreports-javaflow:pom:4.6.0:compile' is invalid.
+
+Its dependencies (if any) will NOT be available to the current build.
+[WARNING] POM for 'net.sf.barcode4j:barcode4j-fop-ext:pom:2.1:compile' is invalid.
+
+Its dependencies (if any) will NOT be available to the current build.
+[WARNING] POM for 'net.sf.barcode4j:barcode4j-light:pom:2.1:compile' is invalid.
+
+Its dependencies (if any) will NOT be available to the current build.
+[WARNING] POM for 'net.sf.barcode4j:barcode4j-xgc:pom:2.1:compile' is invalid.
+
+Its dependencies (if any) will NOT be available to the current build.
+Downloading: http://repo1.maven.org/maven2/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
+[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository offical (http://repo1.maven.org/maven2)
+Downloading: http://download.java.net/maven/2//xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
+[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository sun (http://download.java.net/maven/2/)
+Downloading: http://repository.sonatype.org/content/groups/public//xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
+[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository sonatype (http://repository.sonatype.org/content/groups/public/)
+Downloading: http://repo.springsource.org/release/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
+[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository repo.springsource.org-release (http://repo.springsource.org/release)
+Downloading: https://repository.jboss.org/nexus/content/groups/public/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
+[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository repository.jboss.org-public (https://repository.jboss.org/nexus/content/groups/public)
+Downloading: http://mvnrepository.com//xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
+[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository mvnrepository (http://mvnrepository.com/)
+Downloading: http://mirrors.ibiblio.org/pub/mirrors/maven2/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
+[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository ibiblio (http://mirrors.ibiblio.org/pub/mirrors/maven2)
+Downloading: http://repository.codehaus.org/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
+[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository codehaus (http://repository.codehaus.org)
+Downloading: http://www.mvnsearch.org/maven2/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
+[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository mvnsearch (http://www.mvnsearch.org/maven2)
+Downloading: http://mavenhub.com/mvn/central/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
+[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository mavenhub (http://mavenhub.com/mvn/central)
+Downloading: https://repository.mulesoft.org/releases//xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
+[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository mulesoft-releases (https://repository.mulesoft.org/releases/)
+Downloading: http://download.osgeo.org/webdav/geotools/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
+[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository OSGEO GeoTools repo (http://download.osgeo.org/webdav/geotools)
+Downloading: http://www.hibernatespatial.org/repository/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
+[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository Hibernate Spatial repo (http://www.hibernatespatial.org/repository)
+Downloading: http://people.apache.org/repo/m2-ibiblio-rsync-repository/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
+[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository apache (http://people.apache.org/repo/m2-ibiblio-rsync-repository)
+Downloading: https://repository.apache.org/content/groups/public/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
+[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository apache-public (https://repository.apache.org/content/groups/public)
+Downloading: http://dev.nightlabs.org/maven-repository/repo/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
+[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository nightlabs (http://dev.nightlabs.org/maven-repository/repo)
+Downloading: http://snapshots.jboss.org/maven2/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
+[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository snapshots.jboss.org (http://snapshots.jboss.org/maven2)
+Downloading: http://repo1.maven.org/maven2/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
+[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository central (http://repo1.maven.org/maven2)
+Downloading: http://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository offical (http://repo1.maven.org/maven2)
+Downloading: http://download.java.net/maven/2//com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository sun (http://download.java.net/maven/2/)
+Downloading: http://repository.sonatype.org/content/groups/public//com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository sonatype (http://repository.sonatype.org/content/groups/public/)
+Downloading: http://repo.springsource.org/release/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository repo.springsource.org-release (http://repo.springsource.org/release)
+Downloading: https://repository.jboss.org/nexus/content/groups/public/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository repository.jboss.org-public (https://repository.jboss.org/nexus/content/groups/public)
+Downloading: http://mvnrepository.com//com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository mvnrepository (http://mvnrepository.com/)
+Downloading: http://mirrors.ibiblio.org/pub/mirrors/maven2/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository ibiblio (http://mirrors.ibiblio.org/pub/mirrors/maven2)
+Downloading: http://repository.codehaus.org/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository codehaus (http://repository.codehaus.org)
+Downloading: http://www.mvnsearch.org/maven2/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository mvnsearch (http://www.mvnsearch.org/maven2)
+Downloading: http://mavenhub.com/mvn/central/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository mavenhub (http://mavenhub.com/mvn/central)
+Downloading: https://repository.mulesoft.org/releases//com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository mulesoft-releases (https://repository.mulesoft.org/releases/)
+Downloading: http://download.osgeo.org/webdav/geotools/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository OSGEO GeoTools repo (http://download.osgeo.org/webdav/geotools)
+Downloading: http://www.hibernatespatial.org/repository/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository Hibernate Spatial repo (http://www.hibernatespatial.org/repository)
+Downloading: http://people.apache.org/repo/m2-ibiblio-rsync-repository/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository apache (http://people.apache.org/repo/m2-ibiblio-rsync-repository)
+Downloading: https://repository.apache.org/content/groups/public/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository apache-public (https://repository.apache.org/content/groups/public)
+Downloading: http://dev.nightlabs.org/maven-repository/repo/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository nightlabs (http://dev.nightlabs.org/maven-repository/repo)
+Downloading: http://snapshots.jboss.org/maven2/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository snapshots.jboss.org (http://snapshots.jboss.org/maven2)
+Downloading: http://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository central (http://repo1.maven.org/maven2)
+[WARNING] POM for 'org.mule.transports:mule-transport-cxf:pom:3.3.0:compile' is invalid.
+
+Its dependencies (if any) will NOT be available to the current build.
+Downloading: http://repo1.maven.org/maven2/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
+[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository offical (http://repo1.maven.org/maven2)
+Downloading: http://download.java.net/maven/2//com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
+[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository sun (http://download.java.net/maven/2/)
+Downloading: http://repository.sonatype.org/content/groups/public//com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
+[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository sonatype (http://repository.sonatype.org/content/groups/public/)
+Downloading: http://repo.springsource.org/release/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
+[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository repo.springsource.org-release (http://repo.springsource.org/release)
+Downloading: https://repository.jboss.org/nexus/content/groups/public/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
+[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository repository.jboss.org-public (https://repository.jboss.org/nexus/content/groups/public)
+Downloading: http://mvnrepository.com//com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
+[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository mvnrepository (http://mvnrepository.com/)
+Downloading: http://mirrors.ibiblio.org/pub/mirrors/maven2/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
+[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository ibiblio (http://mirrors.ibiblio.org/pub/mirrors/maven2)
+Downloading: http://repository.codehaus.org/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
+[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository codehaus (http://repository.codehaus.org)
+Downloading: http://www.mvnsearch.org/maven2/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
+[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository mvnsearch (http://www.mvnsearch.org/maven2)
+Downloading: http://mavenhub.com/mvn/central/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
+[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository mavenhub (http://mavenhub.com/mvn/central)
+Downloading: https://repository.mulesoft.org/releases//com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
+[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository mulesoft-releases (https://repository.mulesoft.org/releases/)
+Downloading: http://download.osgeo.org/webdav/geotools/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
+[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository OSGEO GeoTools repo (http://download.osgeo.org/webdav/geotools)
+Downloading: http://www.hibernatespatial.org/repository/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
+[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository Hibernate Spatial repo (http://www.hibernatespatial.org/repository)
+Downloading: http://people.apache.org/repo/m2-ibiblio-rsync-repository/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
+[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository apache (http://people.apache.org/repo/m2-ibiblio-rsync-repository)
+Downloading: https://repository.apache.org/content/groups/public/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
+[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository apache-public (https://repository.apache.org/content/groups/public)
+Downloading: http://dev.nightlabs.org/maven-repository/repo/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
+[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository nightlabs (http://dev.nightlabs.org/maven-repository/repo)
+Downloading: http://snapshots.jboss.org/maven2/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
+[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository snapshots.jboss.org (http://snapshots.jboss.org/maven2)
+Downloading: http://repo1.maven.org/maven2/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
+[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository central (http://repo1.maven.org/maven2)
+Downloading: http://repo1.maven.org/maven2/com/espertech/esper-db/4.9.0/esper-db-4.9.0.pom
+[INFO] Unable to find resource 'com.espertech:esper-db:pom:4.9.0' in repository offical (http://repo1.maven.org/maven2)
+Downloading: http://download.java.net/maven/2//com/espertech/esper-db/4.9.0/esper-db-4.9.0.pom
+[INFO] Unable to find resource 'com.espertech:esper-db:pom:4.9.0' in repository sun (http://download.java.net/maven/2/)
+Downloading: http://repository.sonatype.org/content/groups/public//com/espertech/esper-db/4.9.0/esper-db-4.9.0.pom
+[INFO] Unable to find resource 'com.espertech:esper-db:pom:4.9.0' in repository sonatype (http://repository.sonatype.org/content/groups/public/)
+Downloading: http://repo.springsource.org/release/com/espertech/esper-db/4.9.0/esper-db-4.9.0.pom
+[INFO] Unable to find resource 'com.espertech:esper-db:pom:4.9.0' in repository repo.springsource.org-release (http://repo.springsource.org/release)
+Downloading: https://repository.jboss.org/nexus/content/groups/public/com/espertech/esper-db/4.9.0/esper-db-4.9.0.pom
+[INFO] Unable to find resource 'com.espertech:esper-db:pom:4.9.0' in repository repository.jboss.org-public (https://repository.jboss.org/nexus/content/groups/public)
+Downloading: http://mvnrepository.com//com/espertech/esper-db/4.9.0/esper-db-4.9.0.pom
+[INFO] Unable to find resource 'com.espertech:esper-db:pom:4.9.0' in repository mvnrepository (http://mvnrepository.com/)
+Downloading: http://mirrors.ibiblio.org/pub/mirrors/maven2/com/espertech/esper-db/4.9.0/esper-db-4.9.0.pom

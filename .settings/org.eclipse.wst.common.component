@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="works-message">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <dependent-module archiveName="works-common-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/works-common/works-common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="works-extenal-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/works-extenal/works-extenal">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="works-model-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/works-model/works-model">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="works-resource-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/works-resource/works-resource">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="works-converter-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/works-converter/works-converter">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="works-batch-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/works-batch/works-batch">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="works-report-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/works-report/works-report">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="works-webservice-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/works-webservice/works-webservice">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="works-message"/>
+        <property name="java-output-path" value="/works-message/target/classes"/>
+    </wb-module>
+</project-modules>

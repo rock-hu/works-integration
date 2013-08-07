@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+	http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util-3.1.xsd
+               http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+	<context:property-placeholder location="classpath*:common/props/ftp.properties"
+		ignore-resource-not-found="true" ignore-unresolvable="true" />
+
+	<bean id="ftpClientFactory"
+		class="org.springframework.integration.ftp.session.DefaultFtpSessionFactory">
+		<property name="host" value="${ftp.host}" />
+		<property name="port" value="${ftp.port}" />
+		<property name="username" value="${ftp.user}" />
+		<property name="password" value="${ftp.password}" />
+		<property name="controlEncoding" value="UTF-8" />
+		<property name="config" ref="ftpClientConfig" />
+		<property name="clientMode">
+			<util:constant
+				static-field="org.apache.commons.net.ftp.FTPClient.PASSIVE_LOCAL_DATA_CONNECTION_MODE" />
+		</property>
+	</bean>
+
+	<bean id="ftpClientConfig" class="org.apache.commons.net.ftp.FTPClientConfig">
+		<constructor-arg index="0">
+			<util:constant static-field="org.apache.commons.net.ftp.FTPClientConfig.SYST_NT" />
+		</constructor-arg>
+	</bean>
+
+	<bean id="fakeFtpServer" class="org.mockftpserver.fake.FakeFtpServer">
+		<property name="serverControlPort" value="9981" />
+		<property name="userAccounts">
+			<list>
+				<bean class="org.mockftpserver.fake.UserAccount">
+					<property name="username" value="${ftp.user}" />
+					<property name="password" value="${ftp.password}" />
+					<property name="homeDirectory" value="${ftp.home}" />
+				</bean>
+			</list>
+		</property>
+		<property name="fileSystem" ref="windowsFakeFileSystem" />
+	</bean>
+
+	<bean id="windowsFakeFileSystem" class="org.mockftpserver.fake.filesystem.WindowsFakeFileSystem">
+		<property name="createParentDirectoriesAutomatically" value="true" />
+		<property name="entries">
+			<list>
+				<bean class="org.mockftpserver.fake.filesystem.DirectoryEntry">
+					<property name="path" value="${ftp.download.path}" />
+					<property name="permissionsFromString" value="rwxrwxrwx" />
+					<property name="owner" value="${ftp.user}" />
+					<property name="group" value="${ftp.group}" />
+				</bean>
+				<bean class="org.mockftpserver.fake.filesystem.FileEntry">
+					<property name="path" value="${ftp.download.path}/data-20130508.txt" />
+					<property name="contents" value="" />
+					<property name="permissionsFromString" value="rwxrwxrwx" />
+					<property name="owner" value="${ftp.user}" />
+					<property name="group" value="${ftp.group}" />
+				</bean>
+				<bean class="org.mockftpserver.fake.filesystem.FileEntry">
+					<property name="path" value="${ftp.download.path}/data-20130509.txt" />
+					<property name="contents" value="" />
+					<property name="permissionsFromString" value="rwxrwxrwx" />
+					<property name="owner" value="${ftp.user}" />
+					<property name="group" value="${ftp.group}" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+</beans>    	   

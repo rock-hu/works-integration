@@ -1,0 +1,110 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:amq="http://activemq.apache.org/schema/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd 
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd 
+	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd 
+	http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.1.xsd 
+	http://activemq.apache.org/schema/core http://activemq.apache.org/schema/core/activemq-core-5.4.0.xsd 
+	http://activemq.apache.org/camel/schema/spring http://activemq.apache.org/camel/schema/spring/camel-spring-2.8.0.xsd">
+	<jee:jndi-lookup id="jmsConnectionFactory"
+		jndi-name="java:comp/env/jms/ConnectionFactory" cache="true"
+		resource-ref="true" lookup-on-startup="true"
+		expected-type="org.apache.activemq.ActiveMQConnectionFactory"
+		proxy-interface="javax.jms.ConnectionFactory" />
+	<jee:jndi-lookup id="sendQueue" jndi-name="java:comp/env/jms/SendQueue"
+		cache="true" resource-ref="true" lookup-on-startup="true"
+		expected-type="org.apache.activemq.command.ActiveMQQueue"
+		proxy-interface="javax.jms.Queue" />
+	<jee:jndi-lookup id="destQueue" jndi-name="java:comp/env/jms/DestQueue"
+		cache="true" resource-ref="true" lookup-on-startup="true"
+		expected-type="org.apache.activemq.command.ActiveMQQueue"
+		proxy-interface="javax.jms.Queue" />
+	<jee:jndi-lookup id="productPromotionTopic"
+		jndi-name="java:comp/env/jms/ProductPromotionTopic" cache="true"
+		resource-ref="true" lookup-on-startup="true"
+		expected-type="org.apache.activemq.command.ActiveMQTopic"
+		proxy-interface="javax.jms.Topic" />
+
+	<bean id="singleConnectionFactory"
+		class="org.springframework.jms.connection.SingleConnectionFactory">
+		<property name="targetConnectionFactory" ref="jmsConnectionFactory" />
+	</bean>
+	<bean id="pooledConnectionFactory" class="org.apache.activemq.pool.PooledConnectionFactory">
+		<property name="connectionFactory" ref="jmsConnectionFactory" />
+	</bean>
+
+	<bean id="cachingConnectionFactory"
+		class="org.springframework.jms.connection.CachingConnectionFactory">
+		<constructor-arg ref="jmsConnectionFactory" />
+	</bean>
+<!-- 	<bean id="jmsTransactionManager"   -->
+<!-- 		class="org.springframework.jms.connection.JmsTransactionManager"> -->
+<!-- 		<property name="connectionFactory" ref="jmsConnectionFactory" /> -->
+<!-- 	</bean> -->
+	<bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+		<property name="connectionFactory" ref="pooledConnectionFactory" />
+		<property name="defaultDestination" ref="destQueue" />
+		<property name="receiveTimeout" value="1000" />
+	</bean>
+	<bean id="jmsQueueTemplate" class="org.springframework.jms.core.JmsTemplate">
+		<property name="connectionFactory" ref="pooledConnectionFactory" />
+		<property name="messageConverter" ref="messageConverter" />
+		<property name="sessionTransacted" value="true" />
+		<property name="defaultDestination" ref="destQueue" />
+		<property name="receiveTimeout" value="1000" />
+	</bean>
+	<bean id="jmsTopicTemplate" class="org.springframework.jms.core.JmsTemplate">
+		<property name="connectionFactory" ref="pooledConnectionFactory" />
+		<property name="defaultDestination" ref="destQueue" />
+		<property name="receiveTimeout" value="1000" />
+	</bean>
+	<bean id="listenerContainer"
+		class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+		<property name="connectionFactory" ref="pooledConnectionFactory" />
+		<property name="destination" ref="destQueue" />
+		<property name="messageListener" ref="baseJmsQueueListener" />
+		<property name="taskExecutor" ref="taskExecutor" />
+		<property name="cacheLevel" value="4" />
+	</bean>
+
+	<bean id="baseJmsQueueListener"
+		class="com.works.infrastructure.jms.listener.BaseJmsQueueListener"></bean>
+	<bean id="taskExecutor" class="org.springframework.core.task.SimpleAsyncTaskExecutor">
+		<property name="concurrencyLimit" value="10" />
+	</bean>
+	<bean id="messageConverter"
+		class="org.springframework.jms.support.converter.SimpleMessageConverter"></bean>
+
+	<bean id="admins" class="org.apache.activemq.security.AuthenticationUser">
+		<constructor-arg index="0" value="admin" />
+		<constructor-arg index="1" value="password" />
+		<constructor-arg index="2" value="admins,publisher,consumers" />
+	</bean>
+	<bean id="publishers" class="org.apache.activemq.security.AuthenticationUser">
+		<constructor-arg index="0" value="publisher" />
+		<constructor-arg index="1" value="password" />
+		<constructor-arg index="2" value="publisher,consumers" />
+	</bean>
+	<bean id="consumers" class="org.apache.activemq.security.AuthenticationUser">
+		<constructor-arg index="0" value="consumer" />
+		<constructor-arg index="1" value="password" />
+		<constructor-arg index="2" value="consumers" />
+	</bean>
+	<bean id="guests" class="org.apache.activemq.security.AuthenticationUser">
+		<constructor-arg index="0" value="guest" />
+		<constructor-arg index="1" value="password" />
+		<constructor-arg index="2" value="guests" />
+	</bean>
+	<bean id="simpleAuthPlugin" class="org.apache.activemq.security.SimpleAuthenticationPlugin">
+		<property name="users">
+			<util:list>
+				<ref bean="admins" />
+				<ref bean="publishers" />
+				<ref bean="consumers" />
+				<ref bean="guests" />
+			</util:list>
+		</property>
+	</bean>
+</beans>

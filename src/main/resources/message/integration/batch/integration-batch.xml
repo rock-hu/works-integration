@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:si="http://www.springframework.org/schema/integration"
+	xmlns:si-file="http://www.springframework.org/schema/integration/file"
+	xmlns:si-mail="http://www.springframework.org/schema/integration/mail"
+	xmlns:si-stream="http://www.springframework.org/schema/integration/stream"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+			http://www.springframework.org/schema/integration
+			http://www.springframework.org/schema/integration/spring-integration-2.2.xsd
+			http://www.springframework.org/schema/integration/mail
+			http://www.springframework.org/schema/integration/mail/spring-integration-mail-2.2.xsd
+			http://www.springframework.org/schema/integration/stream
+			http://www.springframework.org/schema/integration/stream/spring-integration-stream-2.2.xsd
+			http://www.springframework.org/schema/integration/file
+			http://www.springframework.org/schema/integration/file/spring-integration-file-2.2.xsd">
+
+	<si:poller default="true" fixed-rate="10000" />
+	<si:channel id="files" />
+	<si:channel id="requests" />
+	<si:channel id="statuses">
+		<si:queue capacity="10" />
+	</si:channel>
+	<si:channel id="jobExecutions" />
+	<si:channel id="chunks" />
+	<si:channel id="jobRestarts">
+		<si:queue capacity="10" />
+	</si:channel>
+	<si:channel id="mailNotifications" />
+	<si:channel id="notifiableExecutions" />
+	<si:channel id="chunkExecutions" />
+
+	<si-file:inbound-channel-adapter
+		directory="classpath:/data/paymentImport" channel="files" />
+	<si:transformer input-channel="files" output-channel="requests">
+		<bean
+			class="org.works.message.transformer.FileMessageToJobRequestTransformer">
+			<property name="job" ref="importPayments" />
+			<property name="fileParameterName" value="input.file.name" />
+		</bean>
+	</si:transformer>
+	<si:service-activator method="launch"
+		input-channel="requests" output-channel="statuses">
+		<bean
+			class="org.springframework.batch.integration.launch.JobLaunchingMessageHandler">
+			<constructor-arg ref="jobLauncher" />
+		</bean>
+	</si:service-activator>
+
+
+	<si:gateway id="notificationExecutionsListener"
+		service-interface="org.springframework.batch.core.JobExecutionListener"
+		default-request-channel="jobExecutions" />
+	<si:router id="executionsRouter" input-channel="jobExecutions">
+		<bean class="org.works.message.router.JobExecutionsRouter" />
+	</si:router>
+	<si:chain input-channel="jobRestarts">
+		<si:delayer id="jobDelaye" default-delay="10000" />
+		<si:service-activator>
+			<bean class="org.works.message.support.JobRestart" />
+		</si:service-activator>
+	</si:chain>
+	<si:transformer id="mailBodyTransformer" input-channel="notifiableExecutions"
+		output-channel="mailNotifications">
+		<bean class="org.works.message.transformer.ExecutionsToMailTransformer">
+			<property name="from" value="system@localhost" />
+			<property name="to" value="cchu@localhost" />
+		</bean>
+	</si:transformer>
+
+	<si-mail:outbound-channel-adapter id="notificationsSender"
+		channel="mailNotifications" mail-sender="javaMailSender" />
+<!-- 	<si-stream:stdout-channel-adapter -->
+<!-- 		channel="chunkExecutions" /> -->
+	<si:service-activator input-channel="chunks">
+		<bean
+			class="org.springframework.batch.integration.chunk.ChunkProcessorChunkHandler">
+			<property name="chunkProcessor">
+				<bean
+					class="org.springframework.batch.core.step.item.SimpleChunkProcessor">
+					<property name="itemWriter">
+						<bean class="org.works.batch.writer.PaymentWriter">
+							<constructor-arg ref="dataSource" />
+						</bean>
+					</property>
+					<property name="itemProcessor">
+						<bean
+							class="org.springframework.batch.item.support.PassThroughItemProcessor" />
+					</property>
+				</bean>
+			</property>
+		</bean>
+	</si:service-activator>
+</beans>

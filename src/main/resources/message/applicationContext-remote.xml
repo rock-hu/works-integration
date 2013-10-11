@@ -29,7 +29,7 @@
 		<property name="connectionFactory" ref="pooledConnectionFactory" />
 		<property name="queue" ref="productPromotionTopic" />
 		<property name="concurrentConsumers" value="3" />
-		<property name="messageListener" ref="gFSFectchService" />
+		<property name="messageListener" ref="gfsOperations" />
 		<property name="taskExecutor" ref="taskExecutor" />
 	</bean>
 
@@ -44,19 +44,19 @@
 	<bean id="/gFSRemoveService"
 		class="org.springframework.remoting.caucho.HessianServiceExporter">
 		<property name="serviceInterface"
-			value="com.works.infrastructure.data.gfs.GFSRemoveService"></property>
+			value="org.works.resource.gfs.GFSOperations"></property>
 		<property name="service">
-			<bean class="com.works.infrastructure.data.gfs.impl.GFSRemoveServiceImpl">
+			<bean class="org.works.resource.gfs.impl.GFSTemplate">
 			</bean>
 		</property>
 	</bean>
 
-	<bean id="gFSFectchService"
+	<bean id="gfsOperations"
 		class="org.springframework.jms.remoting.JmsInvokerServiceExporter">
 		<property name="serviceInterface"
-			value="com.works.infrastructure.data.gfs.GFSFectchService" />
+			value="org.works.resource.gfs.GFSOperations" />
 		<property name="service">
-			<bean class="com.works.infrastructure.data.gfs.impl.GFSFectchServiceImpl" />
+			<bean class="org.works.resource.gfs.impl.GFSTemplate" />
 		</property>
 	</bean>
 </beans>

@@ -1,35 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:spring="http://www.springframework.org/schema/beans" xmlns:ajax="http://www.mulesoft.org/schema/mule/ajax"
-	xmlns:ejb="http://www.mulesoft.org/schema/mule/ejb" xmlns:file="http://www.mulesoft.org/schema/mule/file"
-	xmlns:ftp="http://www.mulesoft.org/schema/mule/ftp" xmlns:http="http://www.mulesoft.org/schema/mule/http"
-	xmlns:https="http://www.mulesoft.org/schema/mule/https" xmlns:imap="http://www.mulesoft.org/schema/mule/imap"
-	xmlns:imaps="http://www.mulesoft.org/schema/mule/imaps" xmlns:jbpm="http://www.mulesoft.org/schema/mule/jbpm"
-	xmlns:jdbc="http://www.mulesoft.org/schema/mule/jdbc" xmlns:jetty="http://www.mulesoft.org/schema/mule/jetty"
-	xmlns:jetty-ssl="http://www.mulesoft.org/schema/mule/jetty-ssl"
+	xmlns:ejb="http://www.mulesoft.org/schema/mule/ejb" xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:ftp="http://www.mulesoft.org/schema/mule/ftp"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:https="http://www.mulesoft.org/schema/mule/https"
+	xmlns:imap="http://www.mulesoft.org/schema/mule/imap" xmlns:imaps="http://www.mulesoft.org/schema/mule/imaps"
+	xmlns:jbpm="http://www.mulesoft.org/schema/mule/jbpm" xmlns:jdbc="http://www.mulesoft.org/schema/mule/jdbc"
+	xmlns:jetty="http://www.mulesoft.org/schema/mule/jetty" xmlns:jetty-ssl="http://www.mulesoft.org/schema/mule/jetty-ssl"
 	xmlns:jms="http://www.mulesoft.org/schema/mule/jms" xmlns:jnp="http://www.mulesoft.org/schema/mule/jnp"
-	xmlns:multicast="http://www.mulesoft.org/schema/mule/multicast"
-	xmlns:pop3="http://www.mulesoft.org/schema/mule/pop3" xmlns:pop3s="http://www.mulesoft.org/schema/mule/pop3s"
-	xmlns:quartz="http://www.mulesoft.org/schema/mule/quartz" xmlns:rmi="http://www.mulesoft.org/schema/mule/rmi"
-	xmlns:servlet="http://www.mulesoft.org/schema/mule/servlet" xmlns:smtp="http://www.mulesoft.org/schema/mule/smtp"
-	xmlns:smtps="http://www.mulesoft.org/schema/mule/smtps" xmlns:ssl="http://www.mulesoft.org/schema/mule/ssl"
-	xmlns:tls="http://www.mulesoft.org/schema/mule/tls" xmlns:stdio="http://www.mulesoft.org/schema/mule/stdio"
-	xmlns:tcp="http://www.mulesoft.org/schema/mule/tcp" xmlns:udp="http://www.mulesoft.org/schema/mule/udp"
-	xmlns:vm="http://www.mulesoft.org/schema/mule/vm" xmlns:xmpp="http://www.mulesoft.org/schema/mule/xmpp"
-	xmlns:annotations="http://www.mulesoft.org/schema/mule/annotations"
+	xmlns:multicast="http://www.mulesoft.org/schema/mule/multicast" xmlns:pop3="http://www.mulesoft.org/schema/mule/pop3"
+	xmlns:pop3s="http://www.mulesoft.org/schema/mule/pop3s" xmlns:quartz="http://www.mulesoft.org/schema/mule/quartz"
+	xmlns:rmi="http://www.mulesoft.org/schema/mule/rmi" xmlns:servlet="http://www.mulesoft.org/schema/mule/servlet"
+	xmlns:smtp="http://www.mulesoft.org/schema/mule/smtp" xmlns:smtps="http://www.mulesoft.org/schema/mule/smtps"
+	xmlns:ssl="http://www.mulesoft.org/schema/mule/ssl" xmlns:tls="http://www.mulesoft.org/schema/mule/tls" xmlns:stdio="http://www.mulesoft.org/schema/mule/stdio"
+	xmlns:tcp="http://www.mulesoft.org/schema/mule/tcp" xmlns:udp="http://www.mulesoft.org/schema/mule/udp" xmlns:vm="http://www.mulesoft.org/schema/mule/vm"
+	xmlns:xmpp="http://www.mulesoft.org/schema/mule/xmpp" xmlns:annotations="http://www.mulesoft.org/schema/mule/annotations"
 	xmlns:atom="http://www.mulesoft.org/schema/mule/atom" xmlns:boot="http://www.mulesoft.org/schema/mule/boot"
-	xmlns:builders="http://www.mulesoft.org/schema/mule/builders"
-	xmlns:client="http://www.mulesoft.org/schema/mule/client" xmlns:cxf="http://www.mulesoft.org/schema/mule/cxf"
-	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:builders="http://www.mulesoft.org/schema/mule/builders" xmlns:client="http://www.mulesoft.org/schema/mule/client"
+	xmlns:cxf="http://www.mulesoft.org/schema/mule/cxf" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
 	xmlns:guice="http://www.mulesoft.org/schema/mule/guice" xmlns:ibeans="http://www.mulesoft.org/schema/mule/ibeans"
 	xmlns:jaas="http://www.mulesoft.org/schema/mule/jaas" xmlns:jbossts="http://www.mulesoft.org/schema/mule/jbossts"
 	xmlns:jersey="http://www.mulesoft.org/schema/mule/jersey" xmlns:json="http://www.mulesoft.org/schema/mule/json"
-	xmlns:management="http://www.mulesoft.org/schema/mule/management"
-	xmlns:ognl="http://www.mulesoft.org/schema/mule/ognl" xmlns:pgp="http://www.mulesoft.org/schema/mule/pgp"
-	xmlns:rss="http://www.mulesoft.org/schema/mule/rss" xmlns:scripting="http://www.mulesoft.org/schema/mule/scripting"
-	xmlns:spring-extras="http://www.mulesoft.org/schema/mule/spring-extras"
-	xmlns:spring-security="http://www.mulesoft.org/schema/mule/spring-security"
-	xmlns:sxc="http://www.mulesoft.org/schema/mule/sxc" xmlns:mule-xml="http://www.mulesoft.org/schema/mule/xml"
+	xmlns:management="http://www.mulesoft.org/schema/mule/management" xmlns:ognl="http://www.mulesoft.org/schema/mule/ognl"
+	xmlns:pgp="http://www.mulesoft.org/schema/mule/pgp" xmlns:rss="http://www.mulesoft.org/schema/mule/rss"
+	xmlns:scripting="http://www.mulesoft.org/schema/mule/scripting" xmlns:spring-extras="http://www.mulesoft.org/schema/mule/spring-extras"
+	xmlns:spring-security="http://www.mulesoft.org/schema/mule/spring-security" xmlns:sxc="http://www.mulesoft.org/schema/mule/sxc"
+	xmlns:mule-xml="http://www.mulesoft.org/schema/mule/xml"
 	xsi:schemaLocation="
         http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
         http://www.mulesoft.org/schema/mule/ajax http://www.mulesoft.org/schema/mule/ajax/current/mule-ajax.xsd
@@ -83,92 +78,60 @@
         http://www.mulesoft.org/schema/mule/sxc http://www.mulesoft.org/schema/mule/sxc/current/mule-sxc.xsd
         http://www.mulesoft.org/schema/mule/xml http://www.mulesoft.org/schema/mule/xml/current/mule-xml.xsd
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
-
 	<notifications dynamic="true">
 		<notification event="COMPONENT-MESSAGE" />
 	</notifications>
-
-
-	<quartz:connector name="quartzConnector"
-		validateConnections="true">
-		<receiver-threading-profile
-			maxThreadsActive="20" />
+	<quartz:connector name="quartzConnector" validateConnections="true">
+		<receiver-threading-profile maxThreadsActive="20" />
 	</quartz:connector>
-	
-	<model name="quartzCronModel">
-		<service name="quartzCronService">
-			<inbound>
-				<quartz:inbound-endpoint jobName="cron-job"
-					cronExpression="0/5 * * * * ?">
-					<quartz:event-generator-job />
-				</quartz:inbound-endpoint>
-			</inbound>
-			<outbound>
-				<pass-through-router>
-					<vm:outbound-endpoint path="data-warehouse-load" />
-				</pass-through-router>
-			</outbound>
-		</service>
-
-		<service name="warehouseService">
-			<inbound>
-				<vm:inbound-endpoint path="data-warehouse-load" />
-			</inbound>
-<!-- 			<component class="com.clood.warehouse.DataWarehousingService"> -->
-<!-- 				<method-entry-point-resolver -->
-<!-- 					acceptVoidMethods="true"> -->
-<!-- 					<include-entry-point method="process" /> -->
-<!-- 				</method-entry-point-resolver> -->
-<!-- 			</component> -->
-		</service>
-
-	</model>
-
-<!-- 	<model name="quartzPollingFileModel"> -->
-<!-- 		<service name="quartzPollingFileService"> -->
-<!-- 			<inbound> -->
-<!-- 				<quartz:inbound-endpoint jobName="cron-job" -->
-<!-- 					cronExpression="0/5 * * * * ?"> -->
-<!-- 					<quartz:endpoint-polling-job> -->
-<!-- 						<quartz:job-endpoint -->
-<!-- 							address="file://E:/Workspace/works-extenal/data/incoming" /> -->
-<!-- 					</quartz:endpoint-polling-job> -->
-<!-- 				</quartz:inbound-endpoint> -->
-<!-- 			</inbound> -->
-<!-- 			<echo-component /> -->
-<!-- 		</service> -->
-<!-- 	</model> -->
-
-<!-- 	<model name="quartzPollingModel"> -->
-<!-- 		<service name="quartzPollingService"> -->
-<!-- 			<inbound> -->
-<!-- 				<quartz:inbound-endpoint jobName="cron-job" -->
-<!-- 					repeatInterval="5000"> -->
-<!-- 					<quartz:endpoint-polling-job> -->
-<!-- 						<quartz:job-endpoint address="jms://messages" /> -->
-<!-- 					</quartz:endpoint-polling-job> -->
-<!-- 				</quartz:inbound-endpoint> -->
-<!-- 			</inbound> -->
-<!-- 			<echo-component /> -->
-<!-- 		</service> -->
-
-<!-- 	</model> -->
-
-<!-- 	<model name="quartzDispatchModel"> -->
-<!-- 		<service name="quartzDispatchService"> -->
-<!-- 			<inbound> -->
-<!-- 				<jms:inbound-endpoint queue="inbound" /> -->
-<!-- 			</inbound> -->
-<!-- 			<outbound> -->
-<!-- 				<pass-through-router> -->
-<!-- 					<quartz:outbound-endpoint jobName="dispatch-job" -->
-<!-- 						cronExpression="0/5 * * * * ?"> -->
-<!-- 						<quartz:scheduled-dispatch-job> -->
-<!-- 							<quartz:job-endpoint address="jms://outbound" /> -->
-<!-- 						</quartz:scheduled-dispatch-job> -->
-<!-- 					</quartz:outbound-endpoint> -->
-<!-- 				</pass-through-router> -->
-<!-- 			</outbound> -->
-<!-- 		</service> -->
-<!-- 	</model> -->
+	<flow name="quartzCronFlow">
+		<quartz:inbound-endpoint jobName="cron-job" cronExpression="0/5 * * * * ?">
+			<quartz:event-generator-job />
+		</quartz:inbound-endpoint>
+		<vm:outbound-endpoint path="data-warehouse-load" />
+	</flow>
+	<!-- <model name="quartzPollingFileModel"> -->
+	<!-- <service name="quartzPollingFileService"> -->
+	<!-- <inbound> -->
+	<!-- <quartz:inbound-endpoint jobName="cron-job" -->
+	<!-- cronExpression="0/5 * * * * ?"> -->
+	<!-- <quartz:endpoint-polling-job> -->
+	<!-- <quartz:job-endpoint -->
+	<!-- address="file://E:/Workspace/works-extenal/data/incoming" /> -->
+	<!-- </quartz:endpoint-polling-job> -->
+	<!-- </quartz:inbound-endpoint> -->
+	<!-- </inbound> -->
+	<!-- <echo-component /> -->
+	<!-- </service> -->
+	<!-- </model> -->
+	<!-- <model name="quartzPollingModel"> -->
+	<!-- <service name="quartzPollingService"> -->
+	<!-- <inbound> -->
+	<!-- <quartz:inbound-endpoint jobName="cron-job" -->
+	<!-- repeatInterval="5000"> -->
+	<!-- <quartz:endpoint-polling-job> -->
+	<!-- <quartz:job-endpoint address="jms://messages" /> -->
+	<!-- </quartz:endpoint-polling-job> -->
+	<!-- </quartz:inbound-endpoint> -->
+	<!-- </inbound> -->
+	<!-- <echo-component /> -->
+	<!-- </service> -->
+	<!-- </model> -->
+	<!-- <model name="quartzDispatchModel"> -->
+	<!-- <service name="quartzDispatchService"> -->
+	<!-- <inbound> -->
+	<!-- <jms:inbound-endpoint queue="inbound" /> -->
+	<!-- </inbound> -->
+	<!-- <outbound> -->
+	<!-- <pass-through-router> -->
+	<!-- <quartz:outbound-endpoint jobName="dispatch-job" -->
+	<!-- cronExpression="0/5 * * * * ?"> -->
+	<!-- <quartz:scheduled-dispatch-job> -->
+	<!-- <quartz:job-endpoint address="jms://outbound" /> -->
+	<!-- </quartz:scheduled-dispatch-job> -->
+	<!-- </quartz:outbound-endpoint> -->
+	<!-- </pass-through-router> -->
+	<!-- </outbound> -->
+	<!-- </service> -->
+	<!-- </model> -->
 </mule>

@@ -18,10 +18,8 @@ public class JobRestart {
 	Job job;
 
 	@ServiceActivator
-	public void restartIfPossible(JobExecution execution)
-			throws JobInstanceAlreadyCompleteException,
-			JobParametersInvalidException, JobRestartException,
+	public void restartIfPossible(JobExecution execution) throws JobInstanceAlreadyCompleteException, JobParametersInvalidException, JobRestartException,
 			JobExecutionAlreadyRunningException {
-		jobLauncher.run(job, execution.getJobInstance().getJobParameters());
+		jobLauncher.run(job, execution.getJobParameters());
 	}
 }

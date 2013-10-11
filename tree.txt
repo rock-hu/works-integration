@@ -7,161 +7,102 @@
 [INFO] snapshot org.works:works-common:1.0-SNAPSHOT: checking for updates from repository.jboss.org
 [WARNING] repository metadata for: 'snapshot org.works:works-common:1.0-SNAPSHOT' could not be retrieved from repository: repository.jboss.org due to an error: Authorization failed: Access denied to: http://repository.jboss.org/maven2/org/works/works-common/1.0-SNAPSHOT/maven-metadata.xml
 [INFO] Repository 'repository.jboss.org' will be blacklisted
-[INFO] snapshot org.works:works-extenal:1.0-SNAPSHOT: checking for updates from jdbclogger
-[WARNING] repository metadata for: 'snapshot org.works:works-extenal:1.0-SNAPSHOT' could not be retrieved from repository: jdbclogger due to an error: Error transferring file: Connection timed out: connect
-[INFO] Repository 'jdbclogger' will be blacklisted
-Downloading: http://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository offical (http://repo1.maven.org/maven2)
-Downloading: http://download.java.net/maven/2//com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository sun (http://download.java.net/maven/2/)
-Downloading: http://repository.sonatype.org/content/groups/public//com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository sonatype (http://repository.sonatype.org/content/groups/public/)
-Downloading: http://repo.springsource.org/release/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository repo.springsource.org-release (http://repo.springsource.org/release)
-Downloading: https://repository.jboss.org/nexus/content/groups/public/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository repository.jboss.org-public (https://repository.jboss.org/nexus/content/groups/public)
-Downloading: http://mvnrepository.com//com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository mvnrepository (http://mvnrepository.com/)
-Downloading: http://mirrors.ibiblio.org/pub/mirrors/maven2/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository ibiblio (http://mirrors.ibiblio.org/pub/mirrors/maven2)
-Downloading: http://repository.codehaus.org/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository codehaus (http://repository.codehaus.org)
-Downloading: http://www.mvnsearch.org/maven2/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository mvnsearch (http://www.mvnsearch.org/maven2)
-Downloading: http://mavenhub.com/mvn/central/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository mavenhub (http://mavenhub.com/mvn/central)
-Downloading: https://repository.mulesoft.org/releases//com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository mulesoft-releases (https://repository.mulesoft.org/releases/)
-Downloading: http://download.osgeo.org/webdav/geotools/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository OSGEO GeoTools repo (http://download.osgeo.org/webdav/geotools)
-Downloading: http://www.hibernatespatial.org/repository/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository Hibernate Spatial repo (http://www.hibernatespatial.org/repository)
 Downloading: http://people.apache.org/repo/m2-ibiblio-rsync-repository/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
 [INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository apache (http://people.apache.org/repo/m2-ibiblio-rsync-repository)
 Downloading: https://repository.apache.org/content/groups/public/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
 [INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository apache-public (https://repository.apache.org/content/groups/public)
+Downloading: http://akka.io/repository/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository akka.repository (http://akka.io/repository)
+Downloading: http://repository-master.mulesoft.org/releases//com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository mulesoft-releases (http://repository-master.mulesoft.org/releases/)
+Downloading: http://repository-master.mulesoft.org/snapshots//com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository mulesoft-snapshots (http://repository-master.mulesoft.org/snapshots/)
 Downloading: http://dev.nightlabs.org/maven-repository/repo/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
-[WARNING] Unable to get resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' from repository nightlabs (http://dev.nightlabs.org/maven-repository/repo): Error transferring file: dev.nightlabs.org
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository nightlabs (http://dev.nightlabs.org/maven-repository/repo)
 Downloading: http://snapshots.jboss.org/maven2/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
 [INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository snapshots.jboss.org (http://snapshots.jboss.org/maven2)
 Downloading: http://public.beuth-hochschule.de/~knabe/mvn-repo//com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
 [WARNING] Unable to get resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' from repository bht-knabe-repository (http://public.beuth-hochschule.de/~knabe/mvn-repo/): Authorization failed: Access denied to: http://public.beuth-hochschule.de/~knabe/mvn-repo/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+Downloading: http://repository.codehaus.org/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
+[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository codehaus (http://repository.codehaus.org)
 Downloading: http://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom
 [INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.7' in repository central (http://repo1.maven.org/maven2)
-Downloading: http://repo1.maven.org/maven2/commons-email/commons-email/1.2/commons-email-1.2.pom
-[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository offical (http://repo1.maven.org/maven2)
-Downloading: http://download.java.net/maven/2//commons-email/commons-email/1.2/commons-email-1.2.pom
-[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository sun (http://download.java.net/maven/2/)
-Downloading: http://repository.sonatype.org/content/groups/public//commons-email/commons-email/1.2/commons-email-1.2.pom
-[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository sonatype (http://repository.sonatype.org/content/groups/public/)
-Downloading: http://repo.springsource.org/release/commons-email/commons-email/1.2/commons-email-1.2.pom
-[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository repo.springsource.org-release (http://repo.springsource.org/release)
-Downloading: https://repository.jboss.org/nexus/content/groups/public/commons-email/commons-email/1.2/commons-email-1.2.pom
-[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository repository.jboss.org-public (https://repository.jboss.org/nexus/content/groups/public)
-Downloading: http://mvnrepository.com//commons-email/commons-email/1.2/commons-email-1.2.pom
-[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository mvnrepository (http://mvnrepository.com/)
-Downloading: http://mirrors.ibiblio.org/pub/mirrors/maven2/commons-email/commons-email/1.2/commons-email-1.2.pom
-[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository ibiblio (http://mirrors.ibiblio.org/pub/mirrors/maven2)
-Downloading: http://repository.codehaus.org/commons-email/commons-email/1.2/commons-email-1.2.pom
-[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository codehaus (http://repository.codehaus.org)
-Downloading: http://www.mvnsearch.org/maven2/commons-email/commons-email/1.2/commons-email-1.2.pom
-[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository mvnsearch (http://www.mvnsearch.org/maven2)
-Downloading: http://mavenhub.com/mvn/central/commons-email/commons-email/1.2/commons-email-1.2.pom
-[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository mavenhub (http://mavenhub.com/mvn/central)
-Downloading: https://repository.mulesoft.org/releases//commons-email/commons-email/1.2/commons-email-1.2.pom
-[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository mulesoft-releases (https://repository.mulesoft.org/releases/)
-Downloading: http://download.osgeo.org/webdav/geotools/commons-email/commons-email/1.2/commons-email-1.2.pom
-[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository OSGEO GeoTools repo (http://download.osgeo.org/webdav/geotools)
-Downloading: http://www.hibernatespatial.org/repository/commons-email/commons-email/1.2/commons-email-1.2.pom
-[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository Hibernate Spatial repo (http://www.hibernatespatial.org/repository)
 Downloading: http://people.apache.org/repo/m2-ibiblio-rsync-repository/commons-email/commons-email/1.2/commons-email-1.2.pom
 [INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository apache (http://people.apache.org/repo/m2-ibiblio-rsync-repository)
 Downloading: https://repository.apache.org/content/groups/public/commons-email/commons-email/1.2/commons-email-1.2.pom
 [INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository apache-public (https://repository.apache.org/content/groups/public)
+Downloading: http://akka.io/repository/commons-email/commons-email/1.2/commons-email-1.2.pom
+[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository akka.repository (http://akka.io/repository)
+Downloading: http://repository-master.mulesoft.org/releases//commons-email/commons-email/1.2/commons-email-1.2.pom
+[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository mulesoft-releases (http://repository-master.mulesoft.org/releases/)
+Downloading: http://repository-master.mulesoft.org/snapshots//commons-email/commons-email/1.2/commons-email-1.2.pom
+[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository mulesoft-snapshots (http://repository-master.mulesoft.org/snapshots/)
 Downloading: http://dev.nightlabs.org/maven-repository/repo/commons-email/commons-email/1.2/commons-email-1.2.pom
 [INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository nightlabs (http://dev.nightlabs.org/maven-repository/repo)
 Downloading: http://snapshots.jboss.org/maven2/commons-email/commons-email/1.2/commons-email-1.2.pom
 [INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository snapshots.jboss.org (http://snapshots.jboss.org/maven2)
 Downloading: http://public.beuth-hochschule.de/~knabe/mvn-repo//commons-email/commons-email/1.2/commons-email-1.2.pom
 [INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository bht-knabe-repository (http://public.beuth-hochschule.de/~knabe/mvn-repo/)
+Downloading: http://repository.codehaus.org/commons-email/commons-email/1.2/commons-email-1.2.pom
+[INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository codehaus (http://repository.codehaus.org)
 Downloading: http://repo1.maven.org/maven2/commons-email/commons-email/1.2/commons-email-1.2.pom
 [INFO] Unable to find resource 'commons-email:commons-email:pom:1.2' in repository central (http://repo1.maven.org/maven2)
-Downloading: http://repo1.maven.org/maven2/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
-[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository offical (http://repo1.maven.org/maven2)
-Downloading: http://download.java.net/maven/2//commons-finder/commons-finder/1.0/commons-finder-1.0.pom
-[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository sun (http://download.java.net/maven/2/)
-Downloading: http://repository.sonatype.org/content/groups/public//commons-finder/commons-finder/1.0/commons-finder-1.0.pom
-[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository sonatype (http://repository.sonatype.org/content/groups/public/)
-Downloading: http://repo.springsource.org/release/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
-[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository repo.springsource.org-release (http://repo.springsource.org/release)
-Downloading: https://repository.jboss.org/nexus/content/groups/public/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
-[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository repository.jboss.org-public (https://repository.jboss.org/nexus/content/groups/public)
-Downloading: http://mvnrepository.com//commons-finder/commons-finder/1.0/commons-finder-1.0.pom
-[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository mvnrepository (http://mvnrepository.com/)
-Downloading: http://mirrors.ibiblio.org/pub/mirrors/maven2/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
-[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository ibiblio (http://mirrors.ibiblio.org/pub/mirrors/maven2)
-Downloading: http://repository.codehaus.org/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
-[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository codehaus (http://repository.codehaus.org)
-Downloading: http://www.mvnsearch.org/maven2/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
-[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository mvnsearch (http://www.mvnsearch.org/maven2)
-Downloading: http://mavenhub.com/mvn/central/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
-[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository mavenhub (http://mavenhub.com/mvn/central)
-Downloading: https://repository.mulesoft.org/releases//commons-finder/commons-finder/1.0/commons-finder-1.0.pom
-[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository mulesoft-releases (https://repository.mulesoft.org/releases/)
-Downloading: http://download.osgeo.org/webdav/geotools/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
-[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository OSGEO GeoTools repo (http://download.osgeo.org/webdav/geotools)
-Downloading: http://www.hibernatespatial.org/repository/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
-[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository Hibernate Spatial repo (http://www.hibernatespatial.org/repository)
 Downloading: http://people.apache.org/repo/m2-ibiblio-rsync-repository/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
 [INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository apache (http://people.apache.org/repo/m2-ibiblio-rsync-repository)
 Downloading: https://repository.apache.org/content/groups/public/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
 [INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository apache-public (https://repository.apache.org/content/groups/public)
+Downloading: http://akka.io/repository/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
+[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository akka.repository (http://akka.io/repository)
+Downloading: http://repository-master.mulesoft.org/releases//commons-finder/commons-finder/1.0/commons-finder-1.0.pom
+[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository mulesoft-releases (http://repository-master.mulesoft.org/releases/)
+Downloading: http://repository-master.mulesoft.org/snapshots//commons-finder/commons-finder/1.0/commons-finder-1.0.pom
+[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository mulesoft-snapshots (http://repository-master.mulesoft.org/snapshots/)
 Downloading: http://dev.nightlabs.org/maven-repository/repo/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
 [INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository nightlabs (http://dev.nightlabs.org/maven-repository/repo)
 Downloading: http://snapshots.jboss.org/maven2/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
 [INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository snapshots.jboss.org (http://snapshots.jboss.org/maven2)
 Downloading: http://public.beuth-hochschule.de/~knabe/mvn-repo//commons-finder/commons-finder/1.0/commons-finder-1.0.pom
 [INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository bht-knabe-repository (http://public.beuth-hochschule.de/~knabe/mvn-repo/)
+Downloading: http://repository.codehaus.org/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
+[INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository codehaus (http://repository.codehaus.org)
 Downloading: http://repo1.maven.org/maven2/commons-finder/commons-finder/1.0/commons-finder-1.0.pom
 [INFO] Unable to find resource 'commons-finder:commons-finder:pom:1.0' in repository central (http://repo1.maven.org/maven2)
-Downloading: http://repo1.maven.org/maven2/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
-[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository offical (http://repo1.maven.org/maven2)
-Downloading: http://download.java.net/maven/2//commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
-[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository sun (http://download.java.net/maven/2/)
-Downloading: http://repository.sonatype.org/content/groups/public//commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
-[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository sonatype (http://repository.sonatype.org/content/groups/public/)
-Downloading: http://repo.springsource.org/release/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
-[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository repo.springsource.org-release (http://repo.springsource.org/release)
-Downloading: https://repository.jboss.org/nexus/content/groups/public/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
-[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository repository.jboss.org-public (https://repository.jboss.org/nexus/content/groups/public)
-Downloading: http://mvnrepository.com//commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
-[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository mvnrepository (http://mvnrepository.com/)
-Downloading: http://mirrors.ibiblio.org/pub/mirrors/maven2/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
-[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository ibiblio (http://mirrors.ibiblio.org/pub/mirrors/maven2)
-Downloading: http://repository.codehaus.org/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
-[WARNING] Unable to get resource 'commons-jexl:commons-jexl:pom:2.0.1' from repository codehaus (http://repository.codehaus.org): Error transferring file: Software caused connection abort: recv failed
-Downloading: http://www.mvnsearch.org/maven2/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
-[WARNING] Unable to get resource 'commons-jexl:commons-jexl:pom:2.0.1' from repository mvnsearch (http://www.mvnsearch.org/maven2): Error transferring file: Connection timed out: connect
-Downloading: http://mavenhub.com/mvn/central/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
-[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository mavenhub (http://mavenhub.com/mvn/central)
-Downloading: https://repository.mulesoft.org/releases//commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
-[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository mulesoft-releases (https://repository.mulesoft.org/releases/)
-Downloading: http://download.osgeo.org/webdav/geotools/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
-[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository OSGEO GeoTools repo (http://download.osgeo.org/webdav/geotools)
-Downloading: http://www.hibernatespatial.org/repository/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
-[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository Hibernate Spatial repo (http://www.hibernatespatial.org/repository)
-Downloading: http://people.apache.org/repo/m2-ibiblio-rsync-repository/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
-[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository apache (http://people.apache.org/repo/m2-ibiblio-rsync-repository)
-Downloading: https://repository.apache.org/content/groups/public/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
-[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository apache-public (https://repository.apache.org/content/groups/public)
-Downloading: http://dev.nightlabs.org/maven-repository/repo/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
-[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository nightlabs (http://dev.nightlabs.org/maven-repository/repo)
-Downloading: http://snapshots.jboss.org/maven2/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
-[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository snapshots.jboss.org (http://snapshots.jboss.org/maven2)
-Downloading: http://public.beuth-hochschule.de/~knabe/mvn-repo//commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
-[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository bht-knabe-repository (http://public.beuth-hochschule.de/~knabe/mvn-repo/)
-Downloading: http://repo1.maven.org/maven2/commons-jexl/commons-jexl/2.0.1/commons-jexl-2.0.1.pom
-[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.0.1' in repository central (http://repo1.maven.org/maven2)
+Downloading: http://people.apache.org/repo/m2-ibiblio-rsync-repository/commons-jexl/commons-jexl/2.1.1/commons-jexl-2.1.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.1.1' in repository apache (http://people.apache.org/repo/m2-ibiblio-rsync-repository)
+Downloading: https://repository.apache.org/content/groups/public/commons-jexl/commons-jexl/2.1.1/commons-jexl-2.1.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.1.1' in repository apache-public (https://repository.apache.org/content/groups/public)
+Downloading: http://akka.io/repository/commons-jexl/commons-jexl/2.1.1/commons-jexl-2.1.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.1.1' in repository akka.repository (http://akka.io/repository)
+Downloading: http://repository-master.mulesoft.org/releases//commons-jexl/commons-jexl/2.1.1/commons-jexl-2.1.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.1.1' in repository mulesoft-releases (http://repository-master.mulesoft.org/releases/)
+Downloading: http://repository-master.mulesoft.org/snapshots//commons-jexl/commons-jexl/2.1.1/commons-jexl-2.1.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.1.1' in repository mulesoft-snapshots (http://repository-master.mulesoft.org/snapshots/)
+Downloading: http://dev.nightlabs.org/maven-repository/repo/commons-jexl/commons-jexl/2.1.1/commons-jexl-2.1.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.1.1' in repository nightlabs (http://dev.nightlabs.org/maven-repository/repo)
+Downloading: http://snapshots.jboss.org/maven2/commons-jexl/commons-jexl/2.1.1/commons-jexl-2.1.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.1.1' in repository snapshots.jboss.org (http://snapshots.jboss.org/maven2)
+Downloading: http://public.beuth-hochschule.de/~knabe/mvn-repo//commons-jexl/commons-jexl/2.1.1/commons-jexl-2.1.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.1.1' in repository bht-knabe-repository (http://public.beuth-hochschule.de/~knabe/mvn-repo/)
+Downloading: http://repository.codehaus.org/commons-jexl/commons-jexl/2.1.1/commons-jexl-2.1.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.1.1' in repository codehaus (http://repository.codehaus.org)
+Downloading: http://repo1.maven.org/maven2/commons-jexl/commons-jexl/2.1.1/commons-jexl-2.1.1.pom
+[INFO] Unable to find resource 'commons-jexl:commons-jexl:pom:2.1.1' in repository central (http://repo1.maven.org/maven2)
+Downloading: http://people.apache.org/repo/m2-ibiblio-rsync-repository/org/postgis/postgis-jdbc/1.5.3/postgis-jdbc-1.5.3.pom
+[INFO] Unable to find resource 'org.postgis:postgis-jdbc:pom:1.5.3' in repository apache (http://people.apache.org/repo/m2-ibiblio-rsync-repository)
+Downloading: https://repository.apache.org/content/groups/public/org/postgis/postgis-jdbc/1.5.3/postgis-jdbc-1.5.3.pom
+[INFO] Unable to find resource 'org.postgis:postgis-jdbc:pom:1.5.3' in repository apache-public (https://repository.apache.org/content/groups/public)
+Downloading: http://akka.io/repository/org/postgis/postgis-jdbc/1.5.3/postgis-jdbc-1.5.3.pom
+[INFO] Unable to find resource 'org.postgis:postgis-jdbc:pom:1.5.3' in repository akka.repository (http://akka.io/repository)
+Downloading: http://repository-master.mulesoft.org/releases//org/postgis/postgis-jdbc/1.5.3/postgis-jdbc-1.5.3.pom
+[INFO] Unable to find resource 'org.postgis:postgis-jdbc:pom:1.5.3' in repository mulesoft-releases (http://repository-master.mulesoft.org/releases/)
+Downloading: http://repository-master.mulesoft.org/snapshots//org/postgis/postgis-jdbc/1.5.3/postgis-jdbc-1.5.3.pom
+[INFO] Unable to find resource 'org.postgis:postgis-jdbc:pom:1.5.3' in repository mulesoft-snapshots (http://repository-master.mulesoft.org/snapshots/)
+Downloading: http://dev.nightlabs.org/maven-repository/repo/org/postgis/postgis-jdbc/1.5.3/postgis-jdbc-1.5.3.pom
+[INFO] Unable to find resource 'org.postgis:postgis-jdbc:pom:1.5.3' in repository nightlabs (http://dev.nightlabs.org/maven-repository/repo)
+Downloading: http://snapshots.jboss.org/maven2/org/postgis/postgis-jdbc/1.5.3/postgis-jdbc-1.5.3.pom
+[INFO] Unable to find resource 'org.postgis:postgis-jdbc:pom:1.5.3' in repository snapshots.jboss.org (http://snapshots.jboss.org/maven2)
+Downloading: http://repo1.maven.org/maven2/org/postgis/postgis-jdbc/1.5.3/postgis-jdbc-1.5.3.pom
+[INFO] Unable to find resource 'org.postgis:postgis-jdbc:pom:1.5.3' in repository central (http://repo1.maven.org/maven2)
 [WARNING] POM for 'net.sf.jasperreports:jasperreports-applet:pom:4.6.0:compile' is invalid.
 
 Its dependencies (if any) will NOT be available to the current build.
@@ -180,127 +121,514 @@ Its dependencies (if any) will NOT be available to the current build.
 [WARNING] POM for 'net.sf.barcode4j:barcode4j-xgc:pom:2.1:compile' is invalid.
 
 Its dependencies (if any) will NOT be available to the current build.
-Downloading: http://repo1.maven.org/maven2/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
-[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository offical (http://repo1.maven.org/maven2)
-Downloading: http://download.java.net/maven/2//xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
-[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository sun (http://download.java.net/maven/2/)
-Downloading: http://repository.sonatype.org/content/groups/public//xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
-[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository sonatype (http://repository.sonatype.org/content/groups/public/)
-Downloading: http://repo.springsource.org/release/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
-[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository repo.springsource.org-release (http://repo.springsource.org/release)
-Downloading: https://repository.jboss.org/nexus/content/groups/public/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
-[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository repository.jboss.org-public (https://repository.jboss.org/nexus/content/groups/public)
-Downloading: http://mvnrepository.com//xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
-[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository mvnrepository (http://mvnrepository.com/)
-Downloading: http://mirrors.ibiblio.org/pub/mirrors/maven2/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
-[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository ibiblio (http://mirrors.ibiblio.org/pub/mirrors/maven2)
-Downloading: http://repository.codehaus.org/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
-[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository codehaus (http://repository.codehaus.org)
-Downloading: http://www.mvnsearch.org/maven2/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
-[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository mvnsearch (http://www.mvnsearch.org/maven2)
-Downloading: http://mavenhub.com/mvn/central/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
-[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository mavenhub (http://mavenhub.com/mvn/central)
-Downloading: https://repository.mulesoft.org/releases//xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
-[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository mulesoft-releases (https://repository.mulesoft.org/releases/)
-Downloading: http://download.osgeo.org/webdav/geotools/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
-[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository OSGEO GeoTools repo (http://download.osgeo.org/webdav/geotools)
-Downloading: http://www.hibernatespatial.org/repository/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
-[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository Hibernate Spatial repo (http://www.hibernatespatial.org/repository)
 Downloading: http://people.apache.org/repo/m2-ibiblio-rsync-repository/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
 [INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository apache (http://people.apache.org/repo/m2-ibiblio-rsync-repository)
 Downloading: https://repository.apache.org/content/groups/public/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
 [INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository apache-public (https://repository.apache.org/content/groups/public)
+Downloading: http://akka.io/repository/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
+[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository akka.repository (http://akka.io/repository)
+Downloading: http://repository-master.mulesoft.org/releases//xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
+[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository mulesoft-releases (http://repository-master.mulesoft.org/releases/)
+Downloading: http://repository-master.mulesoft.org/snapshots//xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
+[INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository mulesoft-snapshots (http://repository-master.mulesoft.org/snapshots/)
 Downloading: http://dev.nightlabs.org/maven-repository/repo/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
 [INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository nightlabs (http://dev.nightlabs.org/maven-repository/repo)
 Downloading: http://snapshots.jboss.org/maven2/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
 [INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository snapshots.jboss.org (http://snapshots.jboss.org/maven2)
 Downloading: http://repo1.maven.org/maven2/xerces/xml-apis/1.4.01/xml-apis-1.4.01.pom
 [INFO] Unable to find resource 'xerces:xml-apis:pom:1.4.01' in repository central (http://repo1.maven.org/maven2)
-Downloading: http://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository offical (http://repo1.maven.org/maven2)
-Downloading: http://download.java.net/maven/2//com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository sun (http://download.java.net/maven/2/)
-Downloading: http://repository.sonatype.org/content/groups/public//com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository sonatype (http://repository.sonatype.org/content/groups/public/)
-Downloading: http://repo.springsource.org/release/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository repo.springsource.org-release (http://repo.springsource.org/release)
-Downloading: https://repository.jboss.org/nexus/content/groups/public/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository repository.jboss.org-public (https://repository.jboss.org/nexus/content/groups/public)
-Downloading: http://mvnrepository.com//com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository mvnrepository (http://mvnrepository.com/)
-Downloading: http://mirrors.ibiblio.org/pub/mirrors/maven2/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository ibiblio (http://mirrors.ibiblio.org/pub/mirrors/maven2)
-Downloading: http://repository.codehaus.org/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository codehaus (http://repository.codehaus.org)
-Downloading: http://www.mvnsearch.org/maven2/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository mvnsearch (http://www.mvnsearch.org/maven2)
-Downloading: http://mavenhub.com/mvn/central/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository mavenhub (http://mavenhub.com/mvn/central)
-Downloading: https://repository.mulesoft.org/releases//com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository mulesoft-releases (https://repository.mulesoft.org/releases/)
-Downloading: http://download.osgeo.org/webdav/geotools/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository OSGEO GeoTools repo (http://download.osgeo.org/webdav/geotools)
-Downloading: http://www.hibernatespatial.org/repository/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository Hibernate Spatial repo (http://www.hibernatespatial.org/repository)
-Downloading: http://people.apache.org/repo/m2-ibiblio-rsync-repository/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository apache (http://people.apache.org/repo/m2-ibiblio-rsync-repository)
-Downloading: https://repository.apache.org/content/groups/public/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository apache-public (https://repository.apache.org/content/groups/public)
-Downloading: http://dev.nightlabs.org/maven-repository/repo/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository nightlabs (http://dev.nightlabs.org/maven-repository/repo)
-Downloading: http://snapshots.jboss.org/maven2/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository snapshots.jboss.org (http://snapshots.jboss.org/maven2)
-Downloading: http://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-api/2.2.6/jaxb-api-2.2.6.pom
-[INFO] Unable to find resource 'com.sun.xml.bind:jaxb-api:pom:2.2.6' in repository central (http://repo1.maven.org/maven2)
-[WARNING] POM for 'org.mule.transports:mule-transport-cxf:pom:3.3.0:compile' is invalid.
+[INFO] snapshot org.mule.tools.devkit:mule-devkit-annotations:3.3.2-SNAPSHOT: checking for updates from apache
+[INFO] snapshot org.mule.tools.devkit:mule-devkit-annotations:3.3.2-SNAPSHOT: checking for updates from apache-public
+[INFO] snapshot org.mule.tools.devkit:mule-devkit-annotations:3.3.2-SNAPSHOT: checking for updates from akka.repository
+[INFO] snapshot org.mule.tools.devkit:mule-devkit-annotations:3.3.2-SNAPSHOT: checking for updates from mulesoft-releases
+[INFO] snapshot org.mule.tools.devkit:mule-devkit-annotations:3.3.2-SNAPSHOT: checking for updates from snapshots.jboss.org
+[INFO] [dependency:tree {execution: default-cli}]
+[WARNING] POM for 'net.sf.jasperreports:jasperreports-applet:pom:4.6.0:compile' is invalid.
 
 Its dependencies (if any) will NOT be available to the current build.
-Downloading: http://repo1.maven.org/maven2/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
-[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository offical (http://repo1.maven.org/maven2)
-Downloading: http://download.java.net/maven/2//com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
-[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository sun (http://download.java.net/maven/2/)
-Downloading: http://repository.sonatype.org/content/groups/public//com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
-[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository sonatype (http://repository.sonatype.org/content/groups/public/)
-Downloading: http://repo.springsource.org/release/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
-[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository repo.springsource.org-release (http://repo.springsource.org/release)
-Downloading: https://repository.jboss.org/nexus/content/groups/public/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
-[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository repository.jboss.org-public (https://repository.jboss.org/nexus/content/groups/public)
-Downloading: http://mvnrepository.com//com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
-[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository mvnrepository (http://mvnrepository.com/)
-Downloading: http://mirrors.ibiblio.org/pub/mirrors/maven2/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
-[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository ibiblio (http://mirrors.ibiblio.org/pub/mirrors/maven2)
-Downloading: http://repository.codehaus.org/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
-[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository codehaus (http://repository.codehaus.org)
-Downloading: http://www.mvnsearch.org/maven2/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
-[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository mvnsearch (http://www.mvnsearch.org/maven2)
-Downloading: http://mavenhub.com/mvn/central/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
-[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository mavenhub (http://mavenhub.com/mvn/central)
-Downloading: https://repository.mulesoft.org/releases//com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
-[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository mulesoft-releases (https://repository.mulesoft.org/releases/)
-Downloading: http://download.osgeo.org/webdav/geotools/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
-[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository OSGEO GeoTools repo (http://download.osgeo.org/webdav/geotools)
-Downloading: http://www.hibernatespatial.org/repository/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
-[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository Hibernate Spatial repo (http://www.hibernatespatial.org/repository)
-Downloading: http://people.apache.org/repo/m2-ibiblio-rsync-repository/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
-[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository apache (http://people.apache.org/repo/m2-ibiblio-rsync-repository)
-Downloading: https://repository.apache.org/content/groups/public/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
-[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository apache-public (https://repository.apache.org/content/groups/public)
-Downloading: http://dev.nightlabs.org/maven-repository/repo/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
-[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository nightlabs (http://dev.nightlabs.org/maven-repository/repo)
-Downloading: http://snapshots.jboss.org/maven2/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
-[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository snapshots.jboss.org (http://snapshots.jboss.org/maven2)
-Downloading: http://repo1.maven.org/maven2/com/espertech/esper-csv/4.9.0/esper-csv-4.9.0.pom
-[INFO] Unable to find resource 'com.espertech:esper-csv:pom:4.9.0' in repository central (http://repo1.maven.org/maven2)
-Downloading: http://repo1.maven.org/maven2/com/espertech/esper-db/4.9.0/esper-db-4.9.0.pom
-[INFO] Unable to find resource 'com.espertech:esper-db:pom:4.9.0' in repository offical (http://repo1.maven.org/maven2)
-Downloading: http://download.java.net/maven/2//com/espertech/esper-db/4.9.0/esper-db-4.9.0.pom
-[INFO] Unable to find resource 'com.espertech:esper-db:pom:4.9.0' in repository sun (http://download.java.net/maven/2/)
-Downloading: http://repository.sonatype.org/content/groups/public//com/espertech/esper-db/4.9.0/esper-db-4.9.0.pom
-[INFO] Unable to find resource 'com.espertech:esper-db:pom:4.9.0' in repository sonatype (http://repository.sonatype.org/content/groups/public/)
-Downloading: http://repo.springsource.org/release/com/espertech/esper-db/4.9.0/esper-db-4.9.0.pom
-[INFO] Unable to find resource 'com.espertech:esper-db:pom:4.9.0' in repository repo.springsource.org-release (http://repo.springsource.org/release)
-Downloading: https://repository.jboss.org/nexus/content/groups/public/com/espertech/esper-db/4.9.0/esper-db-4.9.0.pom
-[INFO] Unable to find resource 'com.espertech:esper-db:pom:4.9.0' in repository repository.jboss.org-public (https://repository.jboss.org/nexus/content/groups/public)
-Downloading: http://mvnrepository.com//com/espertech/esper-db/4.9.0/esper-db-4.9.0.pom
-[INFO] Unable to find resource 'com.espertech:esper-db:pom:4.9.0' in repository mvnrepository (http://mvnrepository.com/)
-Downloading: http://mirrors.ibiblio.org/pub/mirrors/maven2/com/espertech/esper-db/4.9.0/esper-db-4.9.0.pom
+[WARNING] POM for 'net.sf.jasperreports:jasperreports-fonts:pom:4.6.0:compile' is invalid.
+
+Its dependencies (if any) will NOT be available to the current build.
+[WARNING] POM for 'net.sf.jasperreports:jasperreports-javaflow:pom:4.6.0:compile' is invalid.
+
+Its dependencies (if any) will NOT be available to the current build.
+[WARNING] POM for 'net.sf.barcode4j:barcode4j-fop-ext:pom:2.1:compile' is invalid.
+
+Its dependencies (if any) will NOT be available to the current build.
+[WARNING] POM for 'net.sf.barcode4j:barcode4j-light:pom:2.1:compile' is invalid.
+
+Its dependencies (if any) will NOT be available to the current build.
+[WARNING] POM for 'net.sf.barcode4j:barcode4j-xgc:pom:2.1:compile' is invalid.
+
+Its dependencies (if any) will NOT be available to the current build.
+[INFO] org.works:works-message:jar:1.0-SNAPSHOT
+[INFO] +- org.works:works-common:jar:1.0-SNAPSHOT:compile
+[INFO] |  +- org.works:works-extenal:jar:1.0-SNAPSHOT:compile
+[INFO] |  +- org.springframework:spring-oxm:jar:3.2.1.RELEASE:compile
+[INFO] |  +- org.springframework:spring-orm:jar:3.2.1.RELEASE:compile
+[INFO] |  +- org.springframework:spring-jms:jar:3.2.1.RELEASE:compile
+[INFO] |  +- org.springframework:spring-instrument-tomcat:jar:3.2.1.RELEASE:compile
+[INFO] |  +- org.springframework:spring-instrument:jar:3.2.1.RELEASE:compile
+[INFO] |  +- org.springframework:spring-expression:jar:3.2.1.RELEASE:compile
+[INFO] |  +- org.springframework:spring-core:jar:3.2.1.RELEASE:compile
+[INFO] |  +- org.springframework:spring-context-support:jar:3.2.1.RELEASE:compile
+[INFO] |  +- org.springframework:spring-context:jar:3.2.1.RELEASE:compile
+[INFO] |  +- org.springframework:spring-beans:jar:3.2.1.RELEASE:compile
+[INFO] |  +- org.springframework:spring-aspects:jar:3.2.1.RELEASE:compile
+[INFO] |  +- org.springframework:spring-aop:jar:3.2.1.RELEASE:compile
+[INFO] |  +- org.springframework:spring-web:jar:3.2.1.RELEASE:compile
+[INFO] |  +- junit:junit:jar:4.8:compile
+[INFO] |  +- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  +- org.springmodules:spring-modules-validation:jar:0.8:compile
+[INFO] |  |  \- rhino:js:jar:1.6R2:compile
+[INFO] |  +- org.slf4j:slf4j-api:jar:1.6.4:compile
+[INFO] |  +- org.slf4j:jcl-over-slf4j:jar:1.6.4:compile
+[INFO] |  +- org.slf4j:slf4j-log4j12:jar:1.6.4:compile
+[INFO] |  +- log4j:log4j:jar:1.2.16:compile
+[INFO] |  +- org.aspectj:aspectjrt:jar:1.6.8:compile
+[INFO] |  +- org.aspectj:aspectjweaver:jar:1.6.8:compile
+[INFO] |  +- cglib:cglib:jar:2.2:compile
+[INFO] |  +- javax.mail:mail:jar:1.4.3:compile
+[INFO] |  +- javax.activation:activation:jar:1.1.1:compile
+[INFO] |  +- dom4j:dom4j:jar:1.6.1:compile
+[INFO] |  +- net.sf.ehcache:ehcache-core:jar:2.4.6:compile
+[INFO] |  +- net.sf.oval:oval:jar:1.80:compile
+[INFO] |  +- javassist:javassist:jar:3.11.0.GA:compile
+[INFO] |  +- org.apache.avalon.framework:avalon-framework-api:jar:4.3.1:compile
+[INFO] |  +- org.apache.avalon.framework:avalon-framework-impl:jar:4.3.1:compile
+[INFO] |  +- com.sun.xml.bind:jaxb-api:jar:2.2.7:compile
+[INFO] |  +- com.sun.xml.bind:jaxb-impl:jar:2.2.7:compile
+[INFO] |  |  +- com.sun.xml.bind:jaxb-core:jar:2.2.7:compile
+[INFO] |  |  |  \- com.sun.istack:istack-commons-runtime:jar:2.16:compile
+[INFO] |  |  \- com.sun.xml.fastinfoset:FastInfoset:jar:1.2.12:compile
+[INFO] |  |     \- javax.xml.bind:jsr173_api:jar:1.0:compile
+[INFO] |  +- commons-io:commons-io:jar:2.4:compile
+[INFO] |  +- commons-logging:commons-logging:jar:1.1:compile
+[INFO] |  +- commons-validator:commons-validator:jar:1.3.0:compile
+[INFO] |  +- commons-digester:commons-digester:jar:1.7:compile
+[INFO] |  +- commons-beanutils:commons-beanutils:jar:1.8.3:compile
+[INFO] |  +- org.apache.commons:commons-lang3:jar:3.1:compile
+[INFO] |  +- commons-collections:commons-collections:jar:3.2.1:compile
+[INFO] |  +- commons-codec:commons-codec:jar:1.4:compile
+[INFO] |  +- commons-fileupload:commons-fileupload:jar:1.2.1:compile
+[INFO] |  +- commons-email:commons-email:jar:1.2:compile
+[INFO] |  +- commons-finder:commons-finder:jar:1.0:compile
+[INFO] |  +- commons-el:commons-el:jar:1.0:compile
+[INFO] |  +- commons-configuration:commons-configuration:jar:1.9:compile
+[INFO] |  +- commons-jexl:commons-jexl:jar:2.1.1:compile
+[INFO] |  +- commons-jxpath:commons-jxpath:jar:1.3:compile
+[INFO] |  +- commons-net:commons-net:jar:3.0.1:compile
+[INFO] |  +- commons-pool:commons-pool:jar:1.5.4:compile
+[INFO] |  +- commons-httpclient:commons-httpclient:jar:3.1:compile
+[INFO] |  +- commons-dbutils:commons-dbutils:jar:1.2:compile
+[INFO] |  +- com.google.collections:google-collections:jar:1.0:compile
+[INFO] |  +- com.google.guava:guava:jar:12.0:compile
+[INFO] |  |  \- com.google.code.findbugs:jsr305:jar:1.3.9:compile
+[INFO] |  +- joda-time:joda-time:jar:2.2:compile
+[INFO] |  +- org.apache.httpcomponents:httpclient:jar:4.0.1:compile
+[INFO] |  |  \- org.apache.httpcomponents:httpcore:jar:4.0.1:compile
+[INFO] |  +- net.jcip:jcip-annotations:jar:1.0:compile
+[INFO] |  +- ognl:ognl:jar:3.0.4:compile
+[INFO] |  +- org.apache.velocity:velocity:jar:1.6.4:compile
+[INFO] |  |  \- oro:oro:jar:2.0.8:compile
+[INFO] |  +- net.sf.dozer:dozer:jar:5.3.2:compile
+[INFO] |  +- org.apache.xmlbeans:xmlbeans:jar:2.3.0:compile
+[INFO] |  |  \- stax:stax-api:jar:1.0.1:compile
+[INFO] |  +- asm:asm:jar:3.1:compile
+[INFO] |  +- asm:asm-util:jar:3.1:compile
+[INFO] |  |  \- asm:asm-tree:jar:3.1:compile
+[INFO] |  +- com.icegreen:greenmail:jar:1.3:compile
+[INFO] |  +- javax.validation:validation-api:jar:1.0.0.GA:compile
+[INFO] |  +- com.thoughtworks.xstream:xstream:jar:1.3:compile
+[INFO] |  +- org.jamon:jamon-runtime:jar:2.4.0:compile
+[INFO] |  +- org.perf4j:perf4j:jar:0.9.16:compile
+[INFO] |  +- javax.inject:javax.inject:jar:1:compile
+[INFO] |  +- javax.annotation:jsr250-api:jar:1.0:compile
+[INFO] |  +- xml-apis:xml-apis:jar:1.3.04:compile
+[INFO] |  +- xml-apis:xml-apis-ext:jar:1.3.04:compile
+[INFO] |  +- backport-util-concurrent:backport-util-concurrent:jar:3.1:compile
+[INFO] |  \- org.owasp.esapi:esapi:jar:2.0.1:compile
+[INFO] |     \- org.owasp.antisamy:antisamy:jar:1.4.3:compile
+[INFO] |        +- org.apache.xmlgraphics:batik-css:jar:1.7:compile
+[INFO] |        \- net.sourceforge.nekohtml:nekohtml:jar:1.9.12:compile
+[INFO] +- org.works:works-model:jar:1.0-SNAPSHOT:compile
+[INFO] |  +- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final:compile
+[INFO] |  +- org.hibernate:hibernate-entitymanager:jar:4.1.0.Final:compile
+[INFO] |  +- org.springframework.security:spring-security-core:jar:3.1.0.RELEASE:compile
+[INFO] |  |  \- org.springframework.security:spring-security-crypto:jar:3.1.0.RELEASE:compile
+[INFO] |  +- org.springframework.security:spring-security-web:jar:3.1.0.RELEASE:compile
+[INFO] |  +- org.springframework.security:spring-security-config:jar:3.1.0.RELEASE:compile
+[INFO] |  +- org.springframework.security:spring-security-ldap:jar:3.1.0.RELEASE:compile
+[INFO] |  +- org.springframework.security:spring-security-acl:jar:3.1.0.RELEASE:compile
+[INFO] |  +- org.hibernate:hibernate-envers:jar:4.1.0.Final:compile
+[INFO] |  +- org.hibernate:hibernate-ehcache:jar:4.1.0.Final:compile
+[INFO] |  +- org.springframework.data:spring-data-jpa:jar:1.1.0.RELEASE:compile
+[INFO] |  \- org.springframework.data:spring-data-commons-core:jar:1.2.1.RELEASE:compile
+[INFO] +- org.works:works-resource:jar:1.0-SNAPSHOT:compile
+[INFO] |  +- org.springframework:spring-tx:jar:3.2.1.RELEASE:compile
+[INFO] |  +- org.springframework:spring-jdbc:jar:3.2.1.RELEASE:compile
+[INFO] |  +- org.springframework.data:spring-data-mongodb:jar:1.0.1.RELEASE:compile
+[INFO] |  +- javax.transaction:jta:jar:1.1:compile
+[INFO] |  +- org.jasypt:jasypt:jar:1.9.0:compile
+[INFO] |  +- org.jasypt:jasypt-spring31:jar:1.9.0:compile
+[INFO] |  +- org.jasypt:jasypt-hibernate3:jar:1.9.0:compile
+[INFO] |  +- org.jasypt:jasypt-springsecurity3:jar:1.9.0:compile
+[INFO] |  +- postgresql:postgresql:jar:9.1-901.jdbc4:compile
+[INFO] |  +- c3p0:c3p0:jar:0.9.1.2:compile
+[INFO] |  +- p6spy:p6spy:jar:1.3:compile
+[INFO] |  +- org.hibernate:hibernate-core:jar:4.1.0.Final:compile
+[INFO] |  |  \- org.javassist:javassist:jar:3.15.0-GA:compile
+[INFO] |  +- org.jboss.logging:jboss-logging:jar:3.1.0.CR2:compile
+[INFO] |  +- org.hibernate.common:hibernate-commons-annotations:jar:4.0.1.Final:compile
+[INFO] |  +- org.hibernate:hibernate-validator:jar:4.2.0.Final:compile
+[INFO] |  +- org.springframework.ldap:spring-ldap-core:jar:1.3.1.RELEASE:compile
+[INFO] |  +- org.springframework.ldap:spring-ldap-core-tiger:jar:1.3.1.RELEASE:compile
+[INFO] |  +- org.springframework.ldap:spring-ldap-odm:jar:1.3.1.RELEASE:compile
+[INFO] |  +- org.springframework.ldap:spring-ldap-ldif-core:jar:1.3.1.RELEASE:compile
+[INFO] |  +- org.springframework.ldap:spring-ldap-ldif-batch:jar:1.3.1.RELEASE:compile
+[INFO] |  +- org.hibernate:hibernate-spatial:jar:4.0-M1:compile
+[INFO] |  |  \- com.vividsolutions:jts:jar:1.12:compile
+[INFO] |  +- org.postgis:postgis-jdbc:jar:1.3.3:compile
+[INFO] |  |  \- org.postgis:postgis-stubs:jar:1.3.3:compile
+[INFO] |  +- org.mongodb:mongo-java-driver:jar:2.9.1:compile
+[INFO] |  +- javax.jcr:jcr:jar:2.0:compile
+[INFO] |  +- org.mybatis:mybatis:jar:3.2.0:compile
+[INFO] |  +- org.mybatis:mybatis-spring:jar:1.2.0:compile
+[INFO] |  +- org.mybatis:mybatis-ehcache:jar:1.0.2:compile
+[INFO] |  +- org.mybatis:mybatis-velocity:jar:1.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-api:jar:2.4.2:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-core:jar:2.4.2:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.4.2:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-rmi:jar:2.4.2:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-servlet:jar:2.4.2:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-ocm:jar:1.5.3:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi:jar:2.4.2:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi-commons:jar:2.4.2:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-webdav:jar:2.4.2:compile
+[INFO] |  +- org.springmodules:spring-modules-jcr:jar:0.8:compile
+[INFO] |  +- org.apache.poi:poi:jar:3.7:compile
+[INFO] |  +- org.apache.poi:poi-scratchpad:jar:3.7:compile
+[INFO] |  +- org.apache.poi:poi-ooxml:jar:3.7:compile
+[INFO] |  +- org.apache.poi:poi-ooxml-schemas:jar:3.7:compile
+[INFO] |  +- net.sourceforge.jexcelapi:jxl:jar:2.6.12:compile
+[INFO] |  \- org.apache.tika:tika-core:jar:1.0:compile
+[INFO] +- org.works:works-converter:jar:1.0-SNAPSHOT:compile
+[INFO] |  +- org.works:works-common:pom:1.0-SNAPSHOT:compile
+[INFO] |  +- org.milyn:milyn-smooks-core:jar:1.5.1:compile
+[INFO] |  |  +- org.milyn:milyn-commons:jar:1.5.1:compile
+[INFO] |  |  |  \- org.freemarker:freemarker:jar:2.3.15:compile
+[INFO] |  |  \- dtdparser:dtdparser:jar:1.21:compile
+[INFO] |  +- org.milyn:milyn-smooks-csv:jar:1.5.1:compile
+[INFO] |  |  +- net.sf.opencsv:opencsv:jar:1.8:compile
+[INFO] |  |  +- org.milyn:milyn-smooks-flatfile:jar:1.5.1:compile
+[INFO] |  |  \- org.milyn:milyn-smooks-javabean:jar:1.5.1:compile
+[INFO] |  +- org.milyn:milyn-smooks-routing:jar:1.5.1:compile
+[INFO] |  \- org.milyn:milyn-smooks-templating:jar:1.5.1:compile
+[INFO] |     +- antlr:stringtemplate:jar:2.2:compile
+[INFO] |     \- antlr:antlr:jar:2.7.7:compile
+[INFO] +- org.works:works-batch:jar:1.0-SNAPSHOT:compile
+[INFO] |  +- org.springframework.batch:spring-batch-core:jar:2.2.1.RELEASE:compile
+[INFO] |  +- org.codehaus.jettison:jettison:jar:1.1:compile
+[INFO] |  +- org.springframework.batch:spring-batch-infrastructure:jar:2.2.1.RELEASE:compile
+[INFO] |  +- org.springframework.batch:spring-batch-admin-manager:jar:1.2.1.RELEASE:compile
+[INFO] |  |  \- org.springframework.batch:spring-batch-admin-resources:jar:1.2.1.RELEASE:compile
+[INFO] |  +- org.springframework.batch:spring-batch-integration:jar:1.2.1.RELEASE:compile
+[INFO] |  +- org.codehaus.castor:castor-xml:jar:1.3.2:compile
+[INFO] |  +- org.codehaus.castor:castor-core:jar:1.3.2:compile
+[INFO] |  +- org.codehaus.castor:castor-codegen:jar:1.3.2:compile
+[INFO] |  +- org.codehaus.castor:castor-anttasks:jar:1.3.2:compile
+[INFO] |  |  \- org.codehaus.castor:castor-ddlgen:jar:1.3.2:compile
+[INFO] |  +- org.codehaus.castor:castor-xml-schema:jar:1.3.2:compile
+[INFO] |  |  \- commons-cli:commons-cli:jar:1.2:compile
+[INFO] |  +- org.beanio:beanio:jar:2.0.3:compile
+[INFO] |  +- com.javaforge.scriptella:scriptella-core:jar:1.1:compile
+[INFO] |  |  \- org.apache.commons:commons-jexl:jar:2.0.1:compile
+[INFO] |  +- com.javaforge.scriptella:scriptella-drivers:jar:1.1:compile
+[INFO] |  +- com.javaforge.scriptella:scriptella-tools:jar:1.1:compile
+[INFO] |  |  \- org.apache.ant:ant:jar:1.7.1:compile
+[INFO] |  |     \- org.apache.ant:ant-launcher:jar:1.7.1:compile
+[INFO] |  \- org.apache.ddlutils:ddlutils:jar:1.0:compile
+[INFO] |     +- commons-betwixt:commons-betwixt:jar:0.8:compile
+[INFO] |     |  \- commons-beanutils:commons-beanutils-core:jar:1.7.0:compile
+[INFO] |     +- commons-dbcp:commons-dbcp:jar:1.2:compile
+[INFO] |     \- commons-logging:commons-logging-api:jar:1.0.4:compile
+[INFO] +- org.works:works-report:jar:1.0-SNAPSHOT:compile
+[INFO] |  +- net.sf.jasperreports:jasperreports:jar:4.6.0:compile
+[INFO] |  |  \- eclipse:jdtcore:jar:3.1.0:compile
+[INFO] |  +- net.sf.jasperreports:jasperreports-applet:jar:4.6.0:compile
+[INFO] |  +- net.sf.jasperreports:jasperreports-fonts:jar:4.6.0:compile
+[INFO] |  +- net.sf.jasperreports:jasperreports-javaflow:jar:4.6.0:compile
+[INFO] |  +- net.sf.barcode4j:barcode4j:jar:2.1:compile
+[INFO] |  +- net.sf.barcode4j:barcode4j-fop-ext:jar:2.1:compile
+[INFO] |  +- net.sf.barcode4j:barcode4j-light:jar:2.1:compile
+[INFO] |  +- net.sf.barcode4j:barcode4j-xgc:jar:2.1:compile
+[INFO] |  +- org.apache.xmlgraphics:fop:jar:1.0:compile
+[INFO] |  |  +- org.apache.xmlgraphics:xmlgraphics-commons:jar:1.4:compile
+[INFO] |  |  +- org.apache.xmlgraphics:batik-svg-dom:jar:1.7:compile
+[INFO] |  |  |  +- org.apache.xmlgraphics:batik-anim:jar:1.7:compile
+[INFO] |  |  |  +- org.apache.xmlgraphics:batik-dom:jar:1.7:compile
+[INFO] |  |  |  +- org.apache.xmlgraphics:batik-parser:jar:1.7:compile
+[INFO] |  |  |  \- org.apache.xmlgraphics:batik-util:jar:1.7:compile
+[INFO] |  |  +- org.apache.xmlgraphics:batik-bridge:jar:1.7:compile
+[INFO] |  |  |  +- org.apache.xmlgraphics:batik-script:jar:1.7:compile
+[INFO] |  |  |  \- org.apache.xmlgraphics:batik-xml:jar:1.7:compile
+[INFO] |  |  +- org.apache.xmlgraphics:batik-awt-util:jar:1.7:compile
+[INFO] |  |  +- org.apache.xmlgraphics:batik-gvt:jar:1.7:compile
+[INFO] |  |  +- org.apache.xmlgraphics:batik-transcoder:jar:1.7:compile
+[INFO] |  |  |  \- org.apache.xmlgraphics:batik-svggen:jar:1.7:compile
+[INFO] |  |  +- org.apache.xmlgraphics:batik-extension:jar:1.7:compile
+[INFO] |  |  \- org.apache.xmlgraphics:batik-ext:jar:1.7:compile
+[INFO] |  +- jfree:jcommon:jar:1.0.12:compile
+[INFO] |  \- jfree:jfreechart:jar:1.0.12:compile
+[INFO] +- org.works:works-webservice:jar:1.0-SNAPSHOT:compile
+[INFO] |  +- javax.servlet:jstl:jar:1.2:compile
+[INFO] |  +- org.springframework:spring-webmvc:jar:3.2.1.RELEASE:compile
+[INFO] |  +- org.apache.cxf:cxf-rt-frontend-jaxws:jar:2.6.1:compile
+[INFO] |  |  \- xml-resolver:xml-resolver:jar:1.2:compile
+[INFO] |  +- org.apache.cxf:cxf-rt-frontend-simple:jar:2.6.1:compile
+[INFO] |  +- org.apache.cxf:cxf-rt-transports-http:jar:2.6.1:compile
+[INFO] |  +- org.apache.cxf:cxf-rt-ws-security:jar:2.6.1:compile
+[INFO] |  +- org.apache.cxf:cxf-rt-management:jar:2.6.1:compile
+[INFO] |  +- org.apache.cxf:cxf-rt-ws-policy:jar:2.6.1:compile
+[INFO] |  +- org.apache.cxf:cxf-rt-core:jar:2.6.1:compile
+[INFO] |  +- org.apache.cxf:cxf-rt-bindings-soap:jar:2.6.1:compile
+[INFO] |  +- org.apache.cxf:cxf-rt-ws-addr:jar:2.6.1:compile
+[INFO] |  +- org.apache.cxf:cxf-rt-transports-jms:jar:2.6.1:compile
+[INFO] |  +- org.apache.cxf:cxf-rt-ws-rm:jar:2.6.1:compile
+[INFO] |  +- org.apache.cxf:cxf-rt-rs-security-xml:jar:2.6.1:compile
+[INFO] |  +- org.apache.cxf:cxf-rt-frontend-jaxrs:jar:2.6.1:compile
+[INFO] |  |  \- javax.ws.rs:jsr311-api:jar:1.1.1:compile
+[INFO] |  +- org.apache.cxf:cxf-bundle:jar:2.6.1:compile
+[INFO] |  |  +- wsdl4j:wsdl4j:jar:1.6.2:compile
+[INFO] |  |  +- javax.xml.soap:saaj-api:jar:1.3.4:compile
+[INFO] |  |  +- org.apache.geronimo.specs:geronimo-ws-metadata_2.0_spec:jar:1.1.3:compile
+[INFO] |  |  +- org.apache.ws.xmlschema:xmlschema-core:jar:2.0.2:compile
+[INFO] |  |  +- org.apache.geronimo.specs:geronimo-stax-api_1.0_spec:jar:1.0.1:compile
+[INFO] |  |  +- org.codehaus.woodstox:woodstox-core-asl:jar:4.1.2:compile
+[INFO] |  |  +- org.codehaus.woodstox:stax2-api:jar:3.1.1:compile
+[INFO] |  |  +- org.apache.geronimo.specs:geronimo-jaxws_2.2_spec:jar:1.1:compile
+[INFO] |  |  +- javax.xml.bind:jaxb-api:jar:2.2.6:compile
+[INFO] |  |  +- org.apache.geronimo.specs:geronimo-javamail_1.4_spec:jar:1.7.1:compile
+[INFO] |  |  +- org.apache.geronimo.specs:geronimo-activation_1.1_spec:jar:1.1:compile
+[INFO] |  |  +- org.apache.geronimo.specs:geronimo-annotation_1.0_spec:jar:1.1.1:compile
+[INFO] |  |  +- org.eclipse.jetty:jetty-server:jar:7.5.4.v20111024:compile
+[INFO] |  |  +- org.eclipse.jetty:jetty-continuation:jar:7.5.4.v20111024:compile
+[INFO] |  |  +- org.eclipse.jetty:jetty-http:jar:7.5.4.v20111024:compile
+[INFO] |  |  +- org.eclipse.jetty:jetty-io:jar:7.5.4.v20111024:compile
+[INFO] |  |  +- org.eclipse.jetty:jetty-util:jar:7.5.4.v20111024:compile
+[INFO] |  |  +- org.eclipse.jetty:jetty-security:jar:7.5.4.v20111024:compile
+[INFO] |  |  +- org.apache.geronimo.specs:geronimo-servlet_2.5_spec:jar:1.1.2:compile
+[INFO] |  |  +- org.springframework:spring-asm:jar:3.0.7.RELEASE:compile
+[INFO] |  |  +- com.sun.xml.messaging.saaj:saaj-impl:jar:1.3.18:compile
+[INFO] |  |  +- org.jvnet.mimepull:mimepull:jar:1.7:compile
+[INFO] |  |  +- net.oauth.core:oauth-provider:jar:20100527:compile
+[INFO] |  |  +- net.oauth.core:oauth:jar:20100527:compile
+[INFO] |  |  +- org.apache.geronimo.specs:geronimo-servlet_3.0_spec:jar:1.0:compile
+[INFO] |  |  +- org.apache.santuario:xmlsec:jar:1.5.2:compile
+[INFO] |  |  +- xalan:xalan:jar:2.7.1:compile
+[INFO] |  |  \- xalan:serializer:jar:2.7.1:compile
+[INFO] |  +- org.apache.cxf:cxf-bundle-jaxrs:jar:2.6.1:compile
+[INFO] |  +- org.apache.cxf:cxf-api:jar:2.6.1:compile
+[INFO] |  +- org.apache.cxf:cxf-rt-bindings-xml:jar:2.6.1:compile
+[INFO] |  +- org.apache.cxf:cxf-rt-databinding-jaxb:jar:2.6.1:compile
+[INFO] |  +- org.apache.cxf:cxf-tools-common:jar:2.6.1:compile
+[INFO] |  +- org.apache.cxf:cxf-rt-databinding-jibx:jar:2.6.1:compile
+[INFO] |  +- org.apache.cxf:cxf-rt-databinding-aegis:jar:2.6.1:compile
+[INFO] |  +- org.apache.cxf:cxf-rt-transports-local:jar:2.6.1:compile
+[INFO] |  +- org.jibx:jibx-bind:jar:1.2.3:compile
+[INFO] |  |  +- bcel:bcel:jar:5.1:compile
+[INFO] |  |  |  \- regexp:regexp:jar:1.2:compile
+[INFO] |  |  \- com.thoughtworks.qdox:qdox:jar:1.6.2:compile
+[INFO] |  |     +- ant:ant:jar:1.5.1:compile
+[INFO] |  |     \- jmock:jmock:jar:1.0.0:compile
+[INFO] |  +- org.jibx:jibx-run:jar:1.2.3:compile
+[INFO] |  |  \- xpp3:xpp3:jar:1.1.3.4.O:compile
+[INFO] |  +- org.jibx:jibx-schema:jar:1.2.3:compile
+[INFO] |  |  \- org.jibx:jibx-extras:jar:1.2.3:compile
+[INFO] |  |     \- org.jdom:jdom:jar:1.1:compile
+[INFO] |  +- org.jibx:jibx-tools:jar:1.2.3:compile
+[INFO] |  |  \- org.eclipse.equinox:common:jar:3.3.0-v20070426:compile
+[INFO] |  +- org.apache.neethi:neethi:jar:3.0.2:compile
+[INFO] |  +- org.apache.ws.security:wss4j:jar:1.6.6:compile
+[INFO] |  +- org.opensaml:opensaml:jar:2.5.1:compile
+[INFO] |  |  \- xerces:xml-apis:jar:1.4.01:runtime
+[INFO] |  +- org.opensaml:openws:jar:1.4.2-1:compile
+[INFO] |  +- org.opensaml:xmltooling:jar:1.3.2-1:compile
+[INFO] |  |  +- org.slf4j:log4j-over-slf4j:jar:1.6.1:compile
+[INFO] |  |  +- org.slf4j:jul-to-slf4j:jar:1.6.1:compile
+[INFO] |  |  +- org.bouncycastle:bcprov-jdk15:jar:1.45:compile
+[INFO] |  |  \- ca.juliusdavies:not-yet-commons-ssl:jar:0.3.9:compile
+[INFO] |  \- com.sun.xml.bind:jaxb-xjc:jar:2.2.7:compile
+[INFO] +- org.springframework:spring-test:jar:3.2.1.RELEASE:test (scope not updated to compile)
+[INFO] +- net.java.dev.rome:rome-fetcher:jar:1.0.0:compile
+[INFO] |  \- net.java.dev.rome:rome:jar:1.0.0:compile
+[INFO] +- org.igniterealtime.smack:smackx:jar:3.2.1:compile
+[INFO] +- org.igniterealtime.smack:smack:jar:3.2.1:compile
+[INFO] +- org.springframework.retry:spring-retry:jar:1.0.2.RELEASE:compile
+[INFO] +- org.mule.modules:mule-module-annotations:jar:3.4.0:compile
+[INFO] +- org.mule.transports:mule-transport-servlet:jar:3.4.0:compile
+[INFO] +- org.mule.transports:mule-transport-vm:jar:3.4.0:compile
+[INFO] +- org.mule.transports:mule-transport-stdio:jar:3.4.0:compile
+[INFO] |  \- org.mule.modules:mule-module-spring-config:jar:3.4.0:compile
+[INFO] +- org.mule.transports:mule-transport-http:jar:3.4.0:compile
+[INFO] |  \- org.samba.jcifs:jcifs:jar:1.3.3:compile
+[INFO] +- org.mule.transports:mule-transport-email:jar:3.4.0:compile
+[INFO] +- org.mule.transports:mule-transport-ftp:jar:3.4.0:compile
+[INFO] +- org.mule.transports:mule-transport-jms:jar:3.4.0:compile
+[INFO] +- org.mule.transports:mule-transport-jdbc:jar:3.4.0:compile
+[INFO] +- org.mule.transports:mule-transport-cxf:jar:3.4.0:compile
+[INFO] +- org.mule.transports:mule-transport-file:jar:3.4.0:compile
+[INFO] +- org.mule.transports:mule-transport-quartz:jar:3.4.0:compile
+[INFO] +- org.mule.modules:mule-module-builders:jar:3.4.0:compile
+[INFO] +- org.mule:mule-core:jar:3.4.0:compile
+[INFO] |  +- commons-lang:commons-lang:jar:2.4:compile
+[INFO] |  +- asm:asm-commons:jar:3.1:compile
+[INFO] |  +- org.jgrapht:jgrapht-jdk1.5:jar:0.7.3:compile
+[INFO] |  \- org.mule.common:mule-common:jar:0.11.0:compile
+[INFO] +- org.mule.modules:mule-module-spring-security:jar:3.4.0:compile
+[INFO] |  \- org.mortbay.jetty:servlet-api:jar:2.5-20081211:compile
+[INFO] +- org.mule.modules:mule-module-spring-extras:jar:3.4.0:compile
+[INFO] |  \- org.apache.geronimo.specs:geronimo-jms_1.1_spec:jar:1.1-osgi:compile
+[INFO] +- org.mule.modules:mule-module-pgp:jar:3.4.0:compile
+[INFO] |  +- org.bouncycastle:bcpg-jdk16:jar:1.46:compile
+[INFO] |  +- org.bouncycastle:bcprov-ext-jdk16:jar:1.46:compile
+[INFO] |  +- org.bouncycastle:bcprov-jdk16:jar:1.46:compile
+[INFO] |  \- org.bouncycastle:bctsp-jdk16:jar:1.46:compile
+[INFO] |     \- org.bouncycastle:bcmail-jdk16:jar:1.46:compile
+[INFO] +- org.mule.modules:mule-module-management:jar:3.4.0:compile
+[INFO] |  +- com.yourkit:yjp-controller-api-redist:jar:9.0.8:compile
+[INFO] |  \- tanukisoft:wrapper:jar:3.2.3:compile
+[INFO] +- org.mule.modules:mule-module-scripting:jar:3.4.0:compile
+[INFO] +- org.mule.modules:mule-module-client:jar:3.4.0:compile
+[INFO] +- org.mule.modules:mule-module-xml:jar:3.4.0:compile
+[INFO] +- org.mule.modules:mule-module-jbossts:jar:3.4.0:compile
+[INFO] |  \- org.jboss.jbossts:jbossjta:jar:4.15.0.Final:compile
+[INFO] +- org.mule.tests:mule-tests-functional:jar:3.4.0:test
+[INFO] |  +- org.apache.ftpserver:ftpserver-core:jar:1.0.2:test
+[INFO] |  |  \- org.apache.mina:mina-core:jar:2.0.0-M6:test
+[INFO] |  +- org.apache.ftpserver:ftplet-api:jar:1.0.2:test
+[INFO] |  +- org.apache.sshd:sshd-core:jar:0.6.0:test
+[INFO] |  +- bouncycastle:bcprov-jdk14:jar:139:test
+[INFO] |  \- org.mockito:mockito-all:jar:1.9.0:test
+[INFO] +- org.mule.modules:mule-module-ldap:jar:1.1.4:compile
+[INFO] +- org.mule.module.esper:esper-module:jar:1.1:compile
+[INFO] |  +- oauth.signpost:signpost-core:jar:1.2.1.1:compile
+[INFO] |  \- org.mule.tools.devkit:mule-devkit-annotations:jar:3.3.2-SNAPSHOT:compile
+[INFO] +- org.mule.modules:mule-module-hdfs:jar:3.6:compile
+[INFO] |  \- org.apache.hadoop:hadoop-client:jar:1.0.4:compile
+[INFO] |     \- org.apache.hadoop:hadoop-core:jar:1.0.4:compile
+[INFO] |        +- xmlenc:xmlenc:jar:0.52:compile
+[INFO] |        +- org.apache.commons:commons-math:jar:2.1:compile
+[INFO] |        +- hsqldb:hsqldb:jar:1.8.0.10:compile
+[INFO] |        \- org.codehaus.jackson:jackson-mapper-asl:jar:1.0.1:compile
+[INFO] |           \- org.codehaus.jackson:jackson-core-asl:jar:1.0.1:compile
+[INFO] +- org.apache.camel:camel-core:jar:2.10.0:compile
+[INFO] +- org.apache.camel:camel-bean-validator:jar:2.10.0:compile
+[INFO] +- org.apache.camel:camel-bindy:jar:2.10.0:compile
+[INFO] +- org.apache.camel:camel-crypto:jar:2.10.0:compile
+[INFO] +- org.apache.camel:camel-cxf:jar:2.10.0:compile
+[INFO] |  \- org.apache.aries.blueprint:org.apache.aries.blueprint:jar:0.3:compile
+[INFO] |     +- org.apache.aries:org.apache.aries.util:jar:0.3:compile
+[INFO] |     +- org.apache.aries.testsupport:org.apache.aries.testsupport.unit:jar:0.3:compile
+[INFO] |     \- org.apache.aries.proxy:org.apache.aries.proxy.api:jar:0.3:compile
+[INFO] +- org.apache.camel:camel-cxf-transport:jar:2.10.0:compile
+[INFO] +- org.apache.camel:camel-dozer:jar:2.10.0:compile
+[INFO] +- org.apache.camel:camel-ftp:jar:2.10.0:compile
+[INFO] +- org.apache.camel:camel-freemarker:jar:2.10.0:compile
+[INFO] +- org.apache.camel:camel-http:jar:2.10.0:compile
+[INFO] +- org.apache.camel:camel-jaxb:jar:2.10.0:compile
+[INFO] +- org.apache.camel:camel-jdbc:jar:2.10.0:compile
+[INFO] +- org.apache.camel:camel-jms:jar:2.10.0:compile
+[INFO] +- org.apache.camel:camel-jpa:jar:2.10.0:compile
+[INFO] +- org.apache.camel:camel-jxpath:jar:2.10.0:compile
+[INFO] +- org.apache.camel:camel-mail:jar:2.10.0:compile
+[INFO] +- org.apache.camel:camel-quartz:jar:2.10.0:compile
+[INFO] +- org.apache.camel:camel-servlet:jar:2.10.0:compile
+[INFO] +- org.apache.camel:camel-soap:jar:2.10.0:compile
+[INFO] +- org.apache.camel:camel-spring:jar:2.10.0:compile
+[INFO] +- org.apache.camel:camel-spring-security:jar:2.10.0:compile
+[INFO] +- org.apache.camel:camel-sql:jar:2.10.0:compile
+[INFO] +- org.apache.camel:camel-stream:jar:2.10.0:compile
+[INFO] +- org.apache.camel:camel-test:jar:2.10.0:test
+[INFO] +- org.apache.camel:camel-xmlbeans:jar:2.10.0:compile
+[INFO] +- org.apache.camel:camel-xmlsecurity:jar:2.10.0:compile
+[INFO] +- org.apache.camel:camel-xstream:jar:2.10.0:compile
+[INFO] +- org.apache.activemq:activemq-core:jar:5.6.0:compile
+[INFO] +- org.apache.activemq.protobuf:activemq-protobuf:jar:1.1:compile
+[INFO] +- org.apache.activemq:activemq-optional:jar:5.6.0:compile
+[INFO] |  \- net.sf.josql:gentlyweb-utils:jar:1.5:compile
+[INFO] +- org.apache.activemq:activeio-core:jar:3.1.4:compile
+[INFO] +- org.apache.activemq:activemq-pool:jar:5.6.0:compile
+[INFO] +- org.apache.activemq:activemq-ra:jar:5.6.0:compile
+[INFO] |  \- org.apache.geronimo.specs:geronimo-j2ee-connector_1.5_spec:jar:2.0.0:compile
+[INFO] +- org.apache.xbean:xbean-spring:jar:3.9:compile
+[INFO] +- org.apache.activemq:kahadb:jar:5.6.0:compile
+[INFO] +- org.jencks:jencks:jar:2.2:compile
+[INFO] |  +- org.apache.geronimo.specs:geronimo-jta_1.1_spec:jar:1.1.1:compile
+[INFO] |  +- org.apache.geronimo.components:geronimo-transaction:jar:2.1.2:compile
+[INFO] |  |  \- org.objectweb.howl:howl:jar:1.0.1-1:compile
+[INFO] |  +- org.apache.geronimo.components:geronimo-connector:jar:2.1.2:compile
+[INFO] |  \- jencks:xapool-without-pool:jar:1.4:compile
+[INFO] +- org.springframework.integration:spring-integration-core:jar:2.2.5.RELEASE:compile
+[INFO] +- org.springframework.integration:spring-integration-event:jar:2.2.5.RELEASE:compile
+[INFO] +- org.springframework.integration:spring-integration-file:jar:2.2.5.RELEASE:compile
+[INFO] +- org.springframework.integration:spring-integration-ftp:jar:2.2.5.RELEASE:compile
+[INFO] +- org.springframework.integration:spring-integration-http:jar:2.2.5.RELEASE:compile
+[INFO] +- org.springframework.integration:spring-integration-jdbc:jar:2.2.5.RELEASE:compile
+[INFO] +- org.springframework.integration:spring-integration-jms:jar:2.2.5.RELEASE:compile
+[INFO] +- org.springframework.integration:spring-integration-mail:jar:2.2.5.RELEASE:compile
+[INFO] +- org.springframework.integration:spring-integration-security:jar:2.2.5.RELEASE:compile
+[INFO] +- org.springframework.integration:spring-integration-stream:jar:2.2.5.RELEASE:compile
+[INFO] +- org.springframework.integration:spring-integration-test:jar:2.2.5.RELEASE:test
+[INFO] +- org.springframework.integration:spring-integration-xml:jar:2.2.5.RELEASE:compile
+[INFO] +- com.espertech:esper:jar:4.9.0:compile
+[INFO] |  +- org.antlr:antlr-runtime:jar:3.2:compile
+[INFO] |  |  \- org.antlr:stringtemplate:jar:3.2:compile
+[INFO] |  \- cglib:cglib-nodep:jar:2.2:compile
+[INFO] +- com.espertech:esper-csv:jar:4.9.0:compile
+[INFO] +- com.espertech:esper-db:jar:4.9.0:compile
+[INFO] +- com.espertech:esper-http:jar:4.9.0:compile
+[INFO] +- com.espertech:esperio-socket:jar:4.9.0:compile
+[INFO] +- com.espertech:esperio-springjms:jar:4.9.0:compile
+[INFO] +- com.espertech:esperio-stax:jar:4.9.0:compile
+[INFO] |  +- org.apache.ws.commons.axiom:axiom-api:jar:1.2.9:compile
+[INFO] |  +- org.apache.ws.commons.axiom:axiom-dom:jar:1.2.9:compile
+[INFO] |  +- org.apache.ws.commons.axiom:axiom-impl:jar:1.2.9:compile
+[INFO] |  +- jaxen:jaxen:jar:1.1.1:compile
+[INFO] |  |  +- jdom:jdom:jar:1.0:compile
+[INFO] |  |  +- xerces:xercesImpl:jar:2.6.2:compile
+[INFO] |  |  \- xom:xom:jar:1.0:compile
+[INFO] |  |     +- xerces:xmlParserAPIs:jar:2.6.2:compile
+[INFO] |  |     \- com.ibm.icu:icu4j:jar:2.6.1:compile
+[INFO] |  \- org.codehaus.woodstox:wstx-asl:jar:3.2.9:compile
+[INFO] +- com.typesafe.akka:akka-actor_2.10:jar:2.1.4:compile
+[INFO] |  +- org.scala-lang:scala-library:jar:2.10.1:compile
+[INFO] |  \- com.typesafe:config:jar:1.0.0:compile
+[INFO] +- com.typesafe.akka:akka-agent_2.10:jar:2.1.4:compile
+[INFO] |  \- org.scala-stm:scala-stm_2.10:jar:0.7:compile
+[INFO] +- com.typesafe.akka:akka-camel_2.10:jar:2.1.4:compile
+[INFO] +- com.typesafe.akka:akka-cluster-experimental_2.10:jar:2.1.4:compile
+[INFO] +- com.typesafe.akka:akka-dataflow_2.10:jar:2.1.4:compile
+[INFO] +- com.typesafe.akka:akka-durable-mailboxes:jar:2.1.4:compile
+[INFO] +- com.typesafe.akka:akka-file-mailbox_2.10:jar:2.1.4:compile
+[INFO] +- com.typesafe.akka:akka-kernel_2.10:jar:2.1.4:compile
+[INFO] +- com.typesafe.akka:akka-mailboxes-common_2.10:jar:2.1.4:compile
+[INFO] +- com.typesafe.akka:akka-remote-tests-experimental_2.10:jar:2.1.4:compile
+[INFO] +- com.typesafe.akka:akka-remote_2.10:jar:2.1.4:compile
+[INFO] |  +- io.netty:netty:jar:3.5.8.Final:compile
+[INFO] |  +- com.google.protobuf:protobuf-java:jar:2.4.1:compile
+[INFO] |  \- org.uncommons.maths:uncommons-maths:jar:1.2.2a:compile
+[INFO] +- com.typesafe.akka:akka-slf4j_2.10:jar:2.1.4:compile
+[INFO] +- com.typesafe.akka:akka-testkit_2.10:jar:2.1.4:compile
+[INFO] +- com.typesafe.akka:akka-transactor_2.10:jar:2.1.4:compile
+[INFO] +- org.springframework.data:spring-data-hadoop:jar:1.0.0.RELEASE:compile
+[INFO] |  +- org.apache.hadoop:hadoop-streaming:jar:1.0.4:compile
+[INFO] |  \- org.apache.hadoop:hadoop-tools:jar:1.0.4:compile
+[INFO] \- org.quartz-scheduler:quartz:jar:2.1.6:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6 minutes 41 seconds
+[INFO] Finished at: Mon Sep 30 15:28:25 CST 2013
+[INFO] Final Memory: 115M/734M
+[INFO] ------------------------------------------------------------------------

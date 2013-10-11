@@ -100,13 +100,13 @@
 		<set-session-variable variableName="appointment"
 			value="#[payload]" doc:name="Set Appointment = Payload" />
 		<logger message="#[appointment]" level="INFO" doc:name="Logger" />
-		<flow-ref name="MakeAppointmentFlow" doc:name="MakeAppointmentFlow" />
+		<flow-ref name="MakeAppointmentFlow"  />
 	</flow>
-	<sub-flow name="MakeAppointmentFlow" doc:name="MakeAppointmentFlow">
-		<flow-ref name="isPatientAlive" doc:name="isPatientAlive Flow" />
-		<flow-ref name="makeAppointment" doc:name="makeAppointment Flow" />
-		<flow-ref name="sendCalendarReminder" doc:name="sendCalendarReminder Flow" />
-		<flow-ref name="choiceCommunication" doc:name="choiceCommunication Flow" />
+	<sub-flow name="MakeAppointmentFlow" >
+		<flow-ref name="isPatientAlive" />
+		<flow-ref name="makeAppointment" />
+		<flow-ref name="sendCalendarReminder"/>
+		<flow-ref name="choiceCommunication"/>
 	</sub-flow>
 	<sub-flow name="isPatientAlive" doc:name="isPatientAlive">
 		<set-payload value="IBM" doc:name="Set Payload" />

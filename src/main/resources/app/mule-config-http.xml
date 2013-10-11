@@ -1,35 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:spring="http://www.springframework.org/schema/beans" xmlns:ajax="http://www.mulesoft.org/schema/mule/ajax"
-	xmlns:ejb="http://www.mulesoft.org/schema/mule/ejb" xmlns:file="http://www.mulesoft.org/schema/mule/file"
-	xmlns:ftp="http://www.mulesoft.org/schema/mule/ftp" xmlns:http="http://www.mulesoft.org/schema/mule/http"
-	xmlns:https="http://www.mulesoft.org/schema/mule/https" xmlns:imap="http://www.mulesoft.org/schema/mule/imap"
-	xmlns:imaps="http://www.mulesoft.org/schema/mule/imaps" xmlns:jbpm="http://www.mulesoft.org/schema/mule/jbpm"
-	xmlns:jdbc="http://www.mulesoft.org/schema/mule/jdbc" xmlns:jetty="http://www.mulesoft.org/schema/mule/jetty"
-	xmlns:jetty-ssl="http://www.mulesoft.org/schema/mule/jetty-ssl"
+	xmlns:ejb="http://www.mulesoft.org/schema/mule/ejb" xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:ftp="http://www.mulesoft.org/schema/mule/ftp"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:https="http://www.mulesoft.org/schema/mule/https"
+	xmlns:imap="http://www.mulesoft.org/schema/mule/imap" xmlns:imaps="http://www.mulesoft.org/schema/mule/imaps"
+	xmlns:jbpm="http://www.mulesoft.org/schema/mule/jbpm" xmlns:jdbc="http://www.mulesoft.org/schema/mule/jdbc"
+	xmlns:jetty="http://www.mulesoft.org/schema/mule/jetty" xmlns:jetty-ssl="http://www.mulesoft.org/schema/mule/jetty-ssl"
 	xmlns:jms="http://www.mulesoft.org/schema/mule/jms" xmlns:jnp="http://www.mulesoft.org/schema/mule/jnp"
-	xmlns:multicast="http://www.mulesoft.org/schema/mule/multicast"
-	xmlns:pop3="http://www.mulesoft.org/schema/mule/pop3" xmlns:pop3s="http://www.mulesoft.org/schema/mule/pop3s"
-	xmlns:quartz="http://www.mulesoft.org/schema/mule/quartz" xmlns:rmi="http://www.mulesoft.org/schema/mule/rmi"
-	xmlns:servlet="http://www.mulesoft.org/schema/mule/servlet" xmlns:smtp="http://www.mulesoft.org/schema/mule/smtp"
-	xmlns:smtps="http://www.mulesoft.org/schema/mule/smtps" xmlns:ssl="http://www.mulesoft.org/schema/mule/ssl"
-	xmlns:tls="http://www.mulesoft.org/schema/mule/tls" xmlns:stdio="http://www.mulesoft.org/schema/mule/stdio"
-	xmlns:tcp="http://www.mulesoft.org/schema/mule/tcp" xmlns:udp="http://www.mulesoft.org/schema/mule/udp"
-	xmlns:vm="http://www.mulesoft.org/schema/mule/vm" xmlns:xmpp="http://www.mulesoft.org/schema/mule/xmpp"
-	xmlns:annotations="http://www.mulesoft.org/schema/mule/annotations"
+	xmlns:multicast="http://www.mulesoft.org/schema/mule/multicast" xmlns:pop3="http://www.mulesoft.org/schema/mule/pop3"
+	xmlns:pop3s="http://www.mulesoft.org/schema/mule/pop3s" xmlns:quartz="http://www.mulesoft.org/schema/mule/quartz"
+	xmlns:rmi="http://www.mulesoft.org/schema/mule/rmi" xmlns:servlet="http://www.mulesoft.org/schema/mule/servlet"
+	xmlns:smtp="http://www.mulesoft.org/schema/mule/smtp" xmlns:smtps="http://www.mulesoft.org/schema/mule/smtps"
+	xmlns:ssl="http://www.mulesoft.org/schema/mule/ssl" xmlns:tls="http://www.mulesoft.org/schema/mule/tls" xmlns:stdio="http://www.mulesoft.org/schema/mule/stdio"
+	xmlns:tcp="http://www.mulesoft.org/schema/mule/tcp" xmlns:udp="http://www.mulesoft.org/schema/mule/udp" xmlns:vm="http://www.mulesoft.org/schema/mule/vm"
+	xmlns:xmpp="http://www.mulesoft.org/schema/mule/xmpp" xmlns:annotations="http://www.mulesoft.org/schema/mule/annotations"
 	xmlns:atom="http://www.mulesoft.org/schema/mule/atom" xmlns:boot="http://www.mulesoft.org/schema/mule/boot"
-	xmlns:builders="http://www.mulesoft.org/schema/mule/builders"
-	xmlns:client="http://www.mulesoft.org/schema/mule/client" xmlns:cxf="http://www.mulesoft.org/schema/mule/cxf"
-	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:builders="http://www.mulesoft.org/schema/mule/builders" xmlns:client="http://www.mulesoft.org/schema/mule/client"
+	xmlns:cxf="http://www.mulesoft.org/schema/mule/cxf" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
 	xmlns:guice="http://www.mulesoft.org/schema/mule/guice" xmlns:ibeans="http://www.mulesoft.org/schema/mule/ibeans"
 	xmlns:jaas="http://www.mulesoft.org/schema/mule/jaas" xmlns:jbossts="http://www.mulesoft.org/schema/mule/jbossts"
 	xmlns:jersey="http://www.mulesoft.org/schema/mule/jersey" xmlns:json="http://www.mulesoft.org/schema/mule/json"
-	xmlns:management="http://www.mulesoft.org/schema/mule/management"
-	xmlns:ognl="http://www.mulesoft.org/schema/mule/ognl" xmlns:pgp="http://www.mulesoft.org/schema/mule/pgp"
-	xmlns:rss="http://www.mulesoft.org/schema/mule/rss" xmlns:scripting="http://www.mulesoft.org/schema/mule/scripting"
-	xmlns:spring-extras="http://www.mulesoft.org/schema/mule/spring-extras"
-	xmlns:spring-security="http://www.mulesoft.org/schema/mule/spring-security"
-	xmlns:sxc="http://www.mulesoft.org/schema/mule/sxc" xmlns:mule-xml="http://www.mulesoft.org/schema/mule/xml"
+	xmlns:management="http://www.mulesoft.org/schema/mule/management" xmlns:ognl="http://www.mulesoft.org/schema/mule/ognl"
+	xmlns:pgp="http://www.mulesoft.org/schema/mule/pgp" xmlns:rss="http://www.mulesoft.org/schema/mule/rss"
+	xmlns:scripting="http://www.mulesoft.org/schema/mule/scripting" xmlns:spring-extras="http://www.mulesoft.org/schema/mule/spring-extras"
+	xmlns:spring-security="http://www.mulesoft.org/schema/mule/spring-security" xmlns:sxc="http://www.mulesoft.org/schema/mule/sxc"
+	xmlns:mule-xml="http://www.mulesoft.org/schema/mule/xml"
 	xsi:schemaLocation="
         http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
         http://www.mulesoft.org/schema/mule/ajax http://www.mulesoft.org/schema/mule/ajax/current/mule-ajax.xsd
@@ -83,65 +78,27 @@
         http://www.mulesoft.org/schema/mule/sxc http://www.mulesoft.org/schema/mule/sxc/current/mule-sxc.xsd
         http://www.mulesoft.org/schema/mule/xml http://www.mulesoft.org/schema/mule/xml/current/mule-xml.xsd
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
-
 	<notifications dynamic="true">
 		<notification event="ENDPOINT-MESSAGE" />
 	</notifications>
-
-	<file:connector name="httpFileConnector" streaming="false"
-		autoDelete="false" pollingFrequency="300000" />
-
-
-	<model name="httpInboundModel">
-		<service name="httpInboundService">
-			<inbound>
-				<http:inbound-endpoint
-					address="http://${http.host}:${http.port}/backup-reports">
-					<byte-array-to-string-transformer />
-				</http:inbound-endpoint>
-			</inbound>
-			<outbound>
-				<pass-through-router>
-					<file:outbound-endpoint path="./data/reports" connector-ref="httpFileConnector"
-						outputPattern="backup-report-#[function:dateStamp].xml" />
-				</pass-through-router>
-			</outbound>
-		</service>
-	</model>
-
-
-	<model name="httpOutboundModel">
-		<service name="httpOutboundService">
-			<inbound>
-				<file:inbound-endpoint path="./data/provider" connector-ref="httpFileConnector"/>
-			</inbound>
-			<outbound>
-				<pass-through-router>
-					<http:outbound-endpoint
-						address="http://${http.host}:${http.port}/backup-reports" />
-				</pass-through-router>
-			</outbound>
-		</service>
-	</model>
-
-	<http:polling-connector name="pollingHttp"
-		pollingFrequency="300000" />
-
-	<model name="httpPollingModel">
-		<service name="httpPollingService">
-			<inbound>
-				<http:inbound-endpoint address="http://${http.host}?connector=pollingHttp">
-					<byte-array-to-string-transformer />
-				</http:inbound-endpoint>
-			</inbound>
-
-			<outbound>
-				<pass-through-router>
-					<file:outbound-endpoint path="./data/polling"
-						outputPattern="www.cnn.com-#[function:datestamp].html" connector-ref="httpFileConnector"/>
-				</pass-through-router>
-			</outbound>
-		</service>
-	</model>
-
+	<file:connector name="httpFileConnector" streaming="false" autoDelete="false" pollingFrequency="300000" />
+	<flow name="httpInboundFlow">
+		<http:inbound-endpoint address="http://${http.host}:${http.port}/backup-reports">
+			<byte-array-to-string-transformer />
+		</http:inbound-endpoint>
+		<file:outbound-endpoint path="./data/reports" connector-ref="httpFileConnector"
+			outputPattern="backup-report-#[function:dateStamp].xml" />
+	</flow>
+	<flow name="httpOutboundFlow">
+		<file:inbound-endpoint path="./data/provider" connector-ref="httpFileConnector" />
+		<http:outbound-endpoint address="http://${http.host}:${http.port}/backup-reports" />
+	</flow>
+	<http:polling-connector name="pollingHttp" pollingFrequency="300000" />
+	<flow name="httpPollingFlow">
+		<http:inbound-endpoint address="http://${http.host}?connector=pollingHttp">
+			<byte-array-to-string-transformer />
+		</http:inbound-endpoint>
+		<file:outbound-endpoint path="./data/polling" outputPattern="www.cnn.com-#[function:datestamp].html"
+			connector-ref="httpFileConnector" />
+	</flow>
 </mule>

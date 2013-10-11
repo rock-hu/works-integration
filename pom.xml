@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
@@ -13,13 +12,9 @@
 	<version>1.0-SNAPSHOT</version>
 	<name>works-message</name>
 	<url>http://maven.apache.org</url>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.dependency.jar.path>/develop/workspace/works-integration/works-message/lib</project.dependency.jar.path>
-		<esper.version>4.9.0</esper.version>
-		<mule.ldap.version>1.1.4</mule.ldap.version>
-		<akka.version>2.1.4</akka.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -58,6 +53,11 @@
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
+			<groupId>org.works</groupId>
+			<artifactId>works-resource</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
 			<version>${spring.core.version}</version>
@@ -90,7 +90,6 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-
 		<dependency>
 			<groupId>org.igniterealtime.smack</groupId>
 			<artifactId>smackx</artifactId>
@@ -206,6 +205,11 @@
 			</exclusions>
 		</dependency>
 		<dependency>
+			<groupId>com.experlog</groupId>
+			<artifactId>xapool</artifactId>
+			<version>${xapool.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>org.mule.transports</groupId>
 			<artifactId>mule-transport-email</artifactId>
 			<version>${mule.version}</version>
@@ -230,6 +234,11 @@
 					<artifactId>quartz-all</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz</artifactId>
+			<version>1.8.5</version>
 		</dependency>
 		<dependency>
 			<groupId>org.mule.modules</groupId>
@@ -298,24 +307,24 @@
 			<groupId>org.mule.modules</groupId>
 			<artifactId>mule-module-management</artifactId>
 			<version>${mule.version}</version>
-			<exclusions>
-				<exclusion>
-					<groupId>mx4j</groupId>
-					<artifactId>mx4j-jmx</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>mx4j</groupId>
-					<artifactId>mx4j-impl</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>mx4j</groupId>
-					<artifactId>mx4j-tools</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>mx4j</groupId>
-					<artifactId>mx4j-remote</artifactId>
-				</exclusion>
-			</exclusions>
+			<!-- <exclusions> -->
+			<!-- <exclusion> -->
+			<!-- <groupId>mx4j</groupId> -->
+			<!-- <artifactId>mx4j-jmx</artifactId> -->
+			<!-- </exclusion> -->
+			<!-- <exclusion> -->
+			<!-- <groupId>mx4j</groupId> -->
+			<!-- <artifactId>mx4j-impl</artifactId> -->
+			<!-- </exclusion> -->
+			<!-- <exclusion> -->
+			<!-- <groupId>mx4j</groupId> -->
+			<!-- <artifactId>mx4j-tools</artifactId> -->
+			<!-- </exclusion> -->
+			<!-- <exclusion> -->
+			<!-- <groupId>mx4j</groupId> -->
+			<!-- <artifactId>mx4j-remote</artifactId> -->
+			<!-- </exclusion> -->
+			<!-- </exclusions> -->
 		</dependency>
 		<dependency>
 			<groupId>org.mule.modules</groupId>
@@ -389,12 +398,42 @@
 			</exclusions>
 		</dependency>
 		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>${dom4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>xpp3</groupId>
+			<artifactId>xpp3_min</artifactId>
+			<version>${xpp3.min.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.saxon</groupId>
+			<artifactId>saxon</artifactId>
+			<version>${saxon.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.saxon</groupId>
+			<artifactId>saxon-dom</artifactId>
+			<version>${saxon.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.saxon</groupId>
+			<artifactId>saxon-xqj</artifactId>
+			<version>${saxon.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>jaxen</groupId>
+			<artifactId>jaxen</artifactId>
+			<version>${jaxen.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>org.mule.modules</groupId>
 			<artifactId>mule-module-jbossts</artifactId>
 			<version>${mule.version}</version>
 		</dependency>
-		<!-- <dependency> <groupId>org.mule.transports</groupId> <artifactId>mule-transport-bpm</artifactId> 
-			<version>${mule.version}</version> </dependency> -->
+		<!-- <dependency> <groupId>org.mule.transports</groupId> <artifactId>mule-transport-bpm</artifactId> <version>${mule.version}</version> 
+			</dependency> -->
 		<!-- <dependency> -->
 		<!-- <groupId>org.mule.transports</groupId> -->
 		<!-- <artifactId>mule-transport-jbpm</artifactId> -->
@@ -416,6 +455,21 @@
 			<groupId>org.mule.modules</groupId>
 			<artifactId>mule-module-ldap</artifactId>
 			<version>${mule.ldap.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mule.module.esper</groupId>
+			<artifactId>esper-module</artifactId>
+			<version>${mule.esper.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mule.modules</groupId>
+			<artifactId>mule-module-hdfs</artifactId>
+			<version>${mule.hdfs.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+			<version>${xerces.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.camel</groupId>
@@ -1129,7 +1183,6 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-
 		<dependency>
 			<groupId>org.apache.activemq</groupId>
 			<artifactId>activeio-core</artifactId>
@@ -1145,7 +1198,6 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-
 		<dependency>
 			<groupId>org.apache.activemq</groupId>
 			<artifactId>activemq-pool</artifactId>
@@ -1212,9 +1264,6 @@
 		<!-- <artifactId>lingo</artifactId> -->
 		<!-- <version>${lingo.version}</version> -->
 		<!-- </dependency> -->
-
-
-
 		<!-- Spring integration -->
 		<dependency>
 			<groupId>org.springframework.integration</groupId>
@@ -1253,7 +1302,6 @@
 		<!-- </exclusion> -->
 		<!-- </exclusions> -->
 		<!-- </dependency> -->
-
 		<dependency>
 			<groupId>org.springframework.integration</groupId>
 			<artifactId>spring-integration-file</artifactId>
@@ -1446,7 +1494,6 @@
 			<artifactId>esperio-stax</artifactId>
 			<version>${esper.version}</version>
 		</dependency>
-
 		<dependency>
 			<groupId>com.typesafe.akka</groupId>
 			<artifactId>akka-actor_2.10</artifactId>
@@ -1521,10 +1568,13 @@
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-hadoop</artifactId>
 			<version>${spring.data.hadoop.version}</version>
-		</dependency> 
+		</dependency>
+		<dependency>
+			<groupId>com.googlecode.disruptor</groupId>
+			<artifactId>disruptor</artifactId>
+			<version>${disruptor.version}</version>
+		</dependency>
 	</dependencies>
-	
-
 	<repositories>
 		<repository>
 			<id>apache</id>
@@ -1547,6 +1597,18 @@
 			<name>Akka Maven Repository</name>
 			<url>http://akka.io/repository</url>
 		</repository>
+		<repository>
+			<id>mulesoft-releases</id>
+			<name>MuleSoft Repository</name>
+			<url>http://repository-master.mulesoft.org/releases/</url>
+			<layout>default</layout>
+		</repository>
+		<repository>
+			<id>mulesoft-snapshots</id>
+			<name>MuleSoft Snapshot Repository</name>
+			<url>http://repository-master.mulesoft.org/snapshots/</url>
+			<layout>default</layout>
+		</repository>
 	</repositories>
 	<build>
 		<pluginManagement>
@@ -1556,8 +1618,7 @@
 					<artifactId>maven-install-plugin</artifactId>
 					<version>2.3.1</version>
 				</plugin>
-				<!--This plugin's configuration is used to store Eclipse m2e settings 
-					only. It has no influence on the Maven build itself. -->
+				<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself. -->
 				<plugin>
 					<groupId>org.eclipse.m2e</groupId>
 					<artifactId>lifecycle-mapping</artifactId>
@@ -1654,8 +1715,7 @@
 						</goals>
 						<configuration>
 							<tasks>
-								<copy file="${project.build.directory}/${build.finalName}.zip"
-									todir="${env.MULE_HOME}/apps" overwrite="true" />
+								<copy file="${project.build.directory}/${build.finalName}.zip" todir="${env.MULE_HOME}/apps" overwrite="true" />
 							</tasks>
 						</configuration>
 					</execution>

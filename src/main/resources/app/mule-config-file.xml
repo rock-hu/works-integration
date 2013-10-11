@@ -1,34 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:atom="http://www.mulesoft.org/schema/mule/atom" xmlns:ajax="http://www.mulesoft.org/schema/mule/ajax"
-	xmlns:bpm="http://www.mulesoft.org/schema/mule/bpm" xmlns:cxf="http://www.mulesoft.org/schema/mule/cxf"
-	xmlns:smtps="http://www.mulesoft.org/schema/mule/smtps" xmlns:pop3="http://www.mulesoft.org/schema/mule/pop3"
+	xmlns:atom="http://www.mulesoft.org/schema/mule/atom" xmlns:ajax="http://www.mulesoft.org/schema/mule/ajax" xmlns:bpm="http://www.mulesoft.org/schema/mule/bpm"
+	xmlns:cxf="http://www.mulesoft.org/schema/mule/cxf" xmlns:smtps="http://www.mulesoft.org/schema/mule/smtps" xmlns:pop3="http://www.mulesoft.org/schema/mule/pop3"
 	xmlns:smtp="http://www.mulesoft.org/schema/mule/smtp" xmlns:pop3s="http://www.mulesoft.org/schema/mule/pop3s"
 	xmlns:imap="http://www.mulesoft.org/schema/mule/imap" xmlns:imaps="http://www.mulesoft.org/schema/mule/imaps"
-	xmlns:email="http://www.mulesoft.org/schema/mule/email" xmlns:ejb="http://www.mulesoft.org/schema/mule/ejb"
-	xmlns:ftp="http://www.mulesoft.org/schema/mule/ftp" xmlns:file="http://www.mulesoft.org/schema/mule/file"
-	xmlns:https="http://www.mulesoft.org/schema/mule/https" xmlns:http="http://www.mulesoft.org/schema/mule/http"
-	xmlns:jbossts="http://www.mulesoft.org/schema/mule/jbossts" xmlns:jdbc="http://www.mulesoft.org/schema/mule/jdbc"
-	xmlns:jms="http://www.mulesoft.org/schema/mule/jms" xmlns:json="http://www.mulesoft.org/schema/mule/json"
-	xmlns:scripting="http://www.mulesoft.org/schema/mule/scripting"
-	xmlns:jaas="http://www.mulesoft.org/schema/mule/jaas" xmlns:jersey="http://www.mulesoft.org/schema/mule/jersey"
-	xmlns:jetty-ssl="http://www.mulesoft.org/schema/mule/jetty-ssl"
-	xmlns:jetty="http://www.mulesoft.org/schema/mule/jetty"
-	xmlns:management="http://www.mulesoft.org/schema/mule/management"
+	xmlns:email="http://www.mulesoft.org/schema/mule/email" xmlns:ejb="http://www.mulesoft.org/schema/mule/ejb" xmlns:ftp="http://www.mulesoft.org/schema/mule/ftp"
+	xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:https="http://www.mulesoft.org/schema/mule/https"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:jbossts="http://www.mulesoft.org/schema/mule/jbossts"
+	xmlns:jdbc="http://www.mulesoft.org/schema/mule/jdbc" xmlns:jms="http://www.mulesoft.org/schema/mule/jms" xmlns:json="http://www.mulesoft.org/schema/mule/json"
+	xmlns:scripting="http://www.mulesoft.org/schema/mule/scripting" xmlns:jaas="http://www.mulesoft.org/schema/mule/jaas"
+	xmlns:jersey="http://www.mulesoft.org/schema/mule/jersey" xmlns:jetty-ssl="http://www.mulesoft.org/schema/mule/jetty-ssl"
+	xmlns:jetty="http://www.mulesoft.org/schema/mule/jetty" xmlns:management="http://www.mulesoft.org/schema/mule/management"
 	xmlns:client="http://www.mulesoft.org/schema/mule/client" xmlns:test="http://www.mulesoft.org/schema/mule/test"
-	xmlns:multicast="http://www.mulesoft.org/schema/mule/multicast"
-	xmlns:ognl="http://www.mulesoft.org/schema/mule/ognl" xmlns:pgp="http://www.mulesoft.org/schema/mule/pgp"
-	xmlns:quartz="http://www.mulesoft.org/schema/mule/quartz" xmlns:jnp="http://www.mulesoft.org/schema/mule/jnp"
-	xmlns:rmi="http://www.mulesoft.org/schema/mule/rmi" xmlns:rss="http://www.mulesoft.org/schema/mule/rss"
-	xmlns:sftp="http://www.mulesoft.org/schema/mule/sftp" xmlns:tls="http://www.mulesoft.org/schema/mule/tls"
-	xmlns:ssl="http://www.mulesoft.org/schema/mule/ssl" xmlns:sxc="http://www.mulesoft.org/schema/mule/sxc"
-	xmlns:servlet="http://www.mulesoft.org/schema/mule/servlet"
-	xmlns:spring-security="http://www.mulesoft.org/schema/mule/spring-security"
-	xmlns:stdio="http://www.mulesoft.org/schema/mule/stdio" xmlns:tcp="http://www.mulesoft.org/schema/mule/tcp"
-	xmlns:udp="http://www.mulesoft.org/schema/mule/udp" xmlns:vm="http://www.mulesoft.org/schema/mule/vm"
+	xmlns:multicast="http://www.mulesoft.org/schema/mule/multicast" xmlns:ognl="http://www.mulesoft.org/schema/mule/ognl"
+	xmlns:pgp="http://www.mulesoft.org/schema/mule/pgp" xmlns:quartz="http://www.mulesoft.org/schema/mule/quartz"
+	xmlns:jnp="http://www.mulesoft.org/schema/mule/jnp" xmlns:rmi="http://www.mulesoft.org/schema/mule/rmi" xmlns:rss="http://www.mulesoft.org/schema/mule/rss"
+	xmlns:sftp="http://www.mulesoft.org/schema/mule/sftp" xmlns:tls="http://www.mulesoft.org/schema/mule/tls" xmlns:ssl="http://www.mulesoft.org/schema/mule/ssl"
+	xmlns:sxc="http://www.mulesoft.org/schema/mule/sxc" xmlns:servlet="http://www.mulesoft.org/schema/mule/servlet"
+	xmlns:spring-security="http://www.mulesoft.org/schema/mule/spring-security" xmlns:stdio="http://www.mulesoft.org/schema/mule/stdio"
+	xmlns:tcp="http://www.mulesoft.org/schema/mule/tcp" xmlns:udp="http://www.mulesoft.org/schema/mule/udp" xmlns:vm="http://www.mulesoft.org/schema/mule/vm"
 	xmlns:mule-xml="http://www.mulesoft.org/schema/mule/xml" xmlns:xmpp="http://www.mulesoft.org/schema/mule/xmpp"
-	xmlns:spring="http://www.springframework.org/schema/beans"
-	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:spring="http://www.springframework.org/schema/beans" xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="
           http://www.mulesoft.org/schema/mule/atom http://www.mulesoft.org/schema/mule/atom/current/mule-atom.xsd
           http://www.mulesoft.org/schema/mule/ajax http://www.mulesoft.org/schema/mule/ajax/3.3/mule-ajax.xsd
@@ -80,48 +72,24 @@
           http://www.mulesoft.org/schema/mule/xmpp http://www.mulesoft.org/schema/mule/xmpp/current/mule-xmpp.xsd
           http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
 		  http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
-
 	<notifications dynamic="true">
 		<notification event="ENDPOINT-MESSAGE" />
 	</notifications>
-
-	<file:connector name="fileConnector" streaming="false"
-		autoDelete="true" pollingFrequency="15000">
+	<file:connector name="fileConnector" streaming="false" autoDelete="true" pollingFrequency="15000">
 		<file:expression-filename-parser />
 	</file:connector>
-
-
 	<jdbc:connector name="jdbcConnector" dataSource-ref="dataSource">
-		<jdbc:query key="TicketPriceSearch"
-			value="SELECT PRICE FROM TicketPrices WHERE DESTINATION = #[payload:]" />
-		<jdbc:query key="UpdateExample"
-			value="UPDATE Jobs SET Started=#[function:now] 
+		<jdbc:query key="TicketPriceSearch" value="SELECT PRICE FROM TicketPrices WHERE DESTINATION = #[payload:]" />
+		<jdbc:query key="UpdateExample" value="UPDATE Jobs SET Started=#[function:now] 
  			WHERE Id = #[map-payload:Id]" />
-		<jdbc:query key="InsertExample"
-			value="INSERT INTO Tasks (JobId,Task) 
+		<jdbc:query key="InsertExample" value="INSERT INTO Tasks (JobId,Task) 
  			VALUES (#[map-payload:Id],#[map-payload:Task])" />
 	</jdbc:connector>
-
-	<model name="fileModel">
-		<service name="fileService">
-			<inbound>
-				<file:inbound-endpoint path="${local.outgoing.path}"
-					connector-ref="fileConnector">
-					<file:filename-wildcard-filter
-						pattern="*.csv" caseSensitive="true" />
-				</file:inbound-endpoint>
-				<idempotent-receiver-router idExpression="#[header:OUTBOUND:originalFilename]" />
-			</inbound>
-			<outbound>
-				<pass-through-router>
-					<file:outbound-endpoint path="${local.archive.path}"
-						outputPattern="[header:OUTBOUND:originalFilename]-[function:dateStamp].csv"
-						connector-ref="fileConnector" />
-				</pass-through-router>
-			</outbound>
-		</service>
-	</model>
-
-
-
+	<flow name="fileFlow">
+		<file:inbound-endpoint path="${local.outgoing.path}" connector-ref="fileConnector">
+			<file:filename-wildcard-filter pattern="*.csv" caseSensitive="true" />
+		</file:inbound-endpoint>
+		<file:outbound-endpoint path="${local.archive.path}" outputPattern="[header:OUTBOUND:originalFilename]-[function:dateStamp].csv"
+			connector-ref="fileConnector" />
+	</flow>
 </mule>

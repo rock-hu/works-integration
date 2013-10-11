@@ -87,6 +87,9 @@
 			location="classpath*:/common/props/ftp.properties,classpath*:/common/props/ftp.properties,classpath*:/common/props/http.properties,classpath*:/common/props/jms.properties,classpath*:/common/props/mail.properties,classpath*:/common/props/sftp.properties,classpath*:/common/props/system.properties,classpath*:/common/props/file.properties" />
 		<spring:import
 			resource="classpath*:/common/applicationContext-common-registry-locale.xml" />
+					<spring:import
+			resource="classpath*:resource/applicationContext-resource-registry.xml" />
+			
 		<spring:import
 			resource="classpath:/message/applicationContext-message-registry.xml" />
 		<spring:import resource="classpath:app/mule-config-jms.xml" />

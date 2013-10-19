@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:bpm="http://www.mulesoft.org/schema/mule/bpm" xmlns:cxf="http://www.mulesoft.org/schema/mule/cxf" xmlns:smtps="http://www.mulesoft.org/schema/mule/smtps"
+	xmlns:pop3="http://www.mulesoft.org/schema/mule/pop3" xmlns:smtp="http://www.mulesoft.org/schema/mule/smtp"
+	xmlns:pop3s="http://www.mulesoft.org/schema/mule/pop3s" xmlns:imap="http://www.mulesoft.org/schema/mule/imap"
+	xmlns:imaps="http://www.mulesoft.org/schema/mule/imaps" xmlns:email="http://www.mulesoft.org/schema/mule/email"
+	xmlns:ejb="http://www.mulesoft.org/schema/mule/ejb" xmlns:ftp="http://www.mulesoft.org/schema/mule/ftp" xmlns:file="http://www.mulesoft.org/schema/mule/file"
+	xmlns:https="http://www.mulesoft.org/schema/mule/https" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns:jdbc="http://www.mulesoft.org/schema/mule/jdbc" xmlns:jms="http://www.mulesoft.org/schema/mule/jms" xmlns:json="http://www.mulesoft.org/schema/mule/json"
+	xmlns:scripting="http://www.mulesoft.org/schema/mule/scripting" xmlns:management="http://www.mulesoft.org/schema/mule/management"
+	xmlns:client="http://www.mulesoft.org/schema/mule/client" xmlns:test="http://www.mulesoft.org/schema/mule/test"
+	xmlns:multicast="http://www.mulesoft.org/schema/mule/multicast" xmlns:ognl="http://www.mulesoft.org/schema/mule/ognl"
+	xmlns:pgp="http://www.mulesoft.org/schema/mule/pgp" xmlns:quartz="http://www.mulesoft.org/schema/mule/quartz"
+	xmlns:rmi="http://www.mulesoft.org/schema/mule/rmi" xmlns:sftp="http://www.mulesoft.org/schema/mule/sftp" xmlns:tls="http://www.mulesoft.org/schema/mule/tls"
+	xmlns:ssl="http://www.mulesoft.org/schema/mule/ssl" xmlns:spring-security="http://www.mulesoft.org/schema/mule/spring-security"
+	xmlns:stdio="http://www.mulesoft.org/schema/mule/stdio" xmlns:vm="http://www.mulesoft.org/schema/mule/vm"
+	xmlns:mule-xml="http://www.mulesoft.org/schema/mule/xml" xmlns:spring="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+          http://www.mulesoft.org/schema/mule/atom http://www.mulesoft.org/schema/mule/atom/current/mule-atom.xsd
+          http://www.mulesoft.org/schema/mule/bpm http://www.mulesoft.org/schema/mule/bpm/current/mule-bpm.xsd
+          http://www.mulesoft.org/schema/mule/cxf http://www.mulesoft.org/schema/mule/cxf/current/mule-cxf.xsd
+          http://www.mulesoft.org/schema/mule/smtps http://www.mulesoft.org/schema/mule/smtps/current/mule-smtps.xsd
+          http://www.mulesoft.org/schema/mule/pop3 http://www.mulesoft.org/schema/mule/pop3/3.1/mule-pop3.xsd
+          http://www.mulesoft.org/schema/mule/smtp http://www.mulesoft.org/schema/mule/smtp/3.3/mule-smtp.xsd
+          http://www.mulesoft.org/schema/mule/pop3s http://www.mulesoft.org/schema/mule/pop3s/3.4/mule-pop3s.xsd
+          http://www.mulesoft.org/schema/mule/imap http://www.mulesoft.org/schema/mule/imap/current/mule-imap.xsd
+          http://www.mulesoft.org/schema/mule/imaps http://www.mulesoft.org/schema/mule/imaps/current/mule-imaps.xsd
+          http://www.mulesoft.org/schema/mule/email http://www.mulesoft.org/schema/mule/email/3.4/mule-email.xsd
+          http://www.mulesoft.org/schema/mule/ejb http://www.mulesoft.org/schema/mule/ejb/current/mule-ejb.xsd
+          http://www.mulesoft.org/schema/mule/ftp http://www.mulesoft.org/schema/mule/ftp/current/mule-ftp.xsd
+          http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/3.1/mule-file.xsd
+          http://www.mulesoft.org/schema/mule/https http://www.mulesoft.org/schema/mule/https/current/mule-https.xsd
+          http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/3.4/mule-http.xsd
+          http://www.mulesoft.org/schema/mule/jdbc http://www.mulesoft.org/schema/mule/jdbc/3.2/mule-jdbc.xsd
+          http://www.mulesoft.org/schema/mule/jms http://www.mulesoft.org/schema/mule/jms/current/mule-jms.xsd
+          http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+          http://www.mulesoft.org/schema/mule/scripting http://www.mulesoft.org/schema/mule/scripting/3.3/mule-scripting.xsd
+          http://www.mulesoft.org/schema/mule/management http://www.mulesoft.org/schema/mule/management/3.2/mule-management.xsd
+          http://www.mulesoft.org/schema/mule/client http://www.mulesoft.org/schema/mule/client/3.4/mule-client.xsd
+          http://www.mulesoft.org/schema/mule/test http://www.mulesoft.org/schema/mule/test/current/mule-test.xsd
+          http://www.mulesoft.org/schema/mule/multicast http://www.mulesoft.org/schema/mule/multicast/3.1/mule-multicast.xsd
+          http://www.mulesoft.org/schema/mule/ognl http://www.mulesoft.org/schema/mule/ognl/current/mule-ognl.xsd
+          http://www.mulesoft.org/schema/mule/pgp http://www.mulesoft.org/schema/mule/pgp/3.4/mule-pgp.xsd
+          http://www.mulesoft.org/schema/mule/quartz http://www.mulesoft.org/schema/mule/quartz/current/mule-quartz.xsd
+          http://www.mulesoft.org/schema/mule/rmi http://www.mulesoft.org/schema/mule/rmi/current/mule-rmi.xsd
+          http://www.mulesoft.org/schema/mule/sftp http://www.mulesoft.org/schema/mule/sftp/3.3/mule-sftp.xsd
+          http://www.mulesoft.org/schema/mule/tls http://www.mulesoft.org/schema/mule/tls/current/mule-tls.xsd
+          http://www.mulesoft.org/schema/mule/ssl http://www.mulesoft.org/schema/mule/ssl/3.4/mule-ssl.xsd
+          http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+          http://www.mulesoft.org/schema/mule/spring-security http://www.mulesoft.org/schema/mule/spring-security/current/mule-spring-security.xsd
+          http://www.mulesoft.org/schema/mule/stdio http://www.mulesoft.org/schema/mule/stdio/current/mule-stdio.xsd
+          http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/3.4/mule-vm.xsd
+          http://www.mulesoft.org/schema/mule/xml http://www.mulesoft.org/schema/mule/xml/current/mule-xml.xsd
+          http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		  http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+    <notifications dynamic="true"> 
+        <notification event="ENDPOINT-MESSAGE"></notification>  
+    </notifications>
+    <file:connector name="fileConnector" streaming="false" autoDelete="true" pollingFrequency="15000"> 
+        <file:expression-filename-parser></file:expression-filename-parser>  
+    </file:connector>
+    <jdbc-ee:connector name="jdbcConnector" dataSource-ref="dataSource"> 
+        <jdbc-ee:query key="TicketPriceSearch" value="SELECT PRICE FROM TicketPrices WHERE DESTINATION = #[payload:]"></jdbc-ee:query>  
+        <jdbc-ee:query key="UpdateExample" value="UPDATE Jobs SET Started=#[function:now] 
+ 			WHERE Id = #[map-payload:Id]"></jdbc-ee:query>  
+        <jdbc-ee:query key="InsertExample" value="INSERT INTO Tasks (JobId,Task) 
+ 			VALUES (#[map-payload:Id],#[map-payload:Task])"></jdbc-ee:query>  
+    </jdbc-ee:connector>
+    <flow name="fileFlow"> 
+        <file:inbound-endpoint path="${local.outgoing.path}" connector-ref="fileConnector"> 
+            <file:filename-wildcard-filter pattern="*.csv" caseSensitive="true"></file:filename-wildcard-filter>  
+        </file:inbound-endpoint>  
+        <file:outbound-endpoint path="${local.archive.path}" outputPattern="[header:OUTBOUND:originalFilename]-[function:dateStamp].csv" connector-ref="fileConnector"></file:outbound-endpoint>  
+    </flow>
+</mule>

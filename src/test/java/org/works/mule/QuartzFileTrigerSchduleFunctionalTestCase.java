@@ -14,19 +14,32 @@ import javax.jms.ConnectionFactory;
 import javax.jms.Session;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
-import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.mule.api.MuleEvent;
-import org.apache.commons.io.IOUtils;
 import org.mule.api.MuleMessage;
 import org.mule.api.client.MuleClient;
 import org.mule.client.DefaultLocalMuleClient;
 import org.mule.construct.Flow;
 import org.mule.tck.junit4.FunctionalTestCase;
+import org.mule.util.IOUtils;
+import org.springframework.beans.BeansException;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.TestExecutionListeners;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.support.DependencyInjectionTestExecutionListener;
+import org.springframework.test.context.support.DirtiesContextTestExecutionListener;
 
-public class QuartzFileTrigerSchduleFunctionalTestCase extends FunctionalTestCase {
+@RunWith(SpringJUnit4ClassRunner.class)
+@TestExecutionListeners({ DependencyInjectionTestExecutionListener.class, DirtiesContextTestExecutionListener.class })
+@ContextConfiguration(locations = { "classpath:mule/app/works-message.xml" })
+public class QuartzFileTrigerSchduleFunctionalTestCase extends FunctionalTestCase implements ApplicationContextAware {
 
-	String configBase = "E:/Workspace/works-message/src/main/resources/app";
+	protected ApplicationContext applicationContext;
+
+	String configBase = "E:/Workspace/works-message/src/main/resources/mule/app";
 	private String config = configBase + File.pathSeparator + "works-message.xml";
 
 	@Override
@@ -136,10 +149,16 @@ public class QuartzFileTrigerSchduleFunctionalTestCase extends FunctionalTestCas
 
 			MuleEvent event = getTestEvent(downloadDir, flow);
 			MuleEvent result = flow.process(event);
-//			Assert.assertEquals("message", result.getMessage().getPayloadAsString());
+			// Assert.assertEquals("message",
+			// result.getMessage().getPayloadAsString());
 		} catch (Exception e) {
 			e.printStackTrace();
 			fail();
 		}
+	}
+
+	@Override
+	public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+		this.applicationContext = applicationContext;
 	}
 }

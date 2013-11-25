@@ -11,9 +11,10 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
+import javax.jms.JMSException;
+import javax.jms.Queue;
 import javax.jms.Session;
 
-import org.apache.activemq.ActiveMQConnectionFactory;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mule.api.MuleEvent;
@@ -24,6 +25,8 @@ import org.mule.construct.Flow;
 import org.mule.tck.junit4.FunctionalTestCase;
 import org.mule.util.IOUtils;
 import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.test.context.ContextConfiguration;
@@ -31,16 +34,50 @@ import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.support.DependencyInjectionTestExecutionListener;
 import org.springframework.test.context.support.DirtiesContextTestExecutionListener;
+import org.works.batch.domain.Gender;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @TestExecutionListeners({ DependencyInjectionTestExecutionListener.class, DirtiesContextTestExecutionListener.class })
-@ContextConfiguration(locations = { "classpath:mule/app/works-message.xml" })
+@ContextConfiguration(locations = { "classpath:message/applicationContext-message-registry.xml" })
 public class QuartzFileTrigerSchduleFunctionalTestCase extends FunctionalTestCase implements ApplicationContextAware {
+
+	@Autowired(required = false)
+	@Qualifier(value = "connectionFactory")
+	ConnectionFactory connectionFactory;
+
+	@Autowired(required = false)
+	@Qualifier(value = "requestQueue")
+	Queue requestQueue;
 
 	protected ApplicationContext applicationContext;
 
 	String configBase = "E:/Workspace/works-message/src/main/resources/mule/app";
 	private String config = configBase + File.pathSeparator + "works-message.xml";
+
+	int timeout = 600;
+
+	@Override
+	protected void doTearDown() throws Exception {
+		if (muleContext != null) {
+			muleContext.dispose();
+			System.gc();
+		}
+
+	}
+
+	@Override
+	protected void doSetUp() throws Exception {
+		String[] beans = applicationContext.getBeanDefinitionNames();
+		System.out.println("applicationContext beans:");
+		for (String bean : beans) {
+			System.out.println(bean);
+		}
+	}
+
+	@Override
+	protected int getTimeoutSystemProperty() {
+		return timeout;
+	}
 
 	@Override
 	protected String getConfigResources() {
@@ -94,29 +131,25 @@ public class QuartzFileTrigerSchduleFunctionalTestCase extends FunctionalTestCas
 	public void testJms() {
 
 		System.out.println("Begin testJms");
+		System.out.println(Gender.valueOf("M"));
 
+		Connection connection = null;
+		Session session = null;
 		Map<String, Object> msgProps = new HashMap<String, Object>();
-		String BROKER_URL = "vm://localhost";
 		try {
 
-			String expectedPayload = IOUtils.toString(getClass().getResourceAsStream("input.xml"));
-
-			String queueName = "queue.request";
-
-			final ConnectionFactory connectionFactory = new ActiveMQConnectionFactory(BROKER_URL);
-
-			final Connection connection = connectionFactory.createConnection();
-
-			final Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-
-			session.createProducer(session.createQueue(queueName)).send(session.createTextMessage(expectedPayload));
-
-			connection.close();
+			String expectedPayload = IOUtils.toString(getClass().getResourceAsStream("customer-input.xml"));
+			connection = connectionFactory.createConnection();
+			session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+			session.createProducer(requestQueue).send(session.createTextMessage(expectedPayload));
 
 			MuleClient client = new DefaultLocalMuleClient(muleContext);
-			client.dispatch("jms://" + queueName, expectedPayload, msgProps);
+			client.dispatch("jms://" + requestQueue.getQueueName(), expectedPayload, msgProps);
 
-			MuleMessage response = client.request("jms://" + queueName, 1000);
+			MuleMessage response = client.request("jms://" + requestQueue.getQueueName(), 1000);
+
+			System.out.println(response);
+
 			// Assert.assertNotNull(response);
 			// final String actualPayload = response.getPayloadAsString();
 			// Assert.assertNotNull(actualPayload);
@@ -124,6 +157,18 @@ public class QuartzFileTrigerSchduleFunctionalTestCase extends FunctionalTestCas
 		} catch (Exception e) {
 			e.printStackTrace();
 			fail();
+		} finally {
+			try {
+				if (session != null) {
+					session.close();
+				}
+				if (connection != null) {
+					connection.close();
+				}
+
+			} catch (JMSException e) {
+				e.printStackTrace();
+			}
 		}
 
 		System.out.println("End testJms");

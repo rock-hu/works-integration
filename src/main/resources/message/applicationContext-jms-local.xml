@@ -117,24 +117,24 @@
 	<bean id="messageConverter"
 		class="org.springframework.jms.support.converter.SimpleMessageConverter"></bean>
 
-	<bean id="jmsResourceAdapter" class="org.apache.activemq.ra.ActiveMQResourceAdapter">
-		<property name="serverUrl" value="vm://localhost" />
-	</bean>
+<!-- 	<bean id="jmsResourceAdapter" class="org.apache.activemq.ra.ActiveMQResourceAdapter"> -->
+<!-- 		<property name="serverUrl" value="vm://localhost" /> -->
+<!-- 	</bean> -->
 
-	<bean id="jencksTransactionManager" class="org.jencks.factory.TransactionManagerFactoryBean" />
+<!-- 	<bean id="jencksTransactionManager" class="org.jencks.factory.TransactionManagerFactoryBean" /> -->
 
-	<bean id="jencksConnectionManager" class="org.jencks.factory.ConnectionManagerFactoryBean">
-		<property name="transactionManager" ref="jencksTransactionManager" />
-	</bean>
+<!-- 	<bean id="jencksConnectionManager" class="org.jencks.factory.ConnectionManagerFactoryBean"> -->
+<!-- 		<property name="transactionManager" ref="jencksTransactionManager" /> -->
+<!-- 	</bean> -->
 
-	<bean id="jmsManagedConnectionFactory" class="org.apache.activemq.ra.ActiveMQManagedConnectionFactory">
-		<property name="resourceAdapter" ref="jmsResourceAdapter" />
-	</bean>
+<!-- 	<bean id="jmsManagedConnectionFactory" class="org.apache.activemq.ra.ActiveMQManagedConnectionFactory"> -->
+<!-- 		<property name="resourceAdapter" ref="jmsResourceAdapter" /> -->
+<!-- 	</bean> -->
 
-	<bean id="jmsConnectionFactory" class="org.jencks.factory.ConnectionFactoryFactoryBean">
-		<property name="managedConnectionFactory" ref="jmsManagedConnectionFactory" />
-		<property name="connectionManager" ref="jencksConnectionManager" />
-	</bean>
+<!-- 	<bean id="jmsConnectionFactory" class="org.jencks.factory.ConnectionFactoryFactoryBean"> -->
+<!-- 		<property name="managedConnectionFactory" ref="jmsManagedConnectionFactory" /> -->
+<!-- 		<property name="connectionManager" ref="jencksConnectionManager" /> -->
+<!-- 	</bean> -->
 
 	<!-- <bean id="client" class="org.logicblaze.lingo.jms.JmsProxyFactoryBean"> -->
 	<!-- <property name="serviceInterface" value="org.logicblaze.lingo.example.ExampleService" 

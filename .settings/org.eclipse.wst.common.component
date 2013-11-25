@@ -6,9 +6,6 @@
         <dependent-module archiveName="works-common-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/works-common/works-common">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="works-extenal-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/works-extenal/works-extenal">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
         <dependent-module archiveName="works-model-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/works-model/works-model">
             <dependency-type>uses</dependency-type>
         </dependent-module>

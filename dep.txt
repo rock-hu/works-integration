@@ -1,7 +1,0 @@
-total 84
-drwxrwxr-x 2 rock-hu rock-hu  4096 Dec  2 23:59 conf
--rw-rw-r-- 1 rock-hu rock-hu     0 Dec 13 22:27 dep.txt
--rw-rw-r-- 1 rock-hu rock-hu 45617 Dec 13 22:21 pom.xml
-drwxrwxr-x 4 rock-hu rock-hu  4096 Oct 24 21:28 src
-drwxrwxr-x 6 rock-hu rock-hu  4096 Dec 13 21:49 target
--rw-rw-r-- 1 rock-hu rock-hu 21568 Dec 12 23:27 tree.txt

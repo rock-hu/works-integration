@@ -11,9 +11,9 @@
 4. Git
 5. Spring Batch 2.x
 6. PostgreSQL
-## Running locally
+## Running locally		
 1. Make sure project no compile error
-2. mvn install to download dependency via Maven
+2. mvn install to download dependency via Maven		
 ## Building and Deploying
 1. Maven
 	mvn clean install -Dmaven.test.skip=true -X > install.log			

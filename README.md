@@ -1,9 +1,9 @@
-## works-integration
-## works-integration
-## What
-## Why
-## How
-## Reuired Tool
+## works-integration ##
+## works-integration ##
+## What  ##
+## Why  ##
+## How  ##
+## Reuired Tool  ##
 1. Jdk 1.6
 2. Spring Tool Suite
 	EGit(Eclipse Market)/Propedit(http://propedit.sourceforge.jp/eclipse/updates/)
@@ -11,11 +11,11 @@
 4. Git
 5. Spring Batch 2.x
 6. PostgreSQL
-## Running locally		
+## Running locally ##	
 1. Make sure project no compile error
 2. mvn install to download dependency via Maven		
-## Building and Deploying
-1. Maven
+## Building and Deploying ##
+1. Maven  
 	mvn clean install -Dmaven.test.skip=true -X > install.log			
 	mvn dependency:copy-dependencies		
 	mvn dependency:tree > tree.txt		
@@ -58,7 +58,7 @@
 	cobertura:dump-datafile     Cobertura Datafile Dump Mojo  		
 	mvn cobertura:instrument    Instrument the compiled classes		
 	
-	findbugs		
+	findbugs  		
 	mvn findbugs:help       查看findbugs插件的帮助  		
 	mvn findbugs:check      检查代码是否通过findbugs检查，如果没有通过检查，检查会失败，但检查不会生成结果报表		  
 	mvn findbugs:findbugs   检查代码是否通过findbugs检查，如果没有通过检查，检查不会失败，会生成结果报表保存在target/findbugsXml.xml文件中		  
@@ -69,7 +69,7 @@
 	schemaspy		
 	
 
-##	Development guidelines
+##	Development guidelines ##
 1. Clone it (git clone https://github.com/rock-hu/works-integration.git)
 2. Import project into your eclipse workspace
 3. Write your code and unit tests

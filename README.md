@@ -10,23 +10,24 @@
 3. Maven 2
 4. Git
 5. Spring Batch 2.x
-6. PostgreSQL
+6. PostgreSQL  
 ## Running locally ##	
 1. Make sure project no compile error
-2. mvn install to download dependency via Maven		
+2. mvn install to download dependency via Maven  
 ## Building and Deploying ##
 1. Maven  
 	mvn clean install -Dmaven.test.skip=true -X > install.log			
 	mvn dependency:copy-dependencies		
 	mvn dependency:tree > tree.txt		
 	mvn clean install -e -U		
-	mvn clean install -Dmaven.test.skip=true -X > install.log		
+	mvn -T 4C install -Dmaven.test.skip=true -Dmaven.compile.fork=true -B -o -X > install.log		
+	mvn -T 4C install -Dmaven.test.skip=true -Dmaven.compile.fork=true -B -X > install.log
 	
 	mvn dependency:analyze analyzes		
 	mvn dependency:analyze-dep-mgt		
 	mvn dependency:analyze-only		
 	mvn dependency:analyze-report		
-	mvn dependency:analyze-duplicate		
+	mvn dependency:analyze-duplicate -X > 	analyze-duplicate.log  	
 	mvn dependency:build-classpath		
 	mvn dependency:copy		
 	mvn dependency:copy-dependencies		
@@ -41,6 +42,8 @@
 	mvn dependency:tree > tree.txt		
 	mvn dependency:unpack		
 	mvn dependency:unpack-dependencies		
+	
+	mvn clean package site -Ptattletale 
 	
 	checkstyle
 	mvn checkstyle:help           查看checkstyle-plugin的帮助：		
@@ -67,6 +70,10 @@
 	mvn tattletale-maven:report		
 	javadoc:aggregate 		
 	schemaspy		
+	
+	camel		
+	mvn compile camel:dot		
+			
 	
 
 ##	Development guidelines ##

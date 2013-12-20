@@ -20,8 +20,8 @@
 	mvn dependency:copy-dependencies		
 	mvn dependency:tree > tree.txt		
 	mvn clean install -e -U		
-	mvn -T 4C install -Dmaven.test.skip=true -Dmaven.compile.fork=true -B -o -X > install.log		
-	mvn -T 4C install -Dmaven.test.skip=true -Dmaven.compile.fork=true -B -X > install.log
+	mvn -T 4C install -Dmaven.test.skip=true -Dmaven.compile.fork=true -B -fn -o -X > install.log		
+	mvn -T 4C install -Dmaven.test.skip=true -Dmaven.compile.fork=true -B -fn -X > install.log
 	
 	mvn dependency:analyze analyzes		
 	mvn dependency:analyze-dep-mgt		

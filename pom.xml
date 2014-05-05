@@ -1,43 +1,36 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
 	<groupId>org.works</groupId>
 	<artifactId>works-integration</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
-
 	<name>works-integration</name>
 	<url>http://maven.apache.org</url>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
 		<!-- Spring -->
-		<spring.core.version>3.2.6.RELEASE</spring.core.version>
+		<spring.core.version>4.0.3.RELEASE</spring.core.version>
 		<spring.ws.version>2.1.4.RELEASE</spring.ws.version>
-		<spring.ldap.version>1.3.2.RELEASE</spring.ldap.version>
-		<spring.security.version>3.1.4.RELEASE</spring.security.version>
+		<spring.ldap.version>2.0.1.RELEASE</spring.ldap.version>
+		<spring.security.version>3.2.3.RELEASE</spring.security.version>
 		<spring.security.facelets.taglib.version>0.5</spring.security.facelets.taglib.version>
-		<spring.batch.version>2.2.3.RELEASE</spring.batch.version>
+		<spring.batch.version>2.2.6.RELEASE</spring.batch.version>
 		<spring.batch.admin.version>1.2.1.RELEASE</spring.batch.admin.version>
 		<spring.modules.version>0.8</spring.modules.version>
-		<spring.data.jpa.version>1.4.2.RELEASE</spring.data.jpa.version>
-		<spring.data.mongodb.version>1.3.2.RELEASE</spring.data.mongodb.version>
+		<spring.data.jpa.version>1.5.0.RELEASE</spring.data.jpa.version>
+		<spring.data.mongodb.version>1.4.0.RELEASE</spring.data.mongodb.version>
 		<spring.data.commons.core.version>1.4.1.RELEASE</spring.data.commons.core.version>
 		<spring.data.hadoop.version>1.0.2.RELEASE-hadoop22</spring.data.hadoop.version>
 		<spring.webflow.version>2.3.2.RELEASE</spring.webflow.version>
 		<spring.retry.version>1.0.2.RELEASE</spring.retry.version>
-		<spring.integration.version>2.2.6.RELEASE</spring.integration.version>
-
+		<spring.integration.version>4.0.0.RELEASE</spring.integration.version>
 		<hadoop.version>2.2.0</hadoop.version>
-
 		<!-- javax -->
 		<javax.validation.version>1.0.0.GA</javax.validation.version>
 		<javax.inject.version>1</javax.inject.version>
 		<jsr250.version>1.0</jsr250.version>
 		<concurrent.version>1.3.4</concurrent.version>
-
 		<geronimo.j2ee.connector.version>2.1.2</geronimo.j2ee.connector.version>
 		<geronimo.jta.version>1.1.1</geronimo.jta.version>
 		<geronimo.stax.version>1.0.1</geronimo.stax.version>
@@ -45,20 +38,14 @@
 		<geronimo.transaction.version>2.1.2</geronimo.transaction.version>
 		<geronimo.jms.version>1.1.1</geronimo.jms.version>
 		<geronimo.j2ee.management.version>1.1</geronimo.j2ee.management.version>
-
 		<querydsl.version>2.2.5</querydsl.version>
-
-
 		<xbean.spring.version>3.9</xbean.spring.version>
-
 		<aspectjrt.version>1.6.8</aspectjrt.version>
 		<aspectjweaver.version>1.7.2</aspectjweaver.version>
 		<aopalliance.version>1.0</aopalliance.version>
 		<cglib.version>3.0</cglib.version>
 		<asm.version>4.0</asm.version>
-
 		<!-- Apache commons -->
-
 		<commons.io.version>2.4</commons.io.version>
 		<commons.pool.version>1.5.4</commons.pool.version>
 		<commons.fileupload.version>1.2.1</commons.fileupload.version>
@@ -80,20 +67,18 @@
 		<commons.net.version>3.0.1</commons.net.version>
 		<commons.dbcp.version>1.3</commons.dbcp.version>
 		<commons.httpclient.version>3.1</commons.httpclient.version>
-		<httpcore.version>4.0.1</httpcore.version>
-		<httpclient.version>4.0.1</httpclient.version>
+		<httpcore.version>4.3.2</httpcore.version>
+		<httpclient.version>4.3.2</httpclient.version>
+		<httpasyncclient.version>4.0.1</httpasyncclient.version>
 		<commons.cli.version>1.2</commons.cli.version>
 		<commons.configuration.version>1.9</commons.configuration.version>
 		<commons.dbutils.version>1.2</commons.dbutils.version>
 		<commons.lang3.version>3.0</commons.lang3.version>
-
+		<apacheds.version>1.5.7</apacheds.version>
 		<google.collections.version>1.0</google.collections.version>
-
-
 		<multex.version>8.3</multex.version>
 		<jencks.version>2.2</jencks.version>
 		<lingo.version>1.3</lingo.version>
-
 		<!-- Logging -->
 		<commons.logging.version>1.1</commons.logging.version>
 		<log4j.version>1.2.16</log4j.version>
@@ -102,7 +87,6 @@
 		<perf4j.version>0.9.16</perf4j.version>
 		<jboss.logging.version>3.1.0.CR2</jboss.logging.version>
 		<jdbclogger.version>0.6</jdbclogger.version>
-
 		<!-- XML -->
 		<stax.version>1.0.1</stax.version>
 		<woodstox-version>3.2.7</woodstox-version>
@@ -119,19 +103,14 @@
 		<xmlunit.version>1.1</xmlunit.version>
 		<xmlsec.version>1.4.0</xmlsec.version>
 		<xml-resolver>1.2</xml-resolver>
-
 		<wsdl4j>1.6.2</wsdl4j>
 		<mvel2>2.0.19</mvel2>
-
 		<jettison.version>1.1</jettison.version>
-
 		<backport.util.concurrent.version>3.1</backport.util.concurrent.version>
-
 		<castor.version>1.3.2</castor.version>
 		<avalon.version>4.3.1</avalon.version>
 		<rome.version>1.0.0</rome.version>
 		<guava.version>12.0</guava.version>
-
 		<!-- View -->
 		<freemarker.version>2.3.19</freemarker.version>
 		<urlrewritefilter.version>3.1.0</urlrewritefilter.version>
@@ -141,11 +120,11 @@
 		<json.lib.version>2.3</json.lib.version>
 		<velocity.version>1.6.4</velocity.version>
 		<velocity.tools.version>1.3</velocity.tools.version>
-
 		<!-- Testing -->
 		<junit.version>4.10</junit.version>
 		<hamcrest.version>1.1</hamcrest.version>
 		<dbunit.version>2.4.8</dbunit.version>
+		<dbmonster.core.version>1.0.4</dbmonster.core.version>
 		<spring.test.dbunit.version>1.0.1</spring.test.dbunit.version>
 		<jbehave.core.version>3.8</jbehave.core.version>
 		<jbehave.site.version>3.1.1</jbehave.site.version>
@@ -153,12 +132,11 @@
 		<fluent.selenium.version>2.37.0</fluent.selenium.version>
 		<selenium.version>2.0a4</selenium.version>
 		<mock.ftp.server.version>2.4</mock.ftp.server.version>
-
 		<aspectj.version>1.6.12</aspectj.version>
 		<jodatime.version>2.2</jodatime.version>
-
+		<groovy.version>1.8.6</groovy.version>
 		<!-- Database -->
-		<postgresql.version>9.1-901.jdbc4</postgresql.version>
+		<h2.version>1.4.177</h2.version>
 		<mongo.java.driver.version>2.9.1</mongo.java.driver.version>
 		<jasypt.version>1.9.0</jasypt.version>
 		<scriptella.version>1.1</scriptella.version>
@@ -166,15 +144,11 @@
 		<c3p0.version>0.9.1.2</c3p0.version>
 		<jta.version>1.1</jta.version>
 		<liquibase.version>3.0.7</liquibase.version>
-
 		<!-- Mybatis -->
-		<mybatis.version>3.2.3</mybatis.version>
-		<mybatis.spring.version>1.2.1</mybatis.spring.version>
-		<mybatis.ehcache.version>1.0.2</mybatis.ehcache.version>
+		<mybatis.version>3.2.7</mybatis.version>
+		<mybatis.spring.version>1.2.2</mybatis.spring.version>
+		<mybatis.ehcache.version>1.0.3</mybatis.ehcache.version>
 		<mybatis.velocity.version>1.1</mybatis.velocity.version>
-
-
-
 		<!-- Hibernate -->
 		<jpa.version>2.0.0</jpa.version>
 		<hibernate.jpa.version>1.0.1.Final</hibernate.jpa.version>
@@ -187,13 +161,10 @@
 		<ehcache.spring.annotations.version>1.2.0</ehcache.spring.annotations.version>
 		<persistence.version>1.0</persistence.version>
 		<dom4j.version>1.6.1</dom4j.version>
-
 		<!-- Workflow -->
 		<activiti.version>5.14</activiti.version>
 		<drools.version>5.4.0.Final</drools.version>
 		<jbpm.version>5.3.0.Final</jbpm.version>
-
-
 		<!-- Report -->
 		<jasperreports.version>5.5.0</jasperreports.version>
 		<barcode4j.version>2.1</barcode4j.version>
@@ -201,7 +172,6 @@
 		<jasper.version>4.6.0</jasper.version>
 		<poi.version>3.7</poi.version>
 		<jfreechart.version>1.0.12</jfreechart.version>
-
 		<!-- Webservice -->
 		<cxf.version>2.7.8</cxf.version>
 		<wss4j.version>1.6.6</wss4j.version>
@@ -210,7 +180,6 @@
 		<opensaml.xmltooling.version>1.3.2-1</opensaml.xmltooling.version>
 		<neethi.version>3.0.2</neethi.version>
 		<jibx.version>1.2.3</jibx.version>
-
 		<!-- Mule -->
 		<mule.common.version>0.11.0</mule.common.version>
 		<mule.version>3.4.0</mule.version>
@@ -223,34 +192,28 @@
 		<activemq.version>5.6.0</activemq.version>
 		<activemq.protobuf.version>1.1</activemq.protobuf.version>
 		<activeio.version>3.1.4</activeio.version>
-
 		<!-- Camel -->
 		<camel.version>2.12.2</camel.version>
-
 		<!-- Smooks -->
 		<smooks.version>1.5.1</smooks.version>
 		<jaxen.version>1.1.4</jaxen.version>
-
 		<quickfixj.version>1.5.3</quickfixj.version>
 		<esper.version>4.10.0</esper.version>
 		<disruptor.version>3.2.0</disruptor.version>
 		<saxon.version>8.7</saxon.version>
 		<mvel2.version>2.1.3.Final</mvel2.version>
-
 		<!-- Web -->
 		<!-- JSF -->
 		<jsf.api.version>2.1.10</jsf.api.version>
 		<primefaces.version>3.4.1</primefaces.version>
 		<primefaces.extensions.version>0.6.1</primefaces.extensions.version>
 		<primefaces.themes.version>1.0.8</primefaces.themes.version>
-
 		<!-- JSP -->
 		<servlet.api.version>2.5</servlet.api.version>
 		<jsp.api.version>2.1</jsp.api.version>
 		<jstl.version>1.2</jstl.version>
 		<el.api.version>2.2</el.api.version>
 		<jboss.el.version>2.0.1.GA</jboss.el.version>
-
 		<!-- Struts2 -->
 		<struts2.version>2.3.15.3</struts2.version>
 		<struts.menu.version>2.4.3</struts.menu.version>
@@ -258,48 +221,29 @@
 		<xwork.version>2.1.6</xwork.version>
 		<sitemesh.version>2.4.2</sitemesh.version>
 		<oval.version>1.31</oval.version>
-
 		<!-- Schedule -->
 		<quartz.version>2.2.1</quartz.version>
-
 		<!-- Email -->
 		<mail.version>1.4.3</mail.version>
 		<activation.version>1.1.1</activation.version>
-
-
 		<jersey.version>1.3</jersey.version>
 		<jackson.version>1.9.7</jackson.version>
-
-
 		<ognl.version>3.0.4</ognl.version>
-
 		<javassist.version>3.15.0-GA</javassist.version>
-
 		<smack.version>3.2.1</smack.version>
 		<validation.version>1.0.0.GA</validation.version>
-
 		<!-- JCR -->
 		<jackrabbit.version>2.4.2</jackrabbit.version>
 		<jackrabbit.ocm.version>1.5.3</jackrabbit.ocm.version>
 		<tika.version>1.0</tika.version>
 		<jcr.version>2.0</jcr.version>
 		<jackrabbit.jca.version>1.0</jackrabbit.jca.version>
-
-
 		<jxl.version>2.6.12</jxl.version>
-
-
 		<jcaptcha.version>1.0</jcaptcha.version>
-
 		<wiser.version>1.2</wiser.version>
-
 		<joda.time.version>2.2</joda.time.version>
 		<esapi.version>2.1.0</esapi.version>
-
 		<jersey.version>1.9</jersey.version>
-
-
-
 	</properties>
 	<repositories>
 		<repository>
@@ -316,32 +260,39 @@
 		</repository>
 	</repositories>
 	<dependencies>
-
 	</dependencies>
-
 	<modules>
-		<module>../works-common</module>
-		<module>../works-model</module>
-		<module>../works-batch</module>
-		<module>../works-schedule</module>
-		<module>../works-report</module>
-		<module>../works-converter</module>
-		<module>../works-resource</module>
-		<module>../works-message</module>
-		<module>../works-web</module>
-		<module>../works-workflow</module>
-		<module>../works-webservice</module>
-		<module>../works-rule</module>
-		<module>../works-document</module>
+		<!-- <module>../works-common</module> -->
+		<!-- <module>../works-model</module> -->
+		<!-- <module>../works-batch</module> -->
+		<!-- <module>../works-schedule</module> -->
+		<!-- <module>../works-report</module> -->
+		<!-- <module>../works-converter</module> -->
+		<!-- <module>../works-resource</module> -->
+		<!-- <module>../works-message</module> -->
+		<!-- <module>../works-web</module> -->
+		<!-- <module>../works-workflow</module> -->
+		<!-- <module>../works-webservice</module> -->
+		<!-- <module>../works-rule</module> -->
+		<!-- <module>../works-document</module> -->
 	</modules>
-
 	<build>
 		<pluginManagement>
 			<plugins>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>2.3.2</version>
+					<version>3.1</version>
+					<configuration>
+						<source>1.6</source>
+						<target>1.6</target>
+						<encoding>UTF8</encoding>
+						<verbose>true</verbose>
+						<!-- <fork>true</fork> -->
+						<executable>C:/Java/jdk1.6.0_10/bin/javac</executable>
+						<meminitial>128m</meminitial>
+						<maxmem>512m</maxmem>
+					</configuration>
 				</plugin>
 				<plugin>
 					<artifactId>maven-antrun-plugin</artifactId>
@@ -367,11 +318,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
-					<encoding>UTF8</encoding>
-				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -380,13 +326,6 @@
 				<configuration>
 					<attach>true</attach>
 				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>jar</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 			<plugin>
 				<groupId>com.googlecode.maven-overview-plugin</groupId>
@@ -397,60 +336,64 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
 			</plugin>
-			<!-- <plugin> -->
-			<!-- <groupId>org.apache.maven.plugins</groupId> -->
-			<!-- <artifactId>maven-dependency-plugin</artifactId> -->
-			<!-- <version>2.6</version> -->
-			<!-- <executions> -->
-			<!-- <execution> -->
-			<!-- <id>copy-dependencies</id> -->
-			<!-- <phase>package</phase> -->
-			<!-- <goals> -->
-			<!-- <goal>copy-dependencies</goal> -->
-			<!-- </goals> -->
-			<!-- </execution> -->
-			<!-- <execution> -->
-			<!-- <id>unpack-jbehave-site-resources</id> -->
-			<!-- <phase>generate-resources</phase> -->
-			<!-- <goals> -->
-			<!-- <goal>unpack</goal> -->
-			<!-- </goals> -->
-			<!-- <configuration> -->
-			<!-- <overwriteReleases>false</overwriteReleases> -->
-			<!-- <overwriteSnapshots>true</overwriteSnapshots> -->
-			<!-- <artifactItems> -->
-			<!-- <artifactItem> -->
-			<!-- <groupId>org.jbehave.site</groupId> -->
-			<!-- <artifactId>jbehave-site-resources</artifactId> -->
-			<!-- <version>${jbehave.site.version}</version> -->
-			<!-- <type>zip</type> -->
-			<!-- <outputDirectory>${project.build.directory}/jbehave/view</outputDirectory> -->
-			<!-- </artifactItem> -->
-			<!-- </artifactItems> -->
-			<!-- </configuration> -->
-			<!-- </execution> -->
-			<!-- <execution> -->
-			<!-- <id>unpack-jbehave-reports-resources</id> -->
-			<!-- <phase>generate-resources</phase> -->
-			<!-- <goals> -->
-			<!-- <goal>unpack</goal> -->
-			<!-- </goals> -->
-			<!-- <configuration> -->
-			<!-- <overwriteReleases>false</overwriteReleases> -->
-			<!-- <overwriteSnapshots>true</overwriteSnapshots> -->
-			<!-- <artifactItems> -->
-			<!-- <artifactItem> -->
-			<!-- <groupId>org.jbehave</groupId> -->
-			<!-- <artifactId>jbehave-core</artifactId> -->
-			<!-- <version>${jbehave.core.version}</version> -->
-			<!-- <outputDirectory> ${project.build.directory}/jbehave/view </outputDirectory> -->
-			<!-- <includes>**\/*.css,**\/*.ftl,**\/*.js</includes> -->
-			<!-- </artifactItem> -->
-			<!-- </artifactItems> -->
-			<!-- </configuration> -->
-			<!-- </execution> -->
-			<!-- </executions> -->
-			<!-- </plugin> -->
+			<!-- maven-dependency-plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.8</version>
+				<executions>
+					<execution>
+						<id>copy-dependencies</id>
+						<phase>package</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>target/lib</outputDirectory>
+						</configuration>
+					</execution>
+					<!-- <execution> -->
+					<!-- <id>unpack-jbehave-site-resources</id> -->
+					<!-- <phase>generate-resources</phase> -->
+					<!-- <goals> -->
+					<!-- <goal>unpack</goal> -->
+					<!-- </goals> -->
+					<!-- <configuration> -->
+					<!-- <overwriteReleases>false</overwriteReleases> -->
+					<!-- <overwriteSnapshots>true</overwriteSnapshots> -->
+					<!-- <artifactItems> -->
+					<!-- <artifactItem> -->
+					<!-- <groupId>org.jbehave.site</groupId> -->
+					<!-- <artifactId>jbehave-site-resources</artifactId> -->
+					<!-- <version>${jbehave.site.version}</version> -->
+					<!-- <type>zip</type> -->
+					<!-- <outputDirectory>${project.build.directory}/jbehave/view</outputDirectory> -->
+					<!-- </artifactItem> -->
+					<!-- </artifactItems> -->
+					<!-- </configuration> -->
+					<!-- </execution> -->
+					<!-- <execution> -->
+					<!-- <id>unpack-jbehave-reports-resources</id> -->
+					<!-- <phase>generate-resources</phase> -->
+					<!-- <goals> -->
+					<!-- <goal>unpack</goal> -->
+					<!-- </goals> -->
+					<!-- <configuration> -->
+					<!-- <overwriteReleases>false</overwriteReleases> -->
+					<!-- <overwriteSnapshots>true</overwriteSnapshots> -->
+					<!-- <artifactItems> -->
+					<!-- <artifactItem> -->
+					<!-- <groupId>org.jbehave</groupId> -->
+					<!-- <artifactId>jbehave-core</artifactId> -->
+					<!-- <version>${jbehave.core.version}</version> -->
+					<!-- <outputDirectory> ${project.build.directory}/jbehave/view </outputDirectory> -->
+					<!-- <includes>**\/*.css,**\/*.ftl,**\/*.js</includes> -->
+					<!-- </artifactItem> -->
+					<!-- </artifactItems> -->
+					<!-- </configuration> -->
+					<!-- </execution> -->
+				</executions>
+			</plugin>
 			<!-- <plugin> -->
 			<!-- <groupId>org.jbehave</groupId> -->
 			<!-- <artifactId>jbehave-maven-plugin</artifactId> -->
@@ -538,32 +481,23 @@
 			<!-- </execution> -->
 			<!-- </executions> -->
 			<!-- </plugin> -->
-			<plugin>
-				<groupId>org.mule.tools</groupId>
-				<artifactId>maven-mule-plugin</artifactId>
-				<version>1.7</version>
-				<extensions>true</extensions>
-				<configuration>
-					<exclusions>
-						<exclusion>
-							<groupId>org.mule</groupId>
-							<artifactId>mule-core</artifactId>
-						</exclusion>
-					</exclusions>
-					<configuration>
-						<copyToAppsDirectory>true</copyToAppsDirectory>
-					</configuration>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.mule.tools</groupId>
-				<artifactId>maven-mule-plugin</artifactId>
-				<version>1.7</version>
-				<extensions>true</extensions>
-				<configuration>
-					<copyToAppsDirectory>true</copyToAppsDirectory>
-				</configuration>
-			</plugin>
+			<!-- <plugin> -->
+			<!-- <groupId>org.mule.tools</groupId> -->
+			<!-- <artifactId>maven-mule-plugin</artifactId> -->
+			<!-- <version>1.7</version> -->
+			<!-- <extensions>true</extensions> -->
+			<!-- <configuration> -->
+			<!-- <exclusions> -->
+			<!-- <exclusion> -->
+			<!-- <groupId>org.mule</groupId> -->
+			<!-- <artifactId>mule-core</artifactId> -->
+			<!-- </exclusion> -->
+			<!-- </exclusions> -->
+			<!-- <configuration> -->
+			<!-- <copyToAppsDirectory>true</copyToAppsDirectory> -->
+			<!-- </configuration> -->
+			<!-- </configuration> -->
+			<!-- </plugin> -->
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
@@ -584,24 +518,24 @@
 					<classpathScope>compile</classpathScope>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-antrun-plugin</artifactId>
-				<!-- <executions> -->
-				<!-- <execution> -->
-				<!-- <id>mule-deploy</id> -->
-				<!-- <phase>install</phase> -->
-				<!-- <goals> -->
-				<!-- <goal>run</goal> -->
-				<!-- </goals> -->
-				<!-- <configuration> -->
-				<!-- <tasks> -->
-				<!-- <copy file="${project.build.directory}/${build.finalName}.zip" todir="${env.MULE_HOME}/apps" overwrite="true" /> -->
-				<!-- </tasks> -->
-				<!-- </configuration> -->
-				<!-- </execution> -->
-				<!-- </executions> -->
-			</plugin>
+			<!-- <plugin> -->
+			<!-- <groupId>org.apache.maven.plugins</groupId> -->
+			<!-- <artifactId>maven-antrun-plugin</artifactId> -->
+			<!-- <executions> -->
+			<!-- <execution> -->
+			<!-- <id>mule-deploy</id> -->
+			<!-- <phase>install</phase> -->
+			<!-- <goals> -->
+			<!-- <goal>run</goal> -->
+			<!-- </goals> -->
+			<!-- <configuration> -->
+			<!-- <tasks> -->
+			<!-- <copy file="${project.build.directory}/${build.finalName}.zip" todir="${env.MULE_HOME}/apps" overwrite="true" /> -->
+			<!-- </tasks> -->
+			<!-- </configuration> -->
+			<!-- </execution> -->
+			<!-- </executions> -->
+			<!-- </plugin> -->
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>castor-maven-plugin</artifactId>
@@ -627,33 +561,15 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.1.1</version>
 				<configuration>
-					<packagingExcludes>
-						WEB-INF/lib/spring-2.0.3.jar
-						WEB-INF/lib/spring-dao-2.0.3.jar
-						WEB-INF/lib/spring-support-2.0.3.jar
-						WEB-INF/lib/maven-artifact-2.0.9.jar
-						WEB-INF/lib/maven-artifact-manager-2.0.9.jar
-						WEB-INF/lib/maven-model-2.0.9 .jar
-						WEB-INF/lib/maven-plugin-api-2.0.9.jar
-						WEB-INF/lib/maven-plugin-registry-2.0.9.jar
-						WEB-INF/lib/maven-profile-2.0.9.jar
-						WEB-INF/lib/maven-project-2.0.9.jar
-						WEB-INF/lib/maven-repository-metadata-2.0.9.jar
-						WEB-INF/lib/maven-settings-2.0.9.jar
-						WEB-INF/lib/jackrabbit-api-2.4.2.jar
-						WEB-INF/lib/jackrabbit-core-2.4.2.jar
-						WEB-INF/lib/jackrabbit-jcr-commons-2.4.2.jar
-						WEB-INF/lib/jackrabbit-jcr-rmi-2.4.2.jar
-						WEB-INF/lib/jackrabbit-jcr-servlet-2.4.2.jar
-						WEB-INF/lib/jackrabbit-ocm-1.5.3.jar
-						WEB-INF/lib/jackrabbit-spi-2.4.2.jar
-						WEB-INF/lib/jackrabbit-spi-commons-2.4.2.jar
-						WEB-INF/lib/jackrabbit-webdav-2.4.2.jar
-						WEB-INF/lib/derby-10.5.3.0_1.jar
-						WEB-INF/lib/poi-3.7.jar
-						WEB-INF/lib/poi-ooxml-3.7.jar
-						WEB-INF/lib/poi-ooxml-schemas-3.7.jar
-						WEB-INF/lib/poi-scratchpad-3.7.jar
+					<packagingExcludes> WEB-INF/lib/spring-2.0.3.jar WEB-INF/lib/spring-dao-2.0.3.jar WEB-INF/lib/spring-support-2.0.3.jar
+						WEB-INF/lib/maven-artifact-2.0.9.jar WEB-INF/lib/maven-artifact-manager-2.0.9.jar WEB-INF/lib/maven-model-2.0.9 .jar
+						WEB-INF/lib/maven-plugin-api-2.0.9.jar WEB-INF/lib/maven-plugin-registry-2.0.9.jar WEB-INF/lib/maven-profile-2.0.9.jar
+						WEB-INF/lib/maven-project-2.0.9.jar WEB-INF/lib/maven-repository-metadata-2.0.9.jar WEB-INF/lib/maven-settings-2.0.9.jar
+						WEB-INF/lib/jackrabbit-api-2.4.2.jar WEB-INF/lib/jackrabbit-core-2.4.2.jar WEB-INF/lib/jackrabbit-jcr-commons-2.4.2.jar
+						WEB-INF/lib/jackrabbit-jcr-rmi-2.4.2.jar WEB-INF/lib/jackrabbit-jcr-servlet-2.4.2.jar WEB-INF/lib/jackrabbit-ocm-1.5.3.jar
+						WEB-INF/lib/jackrabbit-spi-2.4.2.jar WEB-INF/lib/jackrabbit-spi-commons-2.4.2.jar WEB-INF/lib/jackrabbit-webdav-2.4.2.jar
+						WEB-INF/lib/derby-10.5.3.0_1.jar WEB-INF/lib/poi-3.7.jar WEB-INF/lib/poi-ooxml-3.7.jar WEB-INF/lib/poi-ooxml-schemas-3.7.jar
+						WEB-INF/lib/poi-scratchpad-3.7.jar 
 					</packagingExcludes>
 				</configuration>
 			</plugin>
@@ -721,12 +637,26 @@
 					<environmentVariables>
 						<APP_ENCRYPTION_PASSWORD>PL,MHYRDC0897654wsxzaq</APP_ENCRYPTION_PASSWORD>
 					</environmentVariables>
+					<!-- <forkCount>3</forkCount> -->
+					<!-- <reuseForks>true</reuseForks> -->
+					<jvm>C:/Java/jdk1.6.0_10/bin/java</jvm>
+					<!-- <argLine>-Xms128m -Xmx1024m -XX:MaxPermSize=512m</argLine> -->
+					<skipTests>false</skipTests>
+					<systemPropertyVariables>
+						<spring.profiles.active>dev</spring.profiles.active>
+					</systemPropertyVariables>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>com.h2database</groupId>
+				<artifactId>h2</artifactId>
+				<version>${h2.version}</version>
+				<scope>test</scope>
+			</dependency>
 			<!-- spring batch -->
 			<dependency>
 				<groupId>org.springframework.batch</groupId>
@@ -918,14 +848,11 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
-
 			<dependency>
 				<groupId>org.springframework.security</groupId>
 				<artifactId>facelets-taglib-jsf20-spring-3</artifactId>
 				<version>${spring.security.facelets.taglib.version}</version>
 			</dependency>
-
-
 			<!-- spring ldap -->
 			<dependency>
 				<groupId>org.springframework.ldap</groupId>
@@ -998,6 +925,40 @@
 				<groupId>org.springframework.ldap</groupId>
 				<artifactId>spring-ldap-test</artifactId>
 				<version>${spring.ldap.version}</version>
+			</dependency>
+			<!-- apache ldap -->
+			<dependency>
+				<groupId>org.apache.directory.server</groupId>
+				<artifactId>apacheds-all</artifactId>
+				<version>${apacheds.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.apache.directory.shared</groupId>
+						<artifactId>shared-ldap-schema</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.directory.server</groupId>
+				<artifactId>apacheds-server-integ</artifactId>
+				<version>${apacheds.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.apache.directory.shared</groupId>
+						<artifactId>shared-ldap-schema</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.directory.server</groupId>
+				<artifactId>apacheds-core-integ</artifactId>
+				<version>${apacheds.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.apache.directory.shared</groupId>
+						<artifactId>shared-ldap-schema</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<!-- spring core -->
 			<dependency>
@@ -1290,7 +1251,6 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
-
 			<!-- camel -->
 			<dependency>
 				<groupId>org.apache.camel</groupId>
@@ -1437,7 +1397,6 @@
 						<artifactId>bcprov-jdk16</artifactId>
 					</exclusion>
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.apache.camel</groupId>
@@ -1474,7 +1433,6 @@
 						<artifactId>camel-blueprint</artifactId>
 					</exclusion>
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.apache.camel</groupId>
@@ -1551,7 +1509,6 @@
 						<artifactId>freemarker</artifactId>
 					</exclusion>
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.apache.camel</groupId>
@@ -1563,7 +1520,6 @@
 						<artifactId>jsch</artifactId>
 					</exclusion>
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.apache.camel</groupId>
@@ -1630,7 +1586,6 @@
 						<artifactId>geronimo-servlet_2.5_spec</artifactId>
 					</exclusion>
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.apache.camel</groupId>
@@ -1672,7 +1627,6 @@
 						<artifactId>jaxb-impl</artifactId>
 					</exclusion>
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.apache.camel</groupId>
@@ -1985,7 +1939,6 @@
 						<artifactId>jaxb-impl</artifactId>
 					</exclusion>
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.apache.camel</groupId>
@@ -2018,7 +1971,6 @@
 						<artifactId>spring-jdbc</artifactId>
 					</exclusion>
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.apache.camel</groupId>
@@ -2040,7 +1992,6 @@
 						<artifactId>spring-test</artifactId>
 					</exclusion>
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.apache.camel</groupId>
@@ -2066,7 +2017,6 @@
 						<artifactId>spring-security-config</artifactId>
 					</exclusion>
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.apache.camel</groupId>
@@ -2173,7 +2123,6 @@
 						<artifactId>stax-api</artifactId>
 					</exclusion>
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.apache.camel</groupId>
@@ -2199,7 +2148,6 @@
 						<artifactId>xalan</artifactId>
 					</exclusion>
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.apache.camel</groupId>
@@ -2224,7 +2172,6 @@
 						<artifactId>woodstox-core-asl</artifactId>
 					</exclusion>
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.apache.camel</groupId>
@@ -2283,7 +2230,6 @@
 						<artifactId>spring-context</artifactId>
 					</exclusion>
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.integration</groupId>
@@ -2300,7 +2246,6 @@
 						<artifactId>spring-context-support</artifactId>
 					</exclusion>
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.integration</groupId>
@@ -2317,7 +2262,6 @@
 						<artifactId>spring-context-support</artifactId>
 					</exclusion>
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.integration</groupId>
@@ -2329,7 +2273,6 @@
 						<artifactId>spring-webmvc</artifactId>
 					</exclusion>
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.integration</groupId>
@@ -2354,7 +2297,6 @@
 						<artifactId>spring-tx</artifactId>
 					</exclusion>
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.integration</groupId>
@@ -2366,7 +2308,6 @@
 						<artifactId>spring-jms</artifactId>
 					</exclusion>
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.integration</groupId>
@@ -2421,7 +2362,6 @@
 						<artifactId>spring-security-crypto</artifactId>
 					</exclusion>
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.integration</groupId>
@@ -2451,7 +2391,6 @@
 						<artifactId>junit-dep</artifactId>
 					</exclusion>
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.integration</groupId>
@@ -2477,7 +2416,6 @@
 						<artifactId>spring-oxm</artifactId>
 					</exclusion>
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.integration</groupId>
@@ -2564,7 +2502,6 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
-
 			<!-- barcode4j -->
 			<dependency>
 				<groupId>net.sf.barcode4j</groupId>
@@ -2801,7 +2738,6 @@
 						<artifactId>jdk.tools</artifactId>
 					</exclusion>
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.apache.hadoop</groupId>
@@ -2897,9 +2833,7 @@
 						<groupId>tomcat</groupId>
 						<artifactId>jasper-runtime</artifactId>
 					</exclusion>
-
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.apache.hadoop</groupId>
@@ -3437,7 +3371,6 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
-
 			<!-- smooks -->
 			<dependency>
 				<groupId>org.milyn</groupId>
@@ -3702,6 +3635,11 @@
 				<version>${commons.httpclient.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpasyncclient</artifactId>
+				<version>${httpasyncclient.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>commons-dbutils</groupId>
 				<artifactId>commons-dbutils</artifactId>
 				<version>${commons.dbutils.version}</version>
@@ -3806,7 +3744,6 @@
 				<artifactId>jasypt-springsecurity3</artifactId>
 				<version>${jasypt.version}</version>
 			</dependency>
-
 			<dependency>
 				<groupId>org.apache.jackrabbit</groupId>
 				<artifactId>jackrabbit-jca</artifactId>
@@ -4317,6 +4254,53 @@
 				<version>${dbunit.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>net.sf.dbmonster</groupId>
+				<artifactId>dbmonster-core</artifactId>
+				<version>${dbmonster.core.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>commons-beanutils</groupId>
+						<artifactId>commons-beanutils</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>commons-cli</groupId>
+						<artifactId>commons-cli</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>commons-collections</groupId>
+						<artifactId>commons-collections</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>commons-digester</groupId>
+						<artifactId>commons-digester</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>commons-logging</groupId>
+						<artifactId>commons-logging</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>log4j</groupId>
+						<artifactId>log4j</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>commons-pool</groupId>
+						<artifactId>commons-pool</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>commons-dbcp</groupId>
+						<artifactId>commons-dbcp</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>hsqldb</groupId>
+						<artifactId>hsqldb</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>junit</groupId>
+						<artifactId>junit</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
 				<groupId>com.github.springtestdbunit</groupId>
 				<artifactId>spring-test-dbunit</artifactId>
 				<version>${spring.test.dbunit.version}</version>
@@ -4601,7 +4585,6 @@
 				<artifactId>struts2-jquery-tree-plugin</artifactId>
 				<version>${struts2.jquery.version}</version>
 			</dependency>
-
 			<dependency>
 				<groupId>struts-menu</groupId>
 				<artifactId>struts-menu</artifactId>
@@ -4854,7 +4837,6 @@
 						<artifactId>sshd-core</artifactId>
 					</exclusion>
 				</exclusions>
-
 			</dependency>
 			<dependency>
 				<groupId>org.mule.modules</groupId>
@@ -4949,7 +4931,6 @@
 				<artifactId>mule-pattern-core</artifactId>
 				<version>${mule.version}</version>
 			</dependency>
-
 			<!-- mule transport -->
 			<dependency>
 				<groupId>org.mule.transports</groupId>
@@ -5228,7 +5209,6 @@
 				<artifactId>jug</artifactId>
 				<version>${jug.asl.version}</version>
 			</dependency>
-
 			<dependency>
 				<groupId>org.logicblaze.lingo</groupId>
 				<artifactId>lingo</artifactId>
@@ -5406,10 +5386,6 @@
 					</exclusion>
 					<exclusion>
 						<groupId>org.seleniumhq.selenium</groupId>
-						<artifactId></artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.seleniumhq.selenium</groupId>
 						<artifactId>selenium-support</artifactId>
 					</exclusion>
 					<exclusion>
@@ -5431,7 +5407,6 @@
 				<artifactId>jbehave-spring</artifactId>
 				<version>${jbehave.core.version}</version>
 			</dependency>
-
 			<dependency>
 				<groupId>org.apache.httpcomponents</groupId>
 				<artifactId>httpclient</artifactId>
@@ -5459,7 +5434,6 @@
 				<version>${geronimo.j2ee.management.version}</version>
 			</dependency>
 		</dependencies>
-
 	</dependencyManagement>
 	<reporting>
 		<plugins>

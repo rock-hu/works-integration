@@ -42,6 +42,8 @@
 	mvn dependency:tree > tree.txt		
 	mvn dependency:unpack		
 	mvn dependency:unpack-dependencies		
+	mvn dependency:resolve -Dclassifier=javadoc
+	mvn dependency:resolve -Dclassifier=sources
 	
 	mvn clean package site -Ptattletale 
 	
@@ -73,6 +75,7 @@
 	
 	camel		
 	mvn compile camel:dot		
+	maven env: dev/qa/pre/prod
 			
 	
 

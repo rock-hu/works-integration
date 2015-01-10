@@ -19,7 +19,7 @@
 		<spring.ws.version>2.2.0.RELEASE</spring.ws.version>
 		<spring.ldap.version>2.0.2.RELEASE</spring.ldap.version>
 		<spring.security.version>3.2.4.RELEASE</spring.security.version>
-		<spring.integration.version>4.0.3.RELEASE</spring.integration.version>
+		<spring.integration.version>4.1.1.RELEASE</spring.integration.version>
 		<spring.webflow.version>2.4.0.RELEASE</spring.webflow.version>
 
 		<spring.batch.version>3.0.0.RELEASE</spring.batch.version>
@@ -32,7 +32,7 @@
 		<spring.data.mongodb.version>1.4.0.RELEASE</spring.data.mongodb.version>
 		<spring.data.commons.core.version>1.4.1.RELEASE</spring.data.commons.core.version>
 		<spring.data.oracle.version>1.0.0.RELEASE</spring.data.oracle.version>
-		<spring.data.hadoop.version>2.0.1.RELEASE</spring.data.hadoop.version>
+		<spring.data.hadoop.version>2.0.2.RELEASE</spring.data.hadoop.version>
 		<hadoop.version>2.2.0</hadoop.version>
 
 		<!-- javax -->
@@ -235,6 +235,9 @@
 		<activeio.version>3.1.4</activeio.version>
 		<xbean.spring.version>3.15</xbean.spring.version>
 
+		<!-- IBM -->
+		<mq.version>7.1.0.3</mq.version>
+
 		<!-- Camel -->
 		<camel.version>2.12.3</camel.version>
 
@@ -243,13 +246,14 @@
 		<jaxen.version>1.1.4</jaxen.version>
 
 		<quickfixj.version>1.5.3</quickfixj.version>
-		<esper.version>4.10.0</esper.version>
+		<esper.version>5.0.0</esper.version>
 		<disruptor.version>3.2.0</disruptor.version>
 		<saxon.version>9.1.0.8</saxon.version>
 		<mvel2.version>2.0.10</mvel2.version>
 
 		<antlr.version>3.1.1</antlr.version>
 		<antlr.runtime.version>3.5</antlr.runtime.version>
+		<mina.version>1.1.7</mina.version>
 
 		<!-- Web -->
 		<!-- JSF -->
@@ -325,6 +329,7 @@
 		<sxc.version>0.7.3</sxc.version>
 		<serializer.version>2.7.1</serializer.version>
 		<wss4j.version>1.6.9</wss4j.version>
+		<jeval.version>0.9.4</jeval.version>
 
 	</properties>
 	<repositories>
@@ -656,6 +661,16 @@
 				<groupId>com.envoisolutions.sxc</groupId>
 				<artifactId>sxc-xpath</artifactId>
 				<version>${sxc.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.antlr</groupId>
+				<artifactId>antlr4-runtime</artifactId>
+				<version>4.1</version>
+			</dependency>
+			<dependency>
+				<groupId>cglib</groupId>
+				<artifactId>cglib-nodep</artifactId>
+				<version>3.1</version>
 			</dependency>
 			<dependency>
 				<groupId>com.espertech</groupId>
@@ -1021,36 +1036,36 @@
 				<version>${akka.version}</version>
 			</dependency>
 
-<!-- 			<dependency> -->
-<!-- 				<groupId>com.taobao.tddl</groupId> -->
-<!-- 				<artifactId>tddl-group-datasource</artifactId> -->
-<!-- 				<version>${taobao.tddl.version}</version> -->
-<!-- 			</dependency> -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>com.taobao.tddl</groupId> -->
-<!-- 				<artifactId>tddl-atom-datasource</artifactId> -->
-<!-- 				<version>${taobao.tddl.version}</version> -->
-<!-- 			</dependency> -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>com.taobao.tddl</groupId> -->
-<!-- 				<artifactId>tddl-common</artifactId> -->
-<!-- 				<version>${taobao.tddl.version}</version> -->
-<!-- 			</dependency> -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>com.taobao.tbdatasource</groupId> -->
-<!-- 				<artifactId>tbdatasource</artifactId> -->
-<!-- 				<version>${taobao.tddl.version}</version> -->
-<!-- 			</dependency> -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>com.taobao.tddl</groupId> -->
-<!-- 				<artifactId>tddl-interact</artifactId> -->
-<!-- 				<version>${taobao.tddl.version}</version> -->
-<!-- 			</dependency> -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>com.alibaba.cobar</groupId> -->
-<!-- 				<artifactId>cobar-client</artifactId> -->
-<!-- 				<version>${cobar.client.version}</version> -->
-<!-- 			</dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>com.taobao.tddl</groupId> -->
+			<!-- <artifactId>tddl-group-datasource</artifactId> -->
+			<!-- <version>${taobao.tddl.version}</version> -->
+			<!-- </dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>com.taobao.tddl</groupId> -->
+			<!-- <artifactId>tddl-atom-datasource</artifactId> -->
+			<!-- <version>${taobao.tddl.version}</version> -->
+			<!-- </dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>com.taobao.tddl</groupId> -->
+			<!-- <artifactId>tddl-common</artifactId> -->
+			<!-- <version>${taobao.tddl.version}</version> -->
+			<!-- </dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>com.taobao.tbdatasource</groupId> -->
+			<!-- <artifactId>tbdatasource</artifactId> -->
+			<!-- <version>${taobao.tddl.version}</version> -->
+			<!-- </dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>com.taobao.tddl</groupId> -->
+			<!-- <artifactId>tddl-interact</artifactId> -->
+			<!-- <version>${taobao.tddl.version}</version> -->
+			<!-- </dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>com.alibaba.cobar</groupId> -->
+			<!-- <artifactId>cobar-client</artifactId> -->
+			<!-- <version>${cobar.client.version}</version> -->
+			<!-- </dependency> -->
 
 			<dependency>
 				<groupId>commons-beanutils</groupId>
@@ -1406,6 +1421,11 @@
 				<groupId>mx4j</groupId>
 				<artifactId>mx4j-tools</artifactId>
 				<version>${mx4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.sourceforge.jeval</groupId>
+				<artifactId>jeval</artifactId>
+				<version>${jeval.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>net.java.dev.msv</groupId>
@@ -3124,6 +3144,11 @@
 				</exclusions>
 			</dependency>
 			<dependency>
+				<groupId>org.apache.mina</groupId>
+				<artifactId>mina-core</artifactId>
+				<version>${mina.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.apache.cxf</groupId>
 				<artifactId>cxf-core</artifactId>
 				<version>${cxf.version}</version>
@@ -3488,6 +3513,31 @@
 			</dependency>
 			<dependency>
 				<groupId>org.apache.hadoop</groupId>
+				<artifactId>hadoop-gridmix</artifactId>
+				<version>${hadoop.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.hadoop</groupId>
+				<artifactId>hadoop-hdfs-nfs</artifactId>
+				<version>${hadoop.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.hadoop</groupId>
+				<artifactId>hadoop-datajoin</artifactId>
+				<version>${hadoop.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.hadoop</groupId>
+				<artifactId>hadoop-mapreduce-client-hs-plugins</artifactId>
+				<version>${hadoop.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.hadoop</groupId>
+				<artifactId>hadoop-yarn-applications-unmanaged-am-launcher</artifactId>
+				<version>${hadoop.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.hadoop</groupId>
 				<artifactId>hadoop-annotations</artifactId>
 				<version>${hadoop.version}</version>
 				<exclusions>
@@ -3706,20 +3756,25 @@
 				<version>${hadoop.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.apache.hbase</groupId>
-				<artifactId>hbase-client</artifactId>
-				<version>${hbase.version}</version>
+				<groupId>org.apache.hadoop</groupId>
+				<artifactId>hadoop-mapreduce-examples</artifactId>
+				<version>${hadoop.version}</version>
 			</dependency>
-			<dependency>
-				<groupId>org.apache.hbase</groupId>
-				<artifactId>hbase-common</artifactId>
-				<version>${hbase.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.hbase</groupId>
-				<artifactId>hbase</artifactId>
-				<version>${hbase.version}</version>
-			</dependency>
+<!-- 			<dependency> -->
+<!-- 				<groupId>org.apache.hbase</groupId> -->
+<!-- 				<artifactId>hbase-client</artifactId> -->
+<!-- 				<version>${hbase.version}</version> -->
+<!-- 			</dependency> -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>org.apache.hbase</groupId> -->
+<!-- 				<artifactId>hbase-common</artifactId> -->
+<!-- 				<version>${hbase.version}</version> -->
+<!-- 			</dependency> -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>org.apache.hbase</groupId> -->
+<!-- 				<artifactId>hbase</artifactId> -->
+<!-- 				<version>${hbase.version}</version> -->
+<!-- 			</dependency> -->
 			<dependency>
 				<groupId>org.apache.hive</groupId>
 				<artifactId>hive-service</artifactId>
@@ -6666,6 +6721,71 @@
 				<groupId>xsdlib</groupId>
 				<artifactId>xsdlib</artifactId>
 				<version>2010.1</version>
+			</dependency>
+			<dependency>
+				<groupId>com.ibm.mq</groupId>
+				<artifactId>com.ibm.mq.axis2</artifactId>
+				<version>${mq.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.ibm.mq</groupId>
+				<artifactId>com.ibm.mq.commonservices</artifactId>
+				<version>${mq.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.ibm.mq</groupId>
+				<artifactId>com.ibm.mq.defaultconfig</artifactId>
+				<version>${mq.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.ibm.mq</groupId>
+				<artifactId>com.ibm.mqetclient</artifactId>
+				<version>${mq.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.ibm.mq</groupId>
+				<artifactId>com.ibm.mq.headers</artifactId>
+				<version>${mq.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.ibm.mq</groupId>
+				<artifactId>com.ibm.mq</artifactId>
+				<version>${mq.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.ibm.mq</groupId>
+				<artifactId>com.ibm.mq.jmqi</artifactId>
+				<version>${mq.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.ibm.mq</groupId>
+				<artifactId>com.ibm.mqjms</artifactId>
+				<version>${mq.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.ibm.mq</groupId>
+				<artifactId>com.ibm.mq.jms.Nojndi</artifactId>
+				<version>${mq.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.ibm.mq</groupId>
+				<artifactId>com.ibm.mq.pcf</artifactId>
+				<version>${mq.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.ibm.mq</groupId>
+				<artifactId>com.ibm.mq.postcard</artifactId>
+				<version>${mq.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.ibm.mq</groupId>
+				<artifactId>com.ibm.mq.soap</artifactId>
+				<version>${mq.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.ibm.mq</groupId>
+				<artifactId>com.ibm.mq.tools.ras</artifactId>
+				<version>${mq.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

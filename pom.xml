@@ -40,6 +40,7 @@
 		<javax.inject.version>1</javax.inject.version>
 		<jsr250.version>1.0</jsr250.version>
 		<concurrent.version>1.3.4</concurrent.version>
+		<jms.version>1.1</jms.version>
 
 		<geronimo.j2ee.connector.version>2.1.2</geronimo.j2ee.connector.version>
 		<geronimo.jta.version>1.1.1</geronimo.jta.version>
@@ -106,7 +107,7 @@
 		<!-- XML -->
 		<stax.version>1.0.1</stax.version>
 		<stax2.api.version>3.1.1</stax2.api.version>
-		<woodstox-version>3.2.7</woodstox-version>
+		<woodstox.version>3.2.7</woodstox.version>
 		<xbean.version>3.4.3</xbean.version>
 		<xstream.version>1.4.2</xstream.version>
 		<xmlbeans.version>2.3.0</xmlbeans.version>
@@ -121,8 +122,11 @@
 		<xmlunit.version>1.1</xmlunit.version>
 		<xmlsec.version>1.4.0</xmlsec.version>
 		<xml.resolver.version>1.2</xml.resolver.version>
-		<stax.api.version>1.0.2</stax.api.version>
-
+		<jdom.version>1.1.3</jdom.version>
+		<xom.version>1.2.5</xom.version>
+		<wsdl4j.version>1.6.3</wsdl4j.version>
+		<jaxb.xjc.version>2.2.11</jaxb.xjc.version>
+		<sjsxp.version>1.0.2</sjsxp.version>
 		<jettison.version>1.1</jettison.version>
 
 		<backport.util.concurrent.version>3.1</backport.util.concurrent.version>
@@ -156,7 +160,7 @@
 		<fluent.selenium.version>2.37.0</fluent.selenium.version>
 		<selenium.version>2.0a4</selenium.version>
 		<mock.ftp.server.version>2.4</mock.ftp.server.version>
-		<dbmonster.version>1.0.3</dbmonster.version>
+		<dbmonster.version>1.0.4</dbmonster.version>
 		<apacheds.version>1.5.5</apacheds.version>
 
 		<aspectj.version>1.6.12</aspectj.version>
@@ -204,7 +208,7 @@
 
 
 		<!-- Report -->
-		<jasperreports.version>5.6.0</jasperreports.version>
+		<jasperreports.version>6.0.0</jasperreports.version>
 		<barcode4j.version>2.1</barcode4j.version>
 		<fop.version>1.1</fop.version>
 		<jasper.version>4.6.0</jasper.version>
@@ -333,18 +337,7 @@
 
 	</properties>
 	<repositories>
-		<repository>
-			<id>nightlabs</id>
-			<url>http://dev.nightlabs.org/maven-repository/repo</url>
-		</repository>
-		<repository>
-			<id>snapshots.jboss.org</id>
-			<url>http://snapshots.jboss.org/maven2</url>
-		</repository>
-		<repository>
-			<id>repository.jboss.org</id>
-			<url>http://repository.jboss.org/maven2</url>
-		</repository>
+
 	</repositories>
 
 	<build>
@@ -593,12 +586,12 @@
 				<version>20020414</version>
 			</dependency>
 			<dependency>
-				<groupId>antlr</groupId>
+				<groupId>org.antlr</groupId>
 				<artifactId>antlr-runtime</artifactId>
 				<version>${antlr.runtime.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>antlr</groupId>
+				<groupId>org.antlr</groupId>
 				<artifactId>antlr</artifactId>
 				<version>${antlr.version}</version>
 			</dependency>
@@ -1275,7 +1268,7 @@
 				<version>${isorelax.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>javassist</groupId>
+				<groupId>org.javassist</groupId>
 				<artifactId>javassist</artifactId>
 				<version>${javassist.version}</version>
 			</dependency>
@@ -1520,11 +1513,6 @@
 				<groupId>net.sf.ehcache</groupId>
 				<artifactId>ehcache-web</artifactId>
 				<version>${ehcache.web.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>net.sf.jasperreports</groupId>
-				<artifactId>jasperreports-applet</artifactId>
-				<version>${jasperreports.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>net.sf.jasperreports</groupId>
@@ -5220,22 +5208,27 @@
 			</dependency>
 			<dependency>
 				<groupId>org.ow2.asm</groupId>
-				<artifactId>ow2-asm-commons</artifactId>
+				<artifactId>asm-all</artifactId>
 				<version>${asm.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.ow2.asm</groupId>
-				<artifactId>ow2-asm-tree</artifactId>
+				<artifactId>asm-commons</artifactId>
 				<version>${asm.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.ow2.asm</groupId>
-				<artifactId>ow2-asm-util</artifactId>
+				<artifactId>asm-tree</artifactId>
 				<version>${asm.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.ow2.asm</groupId>
-				<artifactId>ow2-asm</artifactId>
+				<artifactId>asm-util</artifactId>
+				<version>${asm.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.ow2.asm</groupId>
+				<artifactId>asm</artifactId>
 				<version>${asm.version}</version>
 			</dependency>
 			<dependency>
@@ -6614,7 +6607,7 @@
 			<dependency>
 				<groupId>stax</groupId>
 				<artifactId>stax-api</artifactId>
-				<version>${stax.api.version}</version>
+				<version>${stax.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>struts-menu</groupId>
@@ -6786,6 +6779,37 @@
 				<groupId>com.ibm.mq</groupId>
 				<artifactId>com.ibm.mq.tools.ras</artifactId>
 				<version>${mq.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.jdom</groupId>
+				<artifactId>jdom</artifactId>
+				<version>${jdom.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>xom</groupId>
+				<artifactId>xom</artifactId>
+				<version>${xom.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>wsdl4j</groupId>
+				<artifactId>wsdl4j</artifactId>
+				<version>${wsdl4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.jms</groupId>
+				<artifactId>jms</artifactId>
+				<version>${jms.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.sun.xml.bind</groupId>
+				<artifactId>jaxb-xjc</artifactId>
+				<version>${jaxb.xjc.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.sun.xml.stream</groupId>
+				<artifactId>sjsxp</artifactId>
+				<version>${sjsxp.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

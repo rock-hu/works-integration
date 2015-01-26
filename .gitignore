@@ -1,0 +1,8 @@
+target/
+.springBeans
+derby.log
+.studio
+activemq-data
+
+
+/data

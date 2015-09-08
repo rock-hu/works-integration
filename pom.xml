@@ -14,26 +14,26 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
 		<!-- Spring -->
-		<spring.io.version>1.0.0.RELEASE</spring.io.version>
-		<spring.core.version>4.0.5.RELEASE</spring.core.version>
-		<spring.ws.version>2.2.0.RELEASE</spring.ws.version>
-		<spring.ldap.version>2.0.2.RELEASE</spring.ldap.version>
-		<spring.security.version>3.2.4.RELEASE</spring.security.version>
-		<spring.integration.version>4.1.1.RELEASE</spring.integration.version>
-		<spring.webflow.version>2.4.0.RELEASE</spring.webflow.version>
+		<spring.io.version>1.1.3.RELEASE</spring.io.version>
+		<spring.core.version>4.1.6.RELEASE</spring.core.version>
+		<spring.ws.version>2.2.2.RELEASE</spring.ws.version>
+		<spring.ldap.version>2.0.4.RELEASE</spring.ldap.version>
+		<spring.security.version>4.0.2.RELEASE</spring.security.version>
+		<spring.integration.version>4.1.6.RELEASE</spring.integration.version>
+		<spring.webflow.version>2.4.2.RELEASE</spring.webflow.version>
 
-		<spring.batch.version>3.0.0.RELEASE</spring.batch.version>
+		<spring.batch.version>3.0.5.RELEASE</spring.batch.version>
 		<spring.retry.version>1.0.2.RELEASE</spring.retry.version>
-		<spring.batch.admin.version>1.2.1.RELEASE</spring.batch.admin.version>
+		<spring.batch.admin.version>2.0.0.M1</spring.batch.admin.version>
 
 		<spring.modules.version>0.8</spring.modules.version>
 
-		<spring.data.jpa.version>1.5.0.RELEASE</spring.data.jpa.version>
-		<spring.data.mongodb.version>1.4.0.RELEASE</spring.data.mongodb.version>
+		<spring.data.jpa.version>1.9.0.RELEASE</spring.data.jpa.version>
+		<spring.data.mongodb.version>1.8.0.RELEASE</spring.data.mongodb.version>
 		<spring.data.commons.core.version>1.4.1.RELEASE</spring.data.commons.core.version>
-		<spring.data.oracle.version>1.0.0.RELEASE</spring.data.oracle.version>
-		<spring.data.hadoop.version>2.0.2.RELEASE</spring.data.hadoop.version>
-		<hadoop.version>2.2.0</hadoop.version>
+		<spring.data.oracle.version>1.1.0.RELEASE</spring.data.oracle.version>
+		<spring.data.hadoop.version>2.2.0.RELEASE</spring.data.hadoop.version>
+		<hadoop.version>2.6.0</hadoop.version>
 
 		<!-- javax -->
 		<javax.validation.version>1.0.0.GA</javax.validation.version>
@@ -99,7 +99,7 @@
 		<commons.logging.version>1.1.1</commons.logging.version>
 		<log4j.version>1.2.16</log4j.version>
 		<slf4j.version>1.6.4</slf4j.version>
-		<jamon.version>2.4.0</jamon.version>
+		<jamon.version>2.81</jamon.version>
 		<perf4j.version>0.9.16</perf4j.version>
 		<jboss.logging.version>3.1.0.CR2</jboss.logging.version>
 		<jdbclogger.version>0.6</jdbclogger.version>
@@ -112,7 +112,7 @@
 		<xstream.version>1.4.2</xstream.version>
 		<xmlbeans.version>2.3.0</xmlbeans.version>
 		<xmlschema.core.version>2.0.3</xmlschema.core.version>
-		<xml.apis.version>1.3.04</xml.apis.version>
+		<xml.apis.version>1.4.01</xml.apis.version>
 		<jaxb.version>2.2.7</jaxb.version>
 		<dozer.version>5.3.2</dozer.version>
 		<xerces.version>2.9.1</xerces.version>
@@ -151,14 +151,17 @@
 
 		<!-- Testing -->
 		<junit.version>4.10</junit.version>
+		<testng.version>6.1.1</testng.version>
 		<hamcrest.version>1.1</hamcrest.version>
 		<dbunit.version>2.4.8</dbunit.version>
 		<spring.test.dbunit.version>1.0.1</spring.test.dbunit.version>
-		<jbehave.core.version>3.8</jbehave.core.version>
-		<jbehave.site.version>3.1.1</jbehave.site.version>
+
+		<jbehave.core.version>4.0.3</jbehave.core.version>
+		<jbehave.site.version>3.3</jbehave.site.version>
 		<jbehave.web.version>3.5.5</jbehave.web.version>
-		<fluent.selenium.version>2.37.0</fluent.selenium.version>
-		<selenium.version>2.0a4</selenium.version>
+
+		<fluent.selenium.version>1.14.6</fluent.selenium.version>
+		<selenium.version>2.47.1</selenium.version>
 		<mock.ftp.server.version>2.4</mock.ftp.server.version>
 		<dbmonster.version>1.0.4</dbmonster.version>
 		<apacheds.version>1.5.5</apacheds.version>
@@ -175,16 +178,17 @@
 		<ddlutils.version>1.0</ddlutils.version>
 		<c3p0.version>0.9.1.2</c3p0.version>
 		<jta.version>1.1</jta.version>
-		<liquibase.version>3.0.7</liquibase.version>
+		<liquibase.version>3.4.1</liquibase.version>
 		<openjpa.version>2.3.0</openjpa.version>
 		<taobao.tddl.version>3.0.1.5.taobaocode-SNAPSHOT</taobao.tddl.version>
 		<cobar.client.version>1.0.6-SNAPSHOT</cobar.client.version>
 
 		<!-- Mybatis -->
-		<mybatis.version>3.2.3</mybatis.version>
-		<mybatis.spring.version>1.2.1</mybatis.spring.version>
-		<mybatis.ehcache.version>1.0.2</mybatis.ehcache.version>
+		<mybatis.version>3.3.0</mybatis.version>
+		<mybatis.spring.version>1.2.3</mybatis.spring.version>
+		<mybatis.ehcache.version>1.0.3</mybatis.ehcache.version>
 		<mybatis.velocity.version>1.1</mybatis.velocity.version>
+		<mybatis.freemarker.version>1.1.1</mybatis.freemarker.version>
 
 		<torque.version>4.0</torque.version>
 
@@ -202,31 +206,31 @@
 		<dom4j.version>1.6.1</dom4j.version>
 
 		<!-- Workflow -->
-		<activiti.version>5.15.1</activiti.version>
-		<drools.version>5.4.0.Final</drools.version>
-		<jbpm.version>5.3.0.Final</jbpm.version>
+		<activiti.version>5.18.0</activiti.version>
+		<drools.version>6.2.0.Final</drools.version>
+		<jbpm.version>6.2.0.Final</jbpm.version>
 
 
 		<!-- Report -->
-		<jasperreports.version>6.0.0</jasperreports.version>
+		<jasperreports.version>6.1.0</jasperreports.version>
 		<barcode4j.version>2.1</barcode4j.version>
 		<fop.version>1.1</fop.version>
 		<jasper.version>4.6.0</jasper.version>
-		<poi.version>3.7</poi.version>
+
 		<jfreechart.version>1.0.12</jfreechart.version>
 
 		<!-- Webservice -->
 		<cxf.version>3.0.0</cxf.version>
 		<wsdl4j.version>1.6.1</wsdl4j.version>
 		<opensaml.version>2.5.1</opensaml.version>
-		<opensamlws.version>1.4.2-1</opensamlws.version>
-		<opensaml.xmltooling.version>1.3.2-1</opensaml.xmltooling.version>
+		<openws.version>1.4.2</openws.version>
+		<xmltooling.version>1.3.2</xmltooling.version>
 		<neethi.version>3.0.2</neethi.version>
 		<jibx.version>1.2.3</jibx.version>
 
 		<!-- Mule -->
 		<mule.common.version>0.11.0</mule.common.version>
-		<mule.version>3.5.0</mule.version>
+		<mule.version>3.7.0</mule.version>
 		<mule.ldap.version>1.1.4</mule.ldap.version>
 		<mule.esper.module.version>1.1</mule.esper.module.version>
 		<mule.esper.connector.version>1.0</mule.esper.connector.version>
@@ -234,24 +238,25 @@
 		<munit.version>3.5-M3-SNAPSHOT</munit.version>
 		<jug.asl.version>2.0.0</jug.asl.version>
 		<!-- ActiveMQ -->
-		<activemq.version>5.9.1</activemq.version>
+		<activemq.version>5.12.0</activemq.version>
 		<activemq.protobuf.version>1.1</activemq.protobuf.version>
 		<activeio.version>3.1.4</activeio.version>
 		<xbean.spring.version>3.15</xbean.spring.version>
 
 		<!-- IBM -->
-		<mq.version>7.1.0.3</mq.version>
+		<mq.version>7.5.0.3</mq.version>
 
 		<!-- Camel -->
-		<camel.version>2.12.3</camel.version>
+		<camel.version>2.15.3</camel.version>
 
 		<!-- Smooks -->
 		<smooks.version>1.5.1</smooks.version>
+		<beanio.version>2.0</beanio.version>
 		<jaxen.version>1.1.4</jaxen.version>
 
 		<quickfixj.version>1.5.3</quickfixj.version>
 		<esper.version>5.0.0</esper.version>
-		<disruptor.version>3.2.0</disruptor.version>
+		<disruptor.version>3.3.2</disruptor.version>
 		<saxon.version>9.1.0.8</saxon.version>
 		<mvel2.version>2.0.10</mvel2.version>
 
@@ -274,7 +279,7 @@
 		<jboss.el.version>2.0.1.GA</jboss.el.version>
 
 		<!-- Struts2 -->
-		<struts2.version>2.3.15.3</struts2.version>
+		<struts2.version>2.3.24</struts2.version>
 		<struts.menu.version>2.4.3</struts.menu.version>
 		<struts2.jquery.version>3.6.1</struts2.jquery.version>
 		<xwork.version>2.1.6</xwork.version>
@@ -290,10 +295,11 @@
 
 		<!-- REST -->
 		<jersey.version>1.3</jersey.version>
-		<jackson.version>2.3.3</jackson.version>
-
+		<jersey.version>1.9</jersey.version>
 
 		<!-- JSON -->
+		<jackson.version>2.3.3</jackson.version>
+
 		<ognl.version>3.0.4</ognl.version>
 
 		<javassist.version>3.18.1-GA</javassist.version>
@@ -310,7 +316,7 @@
 
 		<!-- EXCEL -->
 		<jxl.version>2.6.12</jxl.version>
-
+		<poi.version>3.7</poi.version>
 
 		<jcaptcha.version>1.0</jcaptcha.version>
 
@@ -319,7 +325,7 @@
 		<joda.time.version>2.2</joda.time.version>
 		<esapi.version>2.1.0</esapi.version>
 
-		<jersey.version>1.9</jersey.version>
+
 		<netty.version>4.0.21.Final</netty.version>
 		<axiom.version>1.2.5</axiom.version>
 		<stax.utils.version>20080702</stax.utils.version>
@@ -337,7 +343,14 @@
 
 	</properties>
 	<repositories>
-
+		<repository>
+			<id>jboss-public-repository-group</id>
+			<url>https://repository.jboss.org/nexus/content/groups/public/</url>
+		</repository>
+		<repository>
+			<id>repository.jboss</id>
+			<url>http://repository.jboss.org/nexus/content/groups/public-jboss</url>
+		</repository>
 	</repositories>
 
 	<build>
@@ -439,30 +452,11 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-antrun-plugin</artifactId>
-				<!-- <executions> -->
-				<!-- <execution> -->
-				<!-- <id>mule-deploy</id> -->
-				<!-- <phase>install</phase> -->
-				<!-- <goals> -->
-				<!-- <goal>run</goal> -->
-				<!-- </goals> -->
-				<!-- <configuration> -->
-				<!-- <tasks> -->
-				<!-- <copy file="${project.build.directory}/${build.finalName}.zip" todir="${env.MULE_HOME}/apps" overwrite="true" /> -->
-				<!-- </tasks> -->
-				<!-- </configuration> -->
-				<!-- </execution> -->
-				<!-- </executions> -->
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>castor-maven-plugin</artifactId>
 				<version>1.0</version>
-				<configuration>
-					<schema>E:/Workspace/works-document/schema/batch-core.xsd</schema>
-					<packaging>org.works.batch.domain.xml</packaging>
-					<properties>src/main/resources/castor/castorbuilder.properties</properties>
-				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -478,102 +472,13 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.1.1</version>
-				<configuration>
-					<packagingExcludes>
-						WEB-INF/lib/spring-2.0.3.jar
-						WEB-INF/lib/spring-dao-2.0.3.jar
-						WEB-INF/lib/spring-support-2.0.3.jar
-						WEB-INF/lib/maven-artifact-2.0.9.jar
-						WEB-INF/lib/maven-artifact-manager-2.0.9.jar
-						WEB-INF/lib/maven-model-2.0.9 .jar
-						WEB-INF/lib/maven-plugin-api-2.0.9.jar
-						WEB-INF/lib/maven-plugin-registry-2.0.9.jar
-						WEB-INF/lib/maven-profile-2.0.9.jar
-						WEB-INF/lib/maven-project-2.0.9.jar
-						WEB-INF/lib/maven-repository-metadata-2.0.9.jar
-						WEB-INF/lib/maven-settings-2.0.9.jar
-						WEB-INF/lib/jackrabbit-api-2.4.2.jar
-						WEB-INF/lib/jackrabbit-core-2.4.2.jar
-						WEB-INF/lib/jackrabbit-jcr-commons-2.4.2.jar
-						WEB-INF/lib/jackrabbit-jcr-rmi-2.4.2.jar
-						WEB-INF/lib/jackrabbit-jcr-servlet-2.4.2.jar
-						WEB-INF/lib/jackrabbit-ocm-1.5.3.jar
-						WEB-INF/lib/jackrabbit-spi-2.4.2.jar
-						WEB-INF/lib/jackrabbit-spi-commons-2.4.2.jar
-						WEB-INF/lib/jackrabbit-webdav-2.4.2.jar
-						WEB-INF/lib/derby-10.5.3.0_1.jar
-						WEB-INF/lib/poi-3.7.jar
-						WEB-INF/lib/poi-ooxml-3.7.jar
-						WEB-INF/lib/poi-ooxml-schemas-3.7.jar
-						WEB-INF/lib/poi-scratchpad-3.7.jar
-					</packagingExcludes>
-				</configuration>
 			</plugin>
-			<!-- <plugin> -->
-			<!-- <groupId>org.apache.tomcat.maven</groupId> -->
-			<!-- <artifactId>tomcat7-maven-plugin</artifactId> -->
-			<!-- <version>2.1</version> -->
-			<!-- <configuration> -->
-			<!-- <url>http://127.0.0.1:8080/manager</url> -->
-			<!-- <server>Tomcat7Server</server> -->
-			<!-- <path>/works-web</path> -->
-			<!-- </configuration> -->
-			<!-- <executions> -->
-			<!-- <execution> -->
-			<!-- <id>tomcat-run</id> -->
-			<!-- <goals> -->
-			<!-- <goal>run-war-only</goal> -->
-			<!-- </goals> -->
-			<!-- <phase>pre-integration-test</phase> -->
-			<!-- </execution> -->
-			<!-- <execution> -->
-			<!-- <id>tomcat-shutdown</id> -->
-			<!-- <goals> -->
-			<!-- <goal>shutdown</goal> -->
-			<!-- </goals> -->
-			<!-- <phase>post-integration-test</phase> -->
-			<!-- </execution> -->
-			<!-- </executions> -->
-			<!-- </plugin> -->
-			<!-- <plugin> -->
-			<!-- <groupId>net.sourceforge.maven-taglib</groupId> -->
-			<!-- <artifactId>maven-taglib-plugin</artifactId> -->
-			<!-- <executions> -->
-			<!-- <execution> -->
-			<!-- <goals> -->
-			<!-- <goal>tldgenerate</goal> -->
-			<!-- </goals> -->
-			<!-- </execution> -->
-			<!-- </executions> -->
-			<!-- </plugin> -->
-			<!-- <plugin> -->
-			<!-- <groupId>org.jboss.tattletale</groupId> -->
-			<!-- <artifactId>tattletale-maven</artifactId> -->
-			<!-- <version>1.1.2.Final</version> -->
-			<!-- <executions> -->
-			<!-- <execution> -->
-			<!-- <goals> -->
-			<!-- <goal>report</goal> -->
-			<!-- </goals> -->
-			<!-- </execution> -->
-			<!-- </executions> -->
-			<!-- <configuration> -->
-			<!-- <source>C:/Rock/Workspace/works-message</source> -->
-			<!-- <destination>C:/Rock/Workspace/works-integration/dependency/reports</destination> -->
-			<!-- </configuration> -->
-			<!-- </plugin> -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.12.4</version>
 				<configuration>
-					<includes>
-						<include>**/*Test*.java</include>
-					</includes>
-					<environmentVariables>
-						<APP_ENCRYPTION_PASSWORD>PL,MHYRDC0897654wsxzaq</APP_ENCRYPTION_PASSWORD>
-					</environmentVariables>
-					<skipTests>true</skipTests>
+					<!-- <skipTests>true</skipTests> -->
 				</configuration>
 			</plugin>
 		</plugins>
@@ -581,7 +486,7 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>activesoap</groupId>
+				<groupId>org.relaxng.datatype</groupId>
 				<artifactId>relaxngDatatype</artifactId>
 				<version>20020414</version>
 			</dependency>
@@ -619,11 +524,6 @@
 				<groupId>c3p0</groupId>
 				<artifactId>c3p0</artifactId>
 				<version>${c3p0.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>cglib</groupId>
-				<artifactId>cglib-nodep</artifactId>
-				<version>${cglib.nodep.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>cglib</groupId>
@@ -803,7 +703,7 @@
 				<version>${guava.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.googlecode.disruptor</groupId>
+				<groupId>com.lmax</groupId>
 				<artifactId>disruptor</artifactId>
 				<version>${disruptor.version}</version>
 			</dependency>
@@ -1391,6 +1291,12 @@
 				<scope>test</scope>
 			</dependency>
 			<dependency>
+				<groupId>org.testng</groupId>
+				<artifactId>testng</artifactId>
+				<version>${testng.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
 				<groupId>log4j</groupId>
 				<artifactId>log4j</artifactId>
 				<version>${log4j.version}</version>
@@ -1893,11 +1799,6 @@
 			<dependency>
 				<groupId>org.apache.activemq</groupId>
 				<artifactId>activemq-jdbc-store</artifactId>
-				<version>${activemq.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.activemq</groupId>
-				<artifactId>activemq-jms-pool</artifactId>
 				<version>${activemq.version}</version>
 			</dependency>
 			<dependency>
@@ -3748,21 +3649,21 @@
 				<artifactId>hadoop-mapreduce-examples</artifactId>
 				<version>${hadoop.version}</version>
 			</dependency>
-<!-- 			<dependency> -->
-<!-- 				<groupId>org.apache.hbase</groupId> -->
-<!-- 				<artifactId>hbase-client</artifactId> -->
-<!-- 				<version>${hbase.version}</version> -->
-<!-- 			</dependency> -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>org.apache.hbase</groupId> -->
-<!-- 				<artifactId>hbase-common</artifactId> -->
-<!-- 				<version>${hbase.version}</version> -->
-<!-- 			</dependency> -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>org.apache.hbase</groupId> -->
-<!-- 				<artifactId>hbase</artifactId> -->
-<!-- 				<version>${hbase.version}</version> -->
-<!-- 			</dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>org.apache.hbase</groupId> -->
+			<!-- <artifactId>hbase-client</artifactId> -->
+			<!-- <version>${hbase.version}</version> -->
+			<!-- </dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>org.apache.hbase</groupId> -->
+			<!-- <artifactId>hbase-common</artifactId> -->
+			<!-- <version>${hbase.version}</version> -->
+			<!-- </dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>org.apache.hbase</groupId> -->
+			<!-- <artifactId>hbase</artifactId> -->
+			<!-- <version>${hbase.version}</version> -->
+			<!-- </dependency> -->
 			<dependency>
 				<groupId>org.apache.hive</groupId>
 				<artifactId>hive-service</artifactId>
@@ -4346,6 +4247,7 @@
 				<artifactId>dbunit</artifactId>
 				<version>${dbunit.version}</version>
 			</dependency>
+			<!-- Drools -->
 			<dependency>
 				<groupId>org.drools</groupId>
 				<artifactId>drools-compiler</artifactId>
@@ -4403,12 +4305,63 @@
 			</dependency>
 			<dependency>
 				<groupId>org.drools</groupId>
-				<artifactId>droolsjbpm-ide-common</artifactId>
-				<version>${jbpm.version}</version>
+				<artifactId>knowledge-api</artifactId>
+				<version>${drools.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.drools</groupId>
+				<artifactId>drools-reteoo</artifactId>
+				<version>${drools.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.drools</groupId>
-				<artifactId>knowledge-api</artifactId>
+				<artifactId>drools-pmml</artifactId>
+				<version>${drools.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.drools</groupId>
+				<artifactId>drools-persistence-jpa</artifactId>
+				<version>${drools.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.drools</groupId>
+				<artifactId>drools-templates</artifactId>
+				<version>${drools.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.drools</groupId>
+				<artifactId>named-kiesession</artifactId>
+				<version>${drools.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.drools</groupId>
+				<artifactId>default-kiesession</artifactId>
+				<version>${drools.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.kie</groupId>
+				<artifactId>kie-ci</artifactId>
+				<version>${drools.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.drools</groupId>
+				<artifactId>drools-scorecards</artifactId>
+				<version>${drools.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.drools</groupId>
+				<artifactId>drools-simulator</artifactId>
+				<version>${drools.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.drools</groupId>
+				<artifactId>drools-karaf-features</artifactId>
+				<version>${drools.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.drools</groupId>
+				<artifactId>drools-karaf-itest</artifactId>
 				<version>${drools.version}</version>
 			</dependency>
 			<dependency>
@@ -4416,6 +4369,7 @@
 				<artifactId>knowledge-internal-api</artifactId>
 				<version>${drools.version}</version>
 			</dependency>
+
 			<dependency>
 				<groupId>org.eclipse.birt.runtime</groupId>
 				<artifactId>org.eclipse.birt.runtime</artifactId>
@@ -4439,7 +4393,12 @@
 			</dependency>
 			<dependency>
 				<groupId>org.jamon</groupId>
-				<artifactId>jamon-runtime</artifactId>
+				<artifactId>jamon</artifactId>
+				<version>${jamon.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.jamonapi</groupId>
+				<artifactId>jamon_osmon</artifactId>
 				<version>${jamon.version}</version>
 			</dependency>
 			<dependency>
@@ -4601,6 +4560,12 @@
 				<groupId>org.lazyluke</groupId>
 				<artifactId>log4jdbc-remix</artifactId>
 				<version>0.2.7</version>
+				<exclusions>
+					<exclusion>
+						<groupId>junit</groupId>
+						<artifactId>junit</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.liquibase</groupId>
@@ -4687,6 +4652,11 @@
 				</exclusions>
 			</dependency>
 			<dependency>
+				<groupId>org.beanio</groupId>
+				<artifactId>beanio</artifactId>
+				<version>${beanio.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.mule.common</groupId>
 				<artifactId>mule-common</artifactId>
 				<version>${mule.version}</version>
@@ -4705,12 +4675,12 @@
 				<groupId>org.mule.modules</groupId>
 				<artifactId>mule-module-annotations</artifactId>
 				<version>${mule.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>cglib</groupId>
-						<artifactId>cglib-nodep</artifactId>
-					</exclusion>
-				</exclusions>
+				<!-- <exclusions> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>cglib</groupId> -->
+				<!-- <artifactId>cglib-nodep</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- </exclusions> -->
 			</dependency>
 			<dependency>
 				<groupId>org.mule.modules</groupId>
@@ -4801,28 +4771,28 @@
 				<groupId>org.mule.modules</groupId>
 				<artifactId>mule-module-management</artifactId>
 				<version>${mule.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>mx4j</groupId>
-						<artifactId>mx4j-jmx</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>mx4j</groupId>
-						<artifactId>mx4j-impl</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>mx4j</groupId>
-						<artifactId>mx4j-tools</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>mx4j</groupId>
-						<artifactId>mx4j-remote</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>com.yourkit</groupId>
-						<artifactId>yjp-controller-api-redist</artifactId>
-					</exclusion>
-				</exclusions>
+				<!-- <exclusions> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>mx4j</groupId> -->
+				<!-- <artifactId>mx4j-jmx</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>mx4j</groupId> -->
+				<!-- <artifactId>mx4j-impl</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>mx4j</groupId> -->
+				<!-- <artifactId>mx4j-tools</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>mx4j</groupId> -->
+				<!-- <artifactId>mx4j-remote</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>com.yourkit</groupId> -->
+				<!-- <artifactId>yjp-controller-api-redist</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- </exclusions> -->
 			</dependency>
 			<dependency>
 				<groupId>org.mule.modules</groupId>
@@ -4849,13 +4819,21 @@
 				<artifactId>mule-module-scripting</artifactId>
 				<version>${mule.version}</version>
 				<exclusions>
+					<!-- <exclusion> -->
+					<!-- <groupId>org.livetribe</groupId> -->
+					<!-- <artifactId>livetribe-jsr223</artifactId> -->
+					<!-- </exclusion> -->
+					<!-- <exclusion> -->
+					<!-- <groupId>org.codehaus.groovy</groupId> -->
+					<!-- <artifactId>groovy-all</artifactId> -->
+					<!-- </exclusion> -->
 					<exclusion>
-						<groupId>org.livetribe</groupId>
-						<artifactId>livetribe-jsr223</artifactId>
+						<groupId>javax.script</groupId>
+						<artifactId>jruby-engine</artifactId>
 					</exclusion>
 					<exclusion>
-						<groupId>org.codehaus.groovy</groupId>
-						<artifactId>groovy-all</artifactId>
+						<groupId>javax.script</groupId>
+						<artifactId>js-engine</artifactId>
 					</exclusion>
 				</exclusions>
 			</dependency>
@@ -4868,27 +4846,27 @@
 				<groupId>org.mule.modules</groupId>
 				<artifactId>mule-module-spring-extras</artifactId>
 				<version>${mule.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>org.apache.geronimo.specs</groupId>
-						<artifactId>geronimo-jms_1.1_spec</artifactId>
-					</exclusion>
-				</exclusions>
+				<!-- <exclusions> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>org.apache.geronimo.specs</groupId> -->
+				<!-- <artifactId>geronimo-jms_1.1_spec</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- </exclusions> -->
 			</dependency>
 			<dependency>
 				<groupId>org.mule.modules</groupId>
 				<artifactId>mule-module-spring-security</artifactId>
 				<version>${mule.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>org.mule.transports</groupId>
-						<artifactId>mule-transport-tcp</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.mortbay.jetty</groupId>
-						<artifactId>servlet-api</artifactId>
-					</exclusion>
-				</exclusions>
+				<!-- <exclusions> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>org.mule.transports</groupId> -->
+				<!-- <artifactId>mule-transport-tcp</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>org.mortbay.jetty</groupId> -->
+				<!-- <artifactId>servlet-api</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- </exclusions> -->
 			</dependency>
 			<dependency>
 				<groupId>org.mule.modules</groupId>
@@ -4909,52 +4887,52 @@
 				<groupId>org.mule.modules</groupId>
 				<artifactId>mule-module-xml</artifactId>
 				<version>${mule.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>dom4j</groupId>
-						<artifactId>dom4j</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>xpp3</groupId>
-						<artifactId>xpp3_min</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>net.sf.saxon</groupId>
-						<artifactId>saxon</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>net.sf.saxon</groupId>
-						<artifactId>saxon-dom</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>net.sf.saxon</groupId>
-						<artifactId>saxon-xqj</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>jaxen</groupId>
-						<artifactId>jaxen</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.apache.geronimo.specs</groupId>
-						<artifactId>geronimo-stax-api_1.0_spec</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.codehaus.woodstox</groupId>
-						<artifactId>woodstox-core-asl</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>net.java.dev.stax-utils</groupId>
-						<artifactId>stax-utils</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>javax.xml.bind</groupId>
-						<artifactId>jaxb-api</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>com.sun.xml.bind</groupId>
-						<artifactId>jaxb-impl</artifactId>
-					</exclusion>
-				</exclusions>
+				<!-- <exclusions> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>dom4j</groupId> -->
+				<!-- <artifactId>dom4j</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>xpp3</groupId> -->
+				<!-- <artifactId>xpp3_min</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>net.sf.saxon</groupId> -->
+				<!-- <artifactId>saxon</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>net.sf.saxon</groupId> -->
+				<!-- <artifactId>saxon-dom</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>net.sf.saxon</groupId> -->
+				<!-- <artifactId>saxon-xqj</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>jaxen</groupId> -->
+				<!-- <artifactId>jaxen</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>org.apache.geronimo.specs</groupId> -->
+				<!-- <artifactId>geronimo-stax-api_1.0_spec</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>org.codehaus.woodstox</groupId> -->
+				<!-- <artifactId>woodstox-core-asl</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>net.java.dev.stax-utils</groupId> -->
+				<!-- <artifactId>stax-utils</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>javax.xml.bind</groupId> -->
+				<!-- <artifactId>jaxb-api</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>com.sun.xml.bind</groupId> -->
+				<!-- <artifactId>jaxb-impl</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- </exclusions> -->
 			</dependency>
 			<dependency>
 				<groupId>org.mule.modules</groupId>
@@ -4990,32 +4968,32 @@
 				<groupId>org.mule.tests</groupId>
 				<artifactId>mule-tests-functional</artifactId>
 				<version>${mule.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>org.mule</groupId>
-						<artifactId>mule-core</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.apache.ftpserver</groupId>
-						<artifactId>ftpserver-core</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.apache.ftpserver</groupId>
-						<artifactId>ftplet-api</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>bouncycastle</groupId>
-						<artifactId>bcprov-jdk14</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.mockito</groupId>
-						<artifactId>mockito-all</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.apache.sshd</groupId>
-						<artifactId>sshd-core</artifactId>
-					</exclusion>
-				</exclusions>
+				<!-- <exclusions> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>org.mule</groupId> -->
+				<!-- <artifactId>mule-core</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>org.apache.ftpserver</groupId> -->
+				<!-- <artifactId>ftpserver-core</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>org.apache.ftpserver</groupId> -->
+				<!-- <artifactId>ftplet-api</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>bouncycastle</groupId> -->
+				<!-- <artifactId>bcprov-jdk14</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>org.mockito</groupId> -->
+				<!-- <artifactId>mockito-all</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>org.apache.sshd</groupId> -->
+				<!-- <artifactId>sshd-core</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- </exclusions> -->
 			</dependency>
 			<dependency>
 				<groupId>org.mule.transports</groupId>
@@ -5036,68 +5014,68 @@
 				<groupId>org.mule.transports</groupId>
 				<artifactId>mule-transport-ftp</artifactId>
 				<version>${mule.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>oro</groupId>
-						<artifactId>oro</artifactId>
-					</exclusion>
-				</exclusions>
+				<!-- <exclusions> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>oro</groupId> -->
+				<!-- <artifactId>oro</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- </exclusions> -->
 			</dependency>
 			<dependency>
 				<groupId>org.mule.transports</groupId>
 				<artifactId>mule-transport-http</artifactId>
 				<version>${mule.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>tomcat</groupId>
-						<artifactId>tomcat-util</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.mule.transports</groupId>
-						<artifactId>mule-transport-ssl</artifactId>
-					</exclusion>
-				</exclusions>
+				<!-- <exclusions> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>tomcat</groupId> -->
+				<!-- <artifactId>tomcat-util</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>org.mule.transports</groupId> -->
+				<!-- <artifactId>mule-transport-ssl</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- </exclusions> -->
 			</dependency>
 			<dependency>
 				<groupId>org.mule.transports</groupId>
 				<artifactId>mule-transport-jdbc</artifactId>
 				<version>${mule.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>commons-dbutils</groupId>
-						<artifactId>commons-dbutils</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>com.experlog</groupId>
-						<artifactId>xapool</artifactId>
-					</exclusion>
-				</exclusions>
+				<!-- <exclusions> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>commons-dbutils</groupId> -->
+				<!-- <artifactId>commons-dbutils</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>com.experlog</groupId> -->
+				<!-- <artifactId>xapool</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- </exclusions> -->
 			</dependency>
 			<dependency>
 				<groupId>org.mule.transports</groupId>
 				<artifactId>mule-transport-jms</artifactId>
 				<version>${mule.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>org.apache.geronimo.specs</groupId>
-						<artifactId>geronimo-j2ee-management_1.0_spec</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.apache.geronimo.specs</groupId>
-						<artifactId>geronimo-jms_1.1_spec</artifactId>
-					</exclusion>
-				</exclusions>
+				<!-- <exclusions> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>org.apache.geronimo.specs</groupId> -->
+				<!-- <artifactId>geronimo-j2ee-management_1.0_spec</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>org.apache.geronimo.specs</groupId> -->
+				<!-- <artifactId>geronimo-jms_1.1_spec</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- </exclusions> -->
 			</dependency>
 			<dependency>
 				<groupId>org.mule.transports</groupId>
 				<artifactId>mule-transport-quartz</artifactId>
 				<version>${mule.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>quartz</groupId>
-						<artifactId>quartz-all</artifactId>
-					</exclusion>
-				</exclusions>
+				<!-- <exclusions> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>quartz</groupId> -->
+				<!-- <artifactId>quartz-all</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- </exclusions> -->
 			</dependency>
 			<dependency>
 				<groupId>org.mule.transports</groupId>
@@ -5118,16 +5096,16 @@
 				<groupId>org.mule</groupId>
 				<artifactId>mule-core</artifactId>
 				<version>${mule.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>asm</groupId>
-						<artifactId>asm</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>asm</groupId>
-						<artifactId>asm-commons</artifactId>
-					</exclusion>
-				</exclusions>
+				<!-- <exclusions> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>asm</groupId> -->
+				<!-- <artifactId>asm</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>asm</groupId> -->
+				<!-- <artifactId>asm-commons</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- </exclusions> -->
 			</dependency>
 			<dependency>
 				<groupId>org.mule</groupId>
@@ -5135,36 +5113,36 @@
 				<version>${mule.version}</version>
 				<type>test-jar</type>
 				<scope>test</scope>
-				<exclusions>
-					<exclusion>
-						<groupId>org.apache.geronimo.specs</groupId>
-						<artifactId>geronimo-jta_1.1_spec</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.apache.geronimo.specs</groupId>
-						<artifactId>geronimo-j2ee-connector_1.5_spec</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.mvel</groupId>
-						<artifactId>mvel2</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.safehaus.jug</groupId>
-						<artifactId>jug</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>commons-cli</groupId>
-						<artifactId>commons-cli</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>asm</groupId>
-						<artifactId>asm-commons</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>asm</groupId>
-						<artifactId>asm</artifactId>
-					</exclusion>
-				</exclusions>
+				<!-- <exclusions> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>org.apache.geronimo.specs</groupId> -->
+				<!-- <artifactId>geronimo-jta_1.1_spec</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>org.apache.geronimo.specs</groupId> -->
+				<!-- <artifactId>geronimo-j2ee-connector_1.5_spec</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>org.mvel</groupId> -->
+				<!-- <artifactId>mvel2</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>org.safehaus.jug</groupId> -->
+				<!-- <artifactId>jug</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>commons-cli</groupId> -->
+				<!-- <artifactId>commons-cli</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>asm</groupId> -->
+				<!-- <artifactId>asm-commons</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <groupId>asm</groupId> -->
+				<!-- <artifactId>asm</artifactId> -->
+				<!-- </exclusion> -->
+				<!-- </exclusions> -->
 			</dependency>
 			<dependency>
 				<groupId>org.mvel</groupId>
@@ -5192,19 +5170,50 @@
 				<version>${mybatis.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>org.mybatis.scripting</groupId>
+				<artifactId>mybatis-freemarker</artifactId>
+				<version>${mybatis.freemarker.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.opensaml</groupId>
 				<artifactId>opensaml</artifactId>
-				<version>2.5.1-1</version>
+				<version>${opensaml.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.opensaml</groupId>
+						<artifactId>openws</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>xerces</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.opensaml</groupId>
 				<artifactId>openws</artifactId>
-				<version>1.4.2-1</version>
+				<version>${openws.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.opensaml</groupId>
+						<artifactId>xmltooling</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>xerces</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.opensaml</groupId>
 				<artifactId>xmltooling</artifactId>
 				<version>1.3.2</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xerces</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.ow2.asm</groupId>
@@ -5329,7 +5338,7 @@
 				<groupId>org.seleniumhq.selenium.fluent</groupId>
 				<artifactId>fluent-selenium</artifactId>
 				<version>${fluent.selenium.version}</version>
-				<optional>true</optional>
+				<scope>test</scope>
 				<exclusions>
 					<exclusion>
 						<groupId>org.seleniumhq.selenium</groupId>
@@ -6600,7 +6609,7 @@
 				<version>${quickfixj.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>rhino</groupId>
+				<groupId>org.mozilla</groupId>
 				<artifactId>rhino</artifactId>
 				<version>1.7R4</version>
 			</dependency>
@@ -6672,7 +6681,7 @@
 			<dependency>
 				<groupId>xml-apis</groupId>
 				<artifactId>xml-apis-ext</artifactId>
-				<version>${xml.apis.version}</version>
+				<version>1.3.04</version>
 			</dependency>
 			<dependency>
 				<groupId>xml-apis</groupId>
@@ -6717,70 +6726,70 @@
 			</dependency>
 			<dependency>
 				<groupId>com.ibm.mq</groupId>
-				<artifactId>com.ibm.mq.axis2</artifactId>
+				<artifactId>axis2</artifactId>
 				<version>${mq.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.ibm.mq</groupId>
-				<artifactId>com.ibm.mq.commonservices</artifactId>
+				<artifactId>commonservices</artifactId>
 				<version>${mq.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.ibm.mq</groupId>
-				<artifactId>com.ibm.mq.defaultconfig</artifactId>
+				<artifactId>defaultconfig</artifactId>
+				<version>${mq.version}</version>
+			</dependency>
+			<!-- <dependency> -->
+			<!-- <groupId>com.ibm.mq</groupId> -->
+			<!-- <artifactId>mqetclient</artifactId> -->
+			<!-- <version>${mq.version}</version> -->
+			<!-- </dependency> -->
+			<dependency>
+				<groupId>com.ibm.mq</groupId>
+				<artifactId>headers</artifactId>
 				<version>${mq.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.ibm.mq</groupId>
-				<artifactId>com.ibm.mqetclient</artifactId>
+				<artifactId>mq</artifactId>
 				<version>${mq.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.ibm.mq</groupId>
-				<artifactId>com.ibm.mq.headers</artifactId>
+				<artifactId>jmqi</artifactId>
 				<version>${mq.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.ibm.mq</groupId>
-				<artifactId>com.ibm.mq</artifactId>
+				<artifactId>mqjms</artifactId>
 				<version>${mq.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.ibm.mq</groupId>
-				<artifactId>com.ibm.mq.jmqi</artifactId>
+				<artifactId>jms.Nojndi</artifactId>
 				<version>${mq.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.ibm.mq</groupId>
-				<artifactId>com.ibm.mqjms</artifactId>
+				<artifactId>pcf</artifactId>
 				<version>${mq.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.ibm.mq</groupId>
-				<artifactId>com.ibm.mq.jms.Nojndi</artifactId>
+				<artifactId>postcard</artifactId>
 				<version>${mq.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.ibm.mq</groupId>
-				<artifactId>com.ibm.mq.pcf</artifactId>
+				<artifactId>soap</artifactId>
 				<version>${mq.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.ibm.mq</groupId>
-				<artifactId>com.ibm.mq.postcard</artifactId>
+				<artifactId>tools.ras</artifactId>
 				<version>${mq.version}</version>
 			</dependency>
-			<dependency>
-				<groupId>com.ibm.mq</groupId>
-				<artifactId>com.ibm.mq.soap</artifactId>
-				<version>${mq.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.ibm.mq</groupId>
-				<artifactId>com.ibm.mq.tools.ras</artifactId>
-				<version>${mq.version}</version>
-			</dependency>
-			
+
 			<dependency>
 				<groupId>org.jdom</groupId>
 				<artifactId>jdom</artifactId>
@@ -6898,4 +6907,15 @@
 			</plugin>
 		</plugins>
 	</reporting>
+	<distributionManagement>
+		<repository>
+			<id>nexus-releases</id>
+			<url>http://localhost:8081/nexus/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus-snapshots</id>
+			<url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+			<uniqueVersion>true</uniqueVersion>
+		</snapshotRepository>
+	</distributionManagement>
 </project>

@@ -23,7 +23,7 @@
 		<spring.webflow.version>2.4.2.RELEASE</spring.webflow.version>
 
 		<spring.batch.version>3.0.5.RELEASE</spring.batch.version>
-		<spring.retry.version>1.0.2.RELEASE</spring.retry.version>
+		<spring.retry.version>1.1.2.RELEASE</spring.retry.version>
 		<spring.batch.admin.version>2.0.0.M1</spring.batch.admin.version>
 
 		<spring.modules.version>0.8</spring.modules.version>
@@ -55,8 +55,8 @@
 		<aspectjrt.version>1.6.11</aspectjrt.version>
 		<aspectjweaver.version>1.6.11</aspectjweaver.version>
 		<aopalliance.version>1.0</aopalliance.version>
-		<cglib.version>3.0</cglib.version>
-		<cglib.nodep.version>2.2</cglib.nodep.version>
+		<cglib.version>3.1</cglib.version>
+		<cglib.nodep.version>3.1</cglib.nodep.version>
 		<asm.version>4.0</asm.version>
 
 		<!-- Apache commons -->
@@ -153,7 +153,7 @@
 		<junit.version>4.10</junit.version>
 		<testng.version>6.1.1</testng.version>
 		<hamcrest.version>1.1</hamcrest.version>
-		<dbunit.version>2.4.8</dbunit.version>
+		<dbunit.version>2.4.9</dbunit.version>
 		<spring.test.dbunit.version>1.0.1</spring.test.dbunit.version>
 
 		<jbehave.core.version>4.0.3</jbehave.core.version>
@@ -559,11 +559,6 @@
 				<groupId>org.antlr</groupId>
 				<artifactId>antlr4-runtime</artifactId>
 				<version>4.1</version>
-			</dependency>
-			<dependency>
-				<groupId>cglib</groupId>
-				<artifactId>cglib-nodep</artifactId>
-				<version>3.1</version>
 			</dependency>
 			<dependency>
 				<groupId>com.espertech</groupId>

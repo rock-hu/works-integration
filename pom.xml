@@ -131,11 +131,11 @@
 
 		<backport.util.concurrent.version>3.1</backport.util.concurrent.version>
 
-		<castor.version>1.3.2</castor.version>
+		<castor.version>1.3.3</castor.version>
 		<avalon.version>4.3.1</avalon.version>
 		<rome.version>1.0.0</rome.version>
 		<guava.version>16.0.1</guava.version>
-		<woodstox.version>4.1.4</woodstox.version>
+		<woodstox.version>4.4.1</woodstox.version>
 
 		<jcommander.version>1.30</jcommander.version>
 
@@ -213,9 +213,13 @@
 
 		<!-- Report -->
 		<jasperreports.version>6.1.0</jasperreports.version>
-		<barcode4j.version>2.1</barcode4j.version>
-		<fop.version>1.1</fop.version>
+		<barcode4j.version>2.0</barcode4j.version>
+		<fop.version>2.0</fop.version>
+		<xmlgraphics.commons.version>2.0.1</xmlgraphics.commons.version>
+		<batik.version>1.8</batik.version>
 		<jasper.version>4.6.0</jasper.version>
+		<groovy.version>2.0.1</groovy.version>
+		<itext.version>2.1.7</itext.version>
 
 		<jfreechart.version>1.0.12</jfreechart.version>
 
@@ -237,6 +241,7 @@
 		<mule.hdfs.version>3.6</mule.hdfs.version>
 		<munit.version>3.5-M3-SNAPSHOT</munit.version>
 		<jug.asl.version>2.0.0</jug.asl.version>
+		
 		<!-- ActiveMQ -->
 		<activemq.version>5.12.0</activemq.version>
 		<activemq.protobuf.version>1.1</activemq.protobuf.version>
@@ -1495,6 +1500,18 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
+			<dependency>
+				<groupId>com.lowagie</groupId>
+				<artifactId>itext</artifactId>
+				<version>${itext.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.codehaus.groovy</groupId>
+				<artifactId>groovy-all</artifactId>
+				<version>${groovy.version}</version>
+				<scope>compile</scope>
+				<optional>true</optional>
+			</dependency>			
 			<dependency>
 				<groupId>net.sf.json-lib</groupId>
 				<artifactId>json-lib</artifactId>
@@ -4149,6 +4166,55 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
+			
+	
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>xmlgraphics-commons</artifactId>
+				<version>${xmlgraphics.commons.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-svg-dom</artifactId>
+				<version>${batik.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-bridge</artifactId>
+				<version>${batik.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-awt-util</artifactId>
+				<version>${batik.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-gvt</artifactId>
+				<version>${batik.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-transcoder</artifactId>
+				<version>${batik.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.apache.xmlgraphics</groupId>
+						<artifactId>fop</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-extension</artifactId>
+				<version>${batik.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlgraphics</groupId>
+				<artifactId>batik-ext</artifactId>
+				<version>${batik.version}</version>
+			</dependency>			
+			
 			<dependency>
 				<groupId>org.aspectj</groupId>
 				<artifactId>aspectjrt</artifactId>
@@ -4368,7 +4434,7 @@
 			<dependency>
 				<groupId>org.eclipse.birt.runtime</groupId>
 				<artifactId>org.eclipse.birt.runtime</artifactId>
-				<version>4.3.0</version>
+				<version>4.5.0</version>
 				<exclusions>
 					<exclusion>
 						<groupId>org.eclipse.birt.runtime</groupId>

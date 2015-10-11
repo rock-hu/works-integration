@@ -6,3 +6,7 @@ activemq-data
 
 
 /data
+/dependency/
+/lib/
+/install.log
+/tree.txt

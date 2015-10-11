@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
 	<!-- <localRepository>/home/rock/repository</localRepository> -->
-
 	<pluginGroups>
 		<pluginGroup>org.apache.tomcat.maven</pluginGroup>
 		<pluginGroup>org.mule.tools</pluginGroup>
 		<pluginGroup>org.apache.portals.jetspeed-2</pluginGroup>
 	</pluginGroups>
-
 	<proxies>
 	</proxies>
 	<servers>
@@ -29,7 +26,6 @@
 			<password>admin123</password>
 		</server>
 	</servers>
-
 	<mirrors>
 		<mirror>
 			<id>nexus-releases</id>
@@ -88,8 +84,18 @@
 					<url>http://mavenhub.com/mvn/central</url>
 				</repository>
 				<repository>
-					<id>mulesoft-releases</id>
-					<url>https://repository.mulesoft.org/releases/</url>
+					<id>mulesoft-releases-https</id>
+					<url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+				</repository>
+				<repository>
+					<id>mulesoft-releases-http</id>
+					<url>http://repository.mulesoft.org/releases/</url>
+					<layout>default</layout>
+				</repository>
+				<repository>
+					<id>mulesoft-snapshots</id>
+					<name>MuleSoft Snapshots Repository</name>
+					<url>https://repository.mulesoft.org/snapshots/</url>
 					<layout>default</layout>
 				</repository>
 				<repository>
@@ -159,18 +165,16 @@
 					<url>http://repository.sonatype.org/content/groups/public/</url>
 				</pluginRepository>
 				<pluginRepository>
-					<id>mulesoft-release</id>
-					<name>mulesoft release repository</name>
-					<layout>default</layout>
+					<id>mulesoft-plugin-releases</id>
 					<url>http://repository.mulesoft.org/releases/</url>
-					<snapshots>
-						<enabled>false</enabled>
-					</snapshots>
+				</pluginRepository>
+				<pluginRepository>
+					<id>mulesoft-plugin-snapshots</id>
+					<url>http://repository.mulesoft.org/snapshots/</url>
 				</pluginRepository>
 				<pluginRepository>
 					<id>code.taobao.org</id>
 					<url>http://code.taobao.org/mvn/repository</url>
-					<layout>default</layout>
 				</pluginRepository>
 				<pluginRepository>
 					<id>plugin-repo-mirror</id>
